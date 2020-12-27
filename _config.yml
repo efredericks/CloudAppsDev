@@ -3,7 +3,7 @@ description: > # this means to ignore newlines until "baseurl:"
   CIS680 is a five-week asynchronous-online course at [Grand Valley State University](https://www.gvsu.edu) for cloud applications development.  Given its asynchronous state, I've made all the course materials open source to benefit the cloud education community.  All materials and labs will be performed on the [Google Cloud Platform (GCP)](https://cloud.google.com/).
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://efredericks.github.io/CloudAppsDev" # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
