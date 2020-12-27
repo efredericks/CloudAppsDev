@@ -1,0 +1,48 @@
+I"b
+<h1 id="cis680-week-1module-1---introduction">CIS680 Week 1/Module 1 - Introduction</h1>
+
+<p>Welcome to Cloud Application Development!  This module will introduce you to the basics of cloud computing.</p>
+
+<blockquote>
+  <p>By the end of this module, you should understand the underlying concepts of cloud computing, be able to setup your GCP account and billing, and create and use a remote virtual machine.</p>
+</blockquote>
+
+<blockquote>
+  <p>Module Video: TBD</p>
+</blockquote>
+
+<p>For this course we will be using <a href="https://cloud.google.com/">Google Cloud Platform</a> as our cloud provider, however others such as <a href="https://aws.amazon.com/">Amazon Web Services (AWS)</a> and <a href="https://azure.microsoft.com/">Microsoft Azure</a> are common as well.  While each provides their own particular flavor, understanding the basics should enable you to transition between one and the other as necessary.</p>
+
+<p>Plus, assuming you are registered for the course at GVSU, you will receive free cloud computing credits (contact me on Blackboard).  If you somehow stumbled across this you can get <a href="https://cloud.google.com/free">free credits via Google</a>, however you’re on your own with those.</p>
+
+<h2 id="cloud-computing-costs">Cloud Computing Costs</h2>
+
+<p>The most important concept to understand about cloud computing is that it is <strong>not</strong> free.  Each moment a virtual machine is on, each API call, each image access in a storage bucket will cost money.</p>
+
+<p>Repeat after me:</p>
+
+<p><strong>CLOUD COMPUTING IS NOT FREE.</strong></p>
+
+<p>Unless if you are running a business with unlimited funds, you don’t want to see charges start to accrue on your account that could be avoided.  That means:</p>
+
+<ol>
+  <li>Shut down your virtual machine when you are done.</li>
+</ol>
+
+<p>Here is a screenshot of an Ubuntu 20 virtual machine with a default configuration.  Note how much it costs to run monthly.  <strong>This is the cost for simply leaving the machine up and running</strong>, i.e., TURN IT OFF WHEN YOU’RE DONE.</p>
+
+<p><img src="images/1-costs.png" alt="GCP cost calculator" /></p>
+
+<ol>
+  <li>Set up stringent access rights to all your API calls, cloud functions, etc.</li>
+  <li>Do not publish any access keys, API ID’s, passwords, etc. to version control (e.g., GitHub, BitBucket, etc.).  Keep in mind that if you <em>accidentally</em> push something identifiable that it can be <strong>easily discovered</strong> by checking commit history.</li>
+</ol>
+
+<h2 id="google-cloud-vs-aws-vs-azure">Google Cloud vs. AWS vs. Azure</h2>
+
+<blockquote>
+  <p>Module Video: TBD</p>
+</blockquote>
+
+<p>TBD</p>
+:ET
