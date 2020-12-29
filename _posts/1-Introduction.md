@@ -24,7 +24,7 @@ Unless if you are running a business with unlimited funds, you don't want to see
 
 Here is a screenshot of an Ubuntu 20 virtual machine with a default configuration.  Note how much it costs to run monthly.  **This is the cost for simply leaving the machine up and running**, i.e., TURN IT OFF WHEN YOU'RE DONE.
 
-![GCP cost calculator](images/1-costs.png)
+![GCP cost calculator](/CloudAppsDev/images/1-costs.png)
 
 
 2. Set up stringent access rights to all your API calls, cloud functions, etc.
