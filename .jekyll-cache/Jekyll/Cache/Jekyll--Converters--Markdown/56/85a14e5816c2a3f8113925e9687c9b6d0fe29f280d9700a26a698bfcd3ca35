@@ -1,0 +1,31 @@
+I"2<h1 id="cis680-week-1module-2---cloud-computing-technologies">CIS680 Week 1/Module 2 - Cloud Computing Technologies</h1>
+
+<p>This module will introduce you to some of the various technologies that are available to you as part of cloud computing.</p>
+
+<blockquote>
+  <p>By the end of this module, you will know what cloud computing can be used for, how to enable a cloud API, and how to navigate the cloud shell.</p>
+</blockquote>
+
+<blockquote>
+  <p>Module Video: TBD</p>
+</blockquote>
+
+<h2 id="cloud-technologies">Cloud Technologies</h2>
+
+<blockquote>
+  <p>Demos - website hosting, failover network, API, cloud shell</p>
+</blockquote>
+
+<h2 id="cloud-shell">Cloud Shell</h2>
+
+<h2 id="codelabs">Codelabs</h2>
+
+<h2 id="colabs">Colabs</h2>
+
+<h2 id="additional-resources">Additional Resources</h2>
+
+<ul>
+  <li><a href="https://codelabs.developers.google.com/codelabs/cloud-shell/#0">Codelab: Getting Started with Cloud Shell &amp; gcloud</a></li>
+  <li><a href="https://cloud.google.com/shell/docs/running-gcloud-commands">Running gcloud Commands with Cloud Shell</a></li>
+</ul>
+:ET

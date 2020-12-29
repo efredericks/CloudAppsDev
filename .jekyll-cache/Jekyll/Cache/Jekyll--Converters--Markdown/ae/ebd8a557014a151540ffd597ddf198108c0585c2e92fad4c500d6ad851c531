@@ -1,4 +1,18 @@
-I"b
+I"'<ul>
+  <li>
+    <p>Module videos:</p>
+  </li>
+  <li>
+    <p>Module labs:</p>
+
+    <ul>
+      <li><a href="/CloudAppsDev/codelabs/CIS680-Lab1-Setup">Lab 1</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
 <h1 id="cis680-week-1module-1---introduction">CIS680 Week 1/Module 1 - Introduction</h1>
 
 <p>Welcome to Cloud Application Development!  This module will introduce you to the basics of cloud computing.</p>
@@ -45,4 +59,5 @@
 </blockquote>
 
 <p>TBD</p>
+
 :ET

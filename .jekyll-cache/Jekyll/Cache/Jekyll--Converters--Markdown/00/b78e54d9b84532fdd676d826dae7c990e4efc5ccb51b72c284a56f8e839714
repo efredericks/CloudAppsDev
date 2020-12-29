@@ -1,14 +1,15 @@
-I"�<p>If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost:</p>
+I"5<ul>
+  <li>
+    <p>Module videos:</p>
+  </li>
+  <li>
+    <p>Module labs:</p>
 
-<p>You may want to <a href="https://tianqi.name/jekyll-TeXt-theme/docs/en/configuration">config the site</a> or <a href="https://tianqi.name/jekyll-TeXt-theme/docs/en/writing-posts">writing a post</a> next. Please feel free to <a href="https://github.com/kitian616/jekyll-TeXt-theme/issues">create an issue</a> or <a href="mailto:kitian616@outlook.com">send me email</a> if you have any questions.</p>
-
-<!--more-->
-
-<hr />
-
-<p>If you like TeXt, don’t forget to give me a star. :star2:</p>
-
-<p><a href="https://github.com/kitian616/jekyll-TeXt-theme/"><img src="https://img.shields.io/github/stars/kitian616/jekyll-TeXt-theme.svg?label=Stars&amp;style=social" alt="Star This Project" /></a></p>
+    <ul>
+      <li><a href="/CloudAppsDev/codelabs/CIS680-Lab1-Setup">Lab 1</a></li>
+    </ul>
+  </li>
+</ul>
 
 <hr />
 
@@ -44,7 +45,7 @@
 
 <p>Here is a screenshot of an Ubuntu 20 virtual machine with a default configuration.  Note how much it costs to run monthly.  <strong>This is the cost for simply leaving the machine up and running</strong>, i.e., TURN IT OFF WHEN YOU’RE DONE.</p>
 
-<p><img src="images/1-costs.png" alt="GCP cost calculator" /></p>
+<p><img src="/CloudAppsDev/images/1-costs.png" alt="GCP cost calculator" /></p>
 
 <ol>
   <li>Set up stringent access rights to all your API calls, cloud functions, etc.</li>
@@ -58,4 +59,5 @@
 </blockquote>
 
 <p>TBD</p>
+
 :ET
