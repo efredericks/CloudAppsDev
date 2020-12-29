@@ -37,4 +37,3 @@ Here is a screenshot of an Ubuntu 20 virtual machine with a default configuratio
 
 TBD
 
-[Lab 1 - Account Setup](codelabs/CIS680-Lab1-Setup)
