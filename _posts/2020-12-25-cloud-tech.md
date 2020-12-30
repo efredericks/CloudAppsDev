@@ -1,5 +1,5 @@
 ---
-title: Cloud Technologies
+title: Week 2 - Cloud Technologies
 tags: page
 #excerpt: Introduction to cloud technologies
 ---  

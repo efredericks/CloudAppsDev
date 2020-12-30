@@ -62,7 +62,8 @@
                 {%- if _excerpt_type == 'html' -%}
                   {{ _article.excerpt }}
                 {%- else -%}
-                  {{ _article.excerpt | strip_html | strip | truncate: _excerpt_truncate }}
+                  <!-- EMF: removed strip_html from here -->
+                  {{ _article.excerpt | strip | truncate: _excerpt_truncate }}
                 {%- endif -%}
               </div>
             {%- endif -%}
