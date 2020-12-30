@@ -1,7 +1,7 @@
 ---
 title: Cloud Technologies
 tags: page
-excerpt: Introduction to cloud technologies
+#excerpt: Introduction to cloud technologies
 ---  
 
 This module will go over the various cloud technologies at your disposal.     
