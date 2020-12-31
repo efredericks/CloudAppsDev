@@ -35,6 +35,52 @@ Here is a screenshot of an Ubuntu 20 virtual machine with a default configuratio
 
 > Module Video: TBD
 
+There are several players in the game (i.e., the battle for cloud dominance) as of this point, however the big three are Google, Microsoft, and Amazon.  Whichever you end up using is more than likely going to come down to enumerating a list of tradeoffs, business decisions, and personal preferences.  
+
+As of now (December 2020), AWS owns an astonishing 62% of the cloud market, with Microsoft (Azure) coming in at 20% and Google (GCP) with 12%.  
+
+> *Source: [https://medium.com/weekly-webtips/google-cloud-vs-aws-vs-azure-bafb554e036](https://medium.com/weekly-webtips/google-cloud-vs-aws-vs-azure-bafb554e036)*
+
+Really, there isn't one "good" answer for which you should pick.  We'll now list out some considerations for you to ponder.
+
+### Cloud Provider Considerations
+
+![Gartner Report - Cloud Market Share](/CloudAppsDev/assets/images/Cloud-Gartner-report.png)
+
+Considerations consistently change with respect to cloud providers.  Here, I am going to very briefly summarize some of the pros and cons for the big three providers with a massive caveat that these points can and will change.  
+
+> *Source: [https://www.datamation.com/cloud-computing/aws-vs-azure-vs-google-cloud-comparison.html](https://www.datamation.com/cloud-computing/aws-vs-azure-vs-google-cloud-comparison.html)*
+
+**Amazon Web Services**
+
+* Pros:
+  - Existing dominance in market
+  - Mature and enterprise-ready
+  
+* Cons:
+  - Can have a higher cost than competitors
+
+**Microsoft Azure**
+
+* Pros:
+  - Pre-existing familiarity with Microsoft products (e.g., Windows Server, Sharepoint, Active Directory, etc.)
+  - Tightly-coupled with Microsoft ecosystem
+
+* Cons:
+  - Issues with enterprise-readiness
+  - Technical support problems
+
+**Google Cloud**
+
+* Pros:
+  - Success with containers/orchestration
+  - Prominent in research-oriented areas (e.g., machine learning, big data analysis)
+  - Massive scale
+  - *Works well with education (cough cough)*
+* Cons:
+  - Tend to be a 'secondary partner' as they not as prominent in the cloud game
+
+
 ## Google Cloud Account Setup (Lab)
 
 > Module Video: TBD (GCP walkthrough)
