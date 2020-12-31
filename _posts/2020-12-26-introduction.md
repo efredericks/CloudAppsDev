@@ -1,5 +1,5 @@
 ---
-title: Week 1 - Introduction
+title: Week 1/Module 1 - Introduction
 tags: page
 excerpt: 
         This module covers everything you need to know to get up and running with Google Cloud for this class.
