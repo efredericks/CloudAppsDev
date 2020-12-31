@@ -1,5 +1,3 @@
-# CIS680 Week 1/Module 1 - Introduction
-
 Welcome to Cloud Application Development!  This module will introduce you to the basics of cloud computing.
 
 > By the end of this module, you should understand the underlying concepts of cloud computing, be able to setup your GCP account and billing, and create and use a remote virtual machine.
