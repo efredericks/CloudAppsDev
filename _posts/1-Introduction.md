@@ -35,5 +35,12 @@ Here is a screenshot of an Ubuntu 20 virtual machine with a default configuratio
 
 > Module Video: TBD
 
-TBD
+## Google Cloud Account Setup (Lab)
 
+> Module Video: TBD (GCP walkthrough)
+
+Time for your first lab assignment!  This will get you up and running with a Google Cloud account, walk you through the web interface, and have you create a web server.  
+
+**Ensure you download the lab manual from Blackboard!**
+
+Click here for your first lab [CIS680 Lab 1 - Intro. to Google Cloud](https://efredericks.github.io/CloudAppsDev/codelabs/CIS680-Lab1-Setup)
