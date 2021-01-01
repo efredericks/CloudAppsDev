@@ -5,6 +5,17 @@
 
 ## Cloud Technologies
 
+vms
+virt networks
+services
+iot
+microservices
+containers
+analytics
+data mgmt
+recovery
+
+
 > Demos - website hosting, failover network, API, cloud shell
 
 ## Cloud Shell
