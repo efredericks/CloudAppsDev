@@ -16,7 +16,7 @@
 
 A *serverless* function effectively is just a function call you make to a remote server.  The nifty thing here is that you don't have to worry about the whole pesky *setting up a machine to run that function* type of concern.  You simply reference an API endpoint of some sort (e.g., an HTTP call, a RESTful call, a pub/sub trigger, etc.) and then receive data.
 
-[A Google Intro to Cloud Functions](https://youtu.be/1r3vMYywNLk)
+> *External video (1:37)*: [A Google Intro to Cloud Functions](https://youtu.be/1r3vMYywNLk)
 
 The following screenshot shows the list of *currently available* triggers for a Cloud Function.  Note that some are in beta, meaning they are not necessarily ready for prime time yet.
 
@@ -31,6 +31,8 @@ Serverless functions, or *Functions as a Service* (FaaS), are effectively some s
 Here is an example (from Microsoft's Azure Functions):
 
 ![Azure Functions](https://docs.microsoft.com/en-us/dotnet/architecture/serverless/media/cqrs-example.png)
+
+> Figure 1: Azure Functions
 
 The lightning bolt represents the serverless function in this example.  Here are the general steps:
 
@@ -135,6 +137,8 @@ The default "Hello World" of serverless, and you get it for free when setting up
 
 ![Hello world CF](/CloudAppsDev/assets/images/3-cf-hello-world.png "Hello World CF")
 
+> Figure 2: Google Cloud Function - Hello World
+
 (You'll do this as part of your lab at the bottom of this post).
 
 **Example 2 - Execute a Slack Slash Command**
@@ -145,11 +149,16 @@ The tutorial is [here if you're interested](https://cloud.google.com/functions/d
 
 <img src="https://cloud.google.com/functions/img/gcf-slack.svg" alt="Slack to CF to Knowledge Graph" title="Slack to CF to Knowledge Graph" style="background-color: white" />
 
+> Figure 3: Google Cloud Function - Slack/Knowledge Graph
+ 
 **Example 3 - Perform Optical Character Recognition**
 
 Last but not least, we have an example where optical character recognition (OCR) is performed using Google services.  There are multiple moving pieces with this application as seen in the following image:
 
 <img src="https://cloud.google.com/functions/img/gcf-ocr.svg" alt="OCR" title="OCR" style="background-color: white" />
+
+> Figure 4: Google Cloud Function - OCR
+ 
 
 [Here is the demo](https://cloud.google.com/functions/docs/tutorials/ocr) if you're interested.  I'll copy/paste the dataflow here to give you an idea of how it all fits together:
 

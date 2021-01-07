@@ -24,6 +24,8 @@ Here is a screenshot of an Ubuntu 20 virtual machine with a default configuratio
 
 ![GCP cost calculator](/CloudAppsDev/assets/images/1-costs.png "GCP cost calculator")
 
+> Figure 1: Cost Calculator
+
 
 2. Set up stringent access rights to all your API calls, cloud functions, etc.
 3. Do not publish any access keys, API ID's, passwords, etc. to version control (e.g., GitHub, BitBucket, etc.).  Keep in mind that if you *accidentally* push something identifiable that it can be **easily discovered** by checking commit history.  
@@ -44,6 +46,8 @@ Really, there isn't one "good" answer for which you should pick.  We'll now list
 ### Cloud Provider Considerations
 
 ![Gartner Report - Cloud Market Share](/CloudAppsDev/assets/images/Cloud-Gartner-report.png "Gartner Report - Cloud Market Share")
+
+> Figure 2: Cloud Market Share
 
 Considerations consistently change with respect to cloud providers.  Here, I am going to very briefly summarize some of the pros and cons for the big three providers with a massive caveat that these points can and will change.  
 

@@ -20,7 +20,9 @@ ASSIGNMENT: WRITEUP 5 SERVICES
 
 One of the more common cloud services that are available are virtual machines.   These are effectively computers that you can setup that are accessible anywhere you have a network connection (and the necessary technology to access it -- for Google Cloud it is simply a browser). 
 
-[![Google Cloud Normal Host vs. Sole-tenant node](https://cloudx-bricks-prod-bucket.storage.googleapis.com/d5c9cad33f729dc110d8b907db5a695ca9cf6b0f4b692f44f0f2c0e276d78369.svg "Google Cloud Normal Host vs. Sole-tenant node]")
+![Google Cloud Normal Host vs. Sole-tenant node](https://cloudx-bricks-prod-bucket.storage.googleapis.com/d5c9cad33f729dc110d8b907db5a695ca9cf6b0f4b692f44f0f2c0e276d78369.svg "Google Cloud Normal Host vs. Sole-tenant node]")
+
+> Figure 1: Normal vs. Sole-tenant nodes
 
 ### Virtual Networks
 
