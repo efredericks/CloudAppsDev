@@ -22,7 +22,7 @@ Unless if you are running a business with unlimited funds, you don't want to see
 
 Here is a screenshot of an Ubuntu 20 virtual machine with a default configuration.  Note how much it costs to run monthly.  **This is the cost for simply leaving the machine up and running**, i.e., TURN IT OFF WHEN YOU'RE DONE.
 
-![GCP cost calculator](/CloudAppsDev/assets/images/1-costs.png)
+![GCP cost calculator](/CloudAppsDev/assets/images/1-costs.png "GCP cost calculator")
 
 
 2. Set up stringent access rights to all your API calls, cloud functions, etc.
@@ -43,7 +43,7 @@ Really, there isn't one "good" answer for which you should pick.  We'll now list
 
 ### Cloud Provider Considerations
 
-![Gartner Report - Cloud Market Share](/CloudAppsDev/assets/images/Cloud-Gartner-report.png)
+![Gartner Report - Cloud Market Share](/CloudAppsDev/assets/images/Cloud-Gartner-report.png "Gartner Report - Cloud Market Share")
 
 Considerations consistently change with respect to cloud providers.  Here, I am going to very briefly summarize some of the pros and cons for the big three providers with a massive caveat that these points can and will change.  
 

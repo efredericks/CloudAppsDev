@@ -4,6 +4,14 @@
 > * Core concepts
 > * Cloud Functions Codelab Demo 
 
+>**Note -- interchangeable terms!**
+>
+>A *serverless* function is the generic activity we're discussing here, and each provider has their own proprietary name for this:  
+>
+>* Google: Cloud Functions
+>* AWS: Lambda functions
+>* Microsoft Azure: Azure Functions
+
 ## Cloud Functions
 
 A Cloud Function (Google-branded), or more generically, a *serverless* function, effectively is just a function call you make to a remote server.  The nifty thing here is that you don't have to worry about the whole pesky *setting up a machine to run that function* type of concern.  You simply reference an API endpoint of some sort (e.g., an HTTP call, a RESTful call, a pub/sub trigger, etc.) and then receive data.
@@ -12,7 +20,7 @@ A Cloud Function (Google-branded), or more generically, a *serverless* function,
 
 The following screenshot shows the list of *currently available* triggers for a Cloud Function.  Note that some are in beta, meaning they are not necessarily ready for prime time yet.
 
-![Cloud Function triggers](/CloudAppsDev/assets/images/3-cf-triggers.png)
+![Cloud Function triggers](/CloudAppsDev/assets/images/3-cf-triggers.png "Cloud Function triggers")
 
 We will be mainly using HTTP for this section.  
 
@@ -48,7 +56,7 @@ Let's take a look at the key benefits published by Google and Amazon, respective
 * Cost optimized with millisecond metering
 * Consistent performance at any scale
 
-Sounds prettty good, right?  Let's pull apart what is being offered.
+Sounds pretty good, right?  Let's pull apart what is being offered.
 
 **(Lack of) Server Management**
 
@@ -59,6 +67,14 @@ With serverless functions we still need to configure and monitor them, however t
 > Each cloud provider (naturally) has their own method for configuring and securing serverless functions, so be aware that the demos we're looking at here will need to be tweaked for whichever provider you use.  The concepts are transferrable, however.
 
 **Scaling**
+
+Scaling is one of the other key benefits of using the cloud (and most likely why you're considering the cloud anyway).  In line with not having to worry about the server backend, you also don't need to worry about scalability from a technological perspective.
+
+**You'll pay for scalability, naturally**.  You just won't have to worry about such pesky things like server scalability.
+
+Since the backend is relatively flexible, your cloud provider only needs to spin up as many resources as necessary.  If you are only being hit with 10 requests, then you don't need a massive virtual machine to handle it.  Likewise if you're in the millions of requests per minute range, more than likely a load-balanced infrastructure will be seamlessly created.
+
+You don't see any of that though!  You just see a bill for resources consumed.
 
 **Monitoring/Metering**
 
@@ -110,6 +126,26 @@ Consider these points when setting up a function.  Points 1-3 tend to focus more
 For instance, Python and Node.js are supported by all, but Microsoft also supports C# and F#.
 
 ### How can we use them?
+
+The big question.  Why would you even bother to use them?  I've pulled a few examples from [Google Cloud's list](https://cloud.google.com/functions/#section-5), I suggest you take a look at them as well.
+
+**Example 1 - A Simple Website (HTTP Endpoint)**
+
+The default "Hello World" of serverless, and you get it for free when setting up a new Google Cloud Function.  Simply visit the `trigger URL` in any browser and you are rewarded with Hello World.
+
+![Hello world CF](/CloudAppsDev/assets/images/3-cf-hello-world.png "Hello World CF")
+
+(You'll do this as part of your lab at the bottom of this post).
+
+**Example 2 - Execute a Slack Slash Command**
+
+Perhaps you want to up your Slack game and make your chats come to life.  This one uses a customized Slack command to search the Knowledge Graph API (i.e., search for information) via a Cloud Function.
+
+The tutorial is [here if you're interested](https://cloud.google.com/functions/docs/tutorials/slack), but the gist is that a custom Slack command triggers the Cloud Function and sends the search query as its payload.  The Cloud Function then reaches out to the Knowledge Graph with the query and returns the results back to Slack.  The following image demonstrates this activity:
+
+<img src="https://cloud.google.com/functions/img/gcf-slack.svg" alt="Slack to CF to Knowledge Grpah" title="Slack to CF to Knowledge Graph" style="background-color: white" />
+
+**Example 3 - Perform Optical Character Recognition**
 
 ## What about those *other* serverless functions?
 
