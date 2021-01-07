@@ -227,7 +227,7 @@ If you are authenticating users, then access will need to be granted to their ac
 
 It can be difficult to understand exactly what is happening in serverless functions, as you don't have easy access to debugging information like you normally would.  Trace debugging is tricky as you would need a console to print to, and you don't have a debugger that you can attach.  Fortunately, we have additional support for this.  
 
-![Operations](/CloudAppsDev/assets/images/3-cf-operations.png "Operations")
+![Operations](/CloudAppsDev/assets/images/3-cf-ops.png "Operations")
 
 > Figure 6: Operations
 
