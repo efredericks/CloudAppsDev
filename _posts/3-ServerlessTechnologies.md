@@ -22,6 +22,9 @@ The following screenshot shows the list of *currently available* triggers for a 
 
 ![Cloud Function triggers](/CloudAppsDev/assets/images/3-cf-triggers.png "Cloud Function triggers")
 
+> Figure 1: Cloud Function triggers
+
+
 We will be mainly using HTTP for this section.  
 
 ### What are they?
@@ -32,7 +35,7 @@ Here is an example (from Microsoft's Azure Functions):
 
 ![Azure Functions](https://docs.microsoft.com/en-us/dotnet/architecture/serverless/media/cqrs-example.png)
 
-> Figure 1: Azure Functions
+> Figure 2: Azure Functions
 
 The lightning bolt represents the serverless function in this example.  Here are the general steps:
 
@@ -137,7 +140,7 @@ The default "Hello World" of serverless, and you get it for free when setting up
 
 ![Hello world CF](/CloudAppsDev/assets/images/3-cf-hello-world.png "Hello World CF")
 
-> Figure 2: Google Cloud Function - Hello World
+> Figure 3: Google Cloud Function - Hello World
 
 (You'll do this as part of your lab at the bottom of this post).
 
@@ -149,7 +152,7 @@ The tutorial is [here if you're interested](https://cloud.google.com/functions/d
 
 <img src="https://cloud.google.com/functions/img/gcf-slack.svg" alt="Slack to CF to Knowledge Graph" title="Slack to CF to Knowledge Graph" style="background-color: white" />
 
-> Figure 3: Google Cloud Function - Slack/Knowledge Graph
+> Figure 4: Google Cloud Function - Slack/Knowledge Graph
  
 **Example 3 - Perform Optical Character Recognition**
 
@@ -157,7 +160,7 @@ Last but not least, we have an example where optical character recognition (OCR)
 
 <img src="https://cloud.google.com/functions/img/gcf-ocr.svg" alt="OCR" title="OCR" style="background-color: white" />
 
-> Figure 4: Google Cloud Function - OCR
+> Figure 5: Google Cloud Function - OCR
  
 
 [Here is the demo](https://cloud.google.com/functions/docs/tutorials/ocr) if you're interested.  I'll copy/paste the dataflow here to give you an idea of how it all fits together:
@@ -184,6 +187,27 @@ For more information: [Serverless Databases](https://dashbird.io/blog/what-is-se
  
 ## Accessing
 
+We can access the results of our serverless functions in a multitude of ways.  The most common are via RESTful calls (meaning we'll be either using a browser or a command-line command to get the result of an HTTP command).
+
+### Browser-Based
+
+If your serverless function provides an HTML trigger (as does Google Cloud) then you can simply visit your cloud function in the browser.  For example, you may see something like this (with angle brackets naturally filled in with appropriate values):
+
+`https://<REGION>-<PROJECT-ID>.cloudfunctions.net/function-1`
+
+You can simply click or copy/paste that URL into a browser and see the results.  
+
+### Terminal-Based
+
+You can also access such a call with a terminal command.  One of the more common commands is `curl`.  Here's a link to the `curl` [documentation](https://curl.se/docs/httpscripting.html).
+
+We will do this in the lab at the bottom, but you can also access the results of a Cloud Function with a `curl` call, as follows:
+
+`curl https://<REGION>-<PROJECT-ID>.cloudfunctions.net/function-1`
+
+If you had created a Cloud Function with the default application, you would see `Hello World` returned to your terminal.  This command *should* work in any terminal where you have `curl` installed (note: you may need to install it if you're a bash user).
+
+There are a plethora of return values you can get from a serverless function.  It may return a `JSON` object, or an HTTP status code, or whatever the cloud provider allows as return.  Here are a list of [Tips and Tricks](https://cloud.google.com/functions/docs/bestpractices/tips) for Google Cloud if you're looking for more details.
 
 ## Authentication
 
@@ -199,7 +223,23 @@ Authentication is required by default (and more detail can be [found here](https
 
 If you are authenticating users, then access will need to be granted to their account.  Again, see the [Authentication page](https://cloud.google.com/functions/docs/securing/authenticating) for specifics.  We will become intimately familiar with this process as we go!
 
-## Logging
+## Logging/Tracing
+
+It can be difficult to understand exactly what is happening in serverless functions, as you don't have easy access to debugging information like you normally would.  Trace debugging is tricky as you would need a console to print to, and you don't have a debugger that you can attach.  Fortunately, we have additional support for this.  
+
+![Operations](/CloudAppsDev/assets/images/3-cf-operations.png "Operations")
+
+> Figure 6: Operations
+
+We'll look at Trace in the lab, but it is a good way to generate reports so that you can understand *how* your functions are being used, *how much* memory and time each take, and *what* they are doing.  
+
+You can also perform logging in various fashions.  The simplest way is to simply override your program's behavior to print out logging statements (i.e., like your typicaly trace debugging).  You can also use the logging statements built into your language of choice.  For instance, if you're using Node.js you can write `console.log('I am a log');` or `console.error('I am an error!');`.  The output will go in the `Logs` tab in your Cloud Function:
+
+![Logging tab](/CloudAppsDev/assets/images/3-cf-logging.png "Logging tab")
+
+> Figure 7: Logging Tab
+
+Anything written to `stdout` or `stderr` will go directly to the cloud console as well.  I **highly** recommend checking out this link as it will help you **immensely** with debugging your programs: [https://cloud.google.com/functions/docs/monitoring/logging](https://cloud.google.com/functions/docs/monitoring/logging)
 
 ## Lab - Cloud Functions (Advanced)
 
@@ -211,7 +251,7 @@ Here we're going to work through Stackdriver logging and trace, two components o
 
 ### Lab Instructions
 
-Download the appropriate lab manual from Blackboard and keep it open while you work through the Codelab.  I'll be asking for screenshots from your progress.  
+Download the appropriate lab manual from Blackboard and keep it open while you work through the Codelab.  I'll be asking for screenshots from your progress and also have you perform a *little extra work as well*.  
 
 The following link will take you to a Google-created Codelab.  
 
