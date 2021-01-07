@@ -12,9 +12,9 @@
 >* AWS: Lambda functions
 >* Microsoft Azure: Azure Functions
 
-## Cloud Functions
+## Serverless Functions
 
-A Cloud Function (Google-branded), or more generically, a *serverless* function, effectively is just a function call you make to a remote server.  The nifty thing here is that you don't have to worry about the whole pesky *setting up a machine to run that function* type of concern.  You simply reference an API endpoint of some sort (e.g., an HTTP call, a RESTful call, a pub/sub trigger, etc.) and then receive data.
+A *serverless* function effectively is just a function call you make to a remote server.  The nifty thing here is that you don't have to worry about the whole pesky *setting up a machine to run that function* type of concern.  You simply reference an API endpoint of some sort (e.g., an HTTP call, a RESTful call, a pub/sub trigger, etc.) and then receive data.
 
 [A Google Intro to Cloud Functions](https://youtu.be/1r3vMYywNLk)
 
@@ -143,9 +143,25 @@ Perhaps you want to up your Slack game and make your chats come to life.  This o
 
 The tutorial is [here if you're interested](https://cloud.google.com/functions/docs/tutorials/slack), but the gist is that a custom Slack command triggers the Cloud Function and sends the search query as its payload.  The Cloud Function then reaches out to the Knowledge Graph with the query and returns the results back to Slack.  The following image demonstrates this activity:
 
-<img src="https://cloud.google.com/functions/img/gcf-slack.svg" alt="Slack to CF to Knowledge Grpah" title="Slack to CF to Knowledge Graph" style="background-color: white" />
+<img src="https://cloud.google.com/functions/img/gcf-slack.svg" alt="Slack to CF to Knowledge Graph" title="Slack to CF to Knowledge Graph" style="background-color: white" />
 
 **Example 3 - Perform Optical Character Recognition**
+
+Last but not least, we have an example where optical character recognition (OCR) is performed using Google services.  There are multiple moving pieces with this application as seen in the following image:
+
+<img src="https://cloud.google.com/functions/img/gcf-ocr.svg" alt="OCR" title="OCR" style="background-color: white" />
+
+[Here is the demo](https://cloud.google.com/functions/docs/tutorials/ocr) if you're interested.  I'll copy/paste the dataflow here to give you an idea of how it all fits together:
+
+> 1. An image that contains text in any language is uploaded to Cloud Storage.
+> 2. A Cloud Function is triggered, which uses the Vision API to extract the text and detect the source language.
+> 3. The text is queued for translation by publishing a message to a Pub/Sub topic. A translation is queued for each target language different from the source language.
+> 4. If a target language matches the source language, the translation queue is skipped, and text is sent to the result queue, another Pub/Sub topic.
+> 5. A Cloud Function uses the Translation API to translate the text in the translation queue. The translated result is sent to the result queue.
+> 6. Another Cloud Function saves the translated text from the result queue to Cloud Storage.
+> 7. The results are found in Cloud Storage as txt files for each translation.
+
+If you visit that link, you may notice that there are several services being invoked, including Cloud Functions, Cloud Pub/Sub, and Vision API (there are a few others as well).  Keep in mind you're billed for each API *separately*!
 
 ## What about those *other* serverless functions?
 
@@ -155,10 +171,24 @@ We're not strictly going to cover that in this module, but be aware that it exis
 
 For more information: [Serverless Databases](https://dashbird.io/blog/what-is-serverless-database/)
 
+> For the rest of this post we'll focus on Cloud Functions.
+ 
 ## Accessing
 
 
 ## Authentication
+
+Cloud Functions can be left wide open to the world (meaning that anybody can use it) or you can lock them behind authentication.  When creating a new Cloud Function you'll be presented with two options (as of 2020 anyway):
+
+* Allow Unauthenticated Invocations
+
+Anybody with the URL to your Cloud Function can access it, meaning that it is fully public.  While this may not necessarily be a problem, keep in mind that there are automated scanners on the web that specifically target cloud providers and they *may* latch onto your service.  Leave it public only if necessary.
+
+* Require Authentication
+
+Authentication is required by default (and more detail can be [found here](https://cloud.google.com/functions/docs/securing/authenticating)).  Regardless of your method for connecting to the Cloud Function (e.g., function-to-function, service-to-function, end-user connection, etc.) you will require an authentication token.  This token will need to be provided as part of the method of connecting (e.g., via `curl`).
+
+If you are authenticating users, then access will need to be granted to their account.  Again, see the [Authentication page](https://cloud.google.com/functions/docs/securing/authenticating) for specifics.  We will become intimately familiar with this process as we go!
 
 ## Logging
 
@@ -177,8 +207,6 @@ Download the appropriate lab manual from Blackboard and keep it open while you w
 The following link will take you to a Google-created Codelab.  
 
 [Google CodeLab -- Stackdriver Logging and Stackdriver Trace for Cloud Functions](https://codelabs.developers.google.com/codelabs/cloud-function-logs-traces)
-
-> 
 
 ## Additional Resources
 
