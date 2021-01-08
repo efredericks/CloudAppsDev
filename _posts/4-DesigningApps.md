@@ -1,8 +1,9 @@
-> By the end of this module, you will learn how to start designing cloud applciations and gain experience with microservices.
+> By the end of this module, you will learn how to start designing cloud applciations and gain experience with microservices (via Google Cloud App Engine).
 
 > Module videos:
 > * Core concepts
 > * Microservices
+> * Introduction to App Engine
 
 ## Cloud Applications
 
@@ -119,8 +120,56 @@ Let me give you an example from a former class - Systems Adminstration, or the a
 
 Let me reiterate: security becomes a massive concern for you in the cloud.  You become a prime target simply by making things easily accessible.  Make sure you treat it as such.
 
+## Microservices
+
+Now then, let's talk about microservices. This term has been a buzzword in industry for quite some time now, but what it really means is to simply break an application apart into smaller pieces.  Decoupling, one might say.
+
+Sound familiar?
+
+![Spinning Think](https://media.tenor.com/images/3a052ff1c095ffe60d03ec031a0c834f/tenor.gif "Spinning Think")
+
+Figure 3 next shows a Microsoft-based example of a microservice architecture.  Note that, to the `Client`, there is no notion what type of application is under the proverbial hood.  The `Client` only sees the `API gateway`; it is the `gateway` that talks to the microservice architecture.  Even then, there may be another layer of abstraction with respect to the `Management/Orchestration` layer.
+
+![Microsoft Microservice Architecture](https://docs.microsoft.com/en-us/azure/architecture/includes/images/microservices-logical.png "Microsoft Microservice Architecture")
+
+> Figure 3: Microsoft Microservice Architecture
+
+Note here that services can also talk to services!  Let's do a practical example using the Google App Engine.  I *highly* recommend you read through [this article to understand how App Engine works](https://cloud.google.com/appengine/docs/standard/python/microservices-on-app-engine).  What is App Engine?  It is simply a Google Cloud service that effectively breaks an application up into microservices, as shown in Figure 4:
+
+![Google App Engine](https://cloud.google.com/appengine/docs/images/modules_hierarchy.svg "Google App Engine")
+
+> Figure 4: Google App Engine
+
+You have multiple instances of services, with different versions if necessary, to support whatever target application you have.  Now, let's do another web server project, this time with App Engine instead of virtual machines.
+
+[Google Codelab - App Engine](https://codelabs.developers.google.com/codelabs/cloud-app-engine-python3/)
+
+(**You may note that there is ... another lab for you in Blackboard!**)
+
+The purpose of this lab is to demonstrate how we might turn a web server into a microservice *that can be deployed and updated without touching the application itself*.  We are creating the microservice using `Flask`, a Python-based web server.  We'll also be using the cloud shell to deploy/re-deploy our microservice.  Again, the lab manual will have screenshots and extensions you'll need to follow as well!
+
+## Migrating from Monolithic to Microlithic (or at least Microservice-based)
+
+This bullet list is directly from [Google here](https://cloud.google.com/appengine/docs/standard/python/microservice-migration), but it is a good procedure/heuristic to follow when migrating from a massive application to one that is centered around microservices:
+
+> * Leaving the existing code in place and operational in the legacy application to facilitate rollback.
+> * Creating a new code repository, or at least a sub-directory in your existing repository.
+> * Copying the classes into the new location.
+> * Writing a view layer that provides the HTTP API hooks and formats the response documents in the correct manner.
+> * Formulating the new code as a separate application (create an app.yaml).
+> * Deploying your new microservice as a service or separate project.
+> * Testing the code to ensure that it is functioning correctly.
+> * Migrating the data from the legacy app to the new microservice. See below for a discussion.
+> * Altering your existing legacy application to use the new microservices application.
+> * Deploying the altered legacy application
+> * Verifying that everything works as expected and that you don't need to roll back to the legacy application.
+> * Removing any dead code from the legacy application.
+
 ## Additional Resources
 
 * [Google Cloud - 5 Principles for Cloud-Native Architecture](https://cloud.google.com/blog/products/application-development/5-principles-for-cloud-native-architecture-what-it-is-and-how-to-master-it)
 * [5 Steps to Building a Cloud-Ready Application Architecture](https://www.cloudtp.com/doppler/5-steps-building-cloud-ready-application-architecture/)
 * [The Ultimate 9 Step Strategy For Building Cloud Applications](https://arkenea.com/blog/building-cloud-applications/)
+* [Microservices Architecture on Google App Engine](https://cloud.google.com/appengine/docs/standard/python/microservices-on-app-engine)
+* [Microservice Performance Optimization](https://cloud.google.com/appengine/docs/standard/python/microservice-performance)
+* [Monolithic to Microlithic](https://cloud.google.com/appengine/docs/standard/python/microservice-migration)
