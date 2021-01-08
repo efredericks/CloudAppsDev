@@ -1,9 +1,8 @@
-> By the end of this module, you will gain experience with microservices and asynchronous processes.
+> By the end of this module, you will learn how to start designing cloud applciations and gain experience with microservices.
 
 > Module videos:
 > * Core concepts
 > * Microservices
-> * Asynchronous processes
 
 ## Cloud Applications
 
