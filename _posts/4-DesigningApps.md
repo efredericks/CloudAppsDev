@@ -136,7 +136,7 @@ Figure 3 next shows a Microsoft-based example of a microservice architecture.  N
 
 Note here that services can also talk to services!  Let's do a practical example using the Google App Engine.  I *highly* recommend you read through [this article to understand how App Engine works](https://cloud.google.com/appengine/docs/standard/python/microservices-on-app-engine).  What is App Engine?  It is simply a Google Cloud service that effectively breaks an application up into microservices, as shown in Figure 4:
 
-![Google App Engine](https://cloud.google.com/appengine/docs/images/modules_hierarchy.svg "Google App Engine")
+<img src="https://cloud.google.com/appengine/docs/images/modules_hierarchy.svg" alt="Google App Engine" title="Google App Engine" style="background-color: white" />
 
 > Figure 4: Google App Engine
 
