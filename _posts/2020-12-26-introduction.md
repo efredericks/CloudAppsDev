@@ -6,9 +6,9 @@ excerpt:
 
         <h2>Module Videos</h2>
         <ul>
-          <li>Video 1</li>
-          <li>Video 2</li>
-          <li>Video 3</li>
+          <li><a href="https://youtu.be/V4hIVODKm20" target="_blank">Cloud Billing [8:24]</a></li>
+          <li><a href="https://youtu.be/huFVLTuPbrs" target="_blank">Cloud Computing Costs [14:40]</a></li>
+          <li><a href="https://youtu.be/IImFXvMWzM8" target="_blank">Lab 1 Overview (Setup / Virtual Machines) [21:31]</a></li>
         </ul>
 
         <h2>Module Labs</h2>

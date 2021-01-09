@@ -2,13 +2,15 @@ Welcome to Cloud Application Development!  This module will introduce you to the
 
 > By the end of this module, you should understand the underlying concepts of cloud computing, be able to setup your GCP account and billing, and create and use a remote virtual machine.
 
-> Module Video: TBD
+> Module Video: <a href="https://youtu.be/V4hIVODKm20" target="_blank">Cloud Billing [8:24]</a>
 
 For this course we will be using [Google Cloud Platform](https://cloud.google.com/) as our cloud provider, however others such as [Amazon Web Services (AWS)](https://aws.amazon.com/) and [Microsoft Azure](https://azure.microsoft.com/) are common as well.  While each provides their own particular flavor, understanding the basics should enable you to transition between one and the other as necessary.
 
 Plus, assuming you are registered for the course at GVSU, you will receive free cloud computing credits (contact me on Blackboard).  If you somehow stumbled across this you can get [free credits via Google](https://cloud.google.com/free), however you're on your own with those.
 
 ## Cloud Computing Costs
+
+> Module Video: <a href="https://youtu.be/huFVLTuPbrs" target="_blank">Cloud Computing Costs [14:40]</a>
 
 The most important concept to understand about cloud computing is that it is **not** free.  Each moment a virtual machine is on, each API call, each image access in a storage bucket will cost money.  
 
@@ -85,7 +87,7 @@ Considerations consistently change with respect to cloud providers.  Here, I am 
 
 ## Google Cloud Account Setup (Lab)
 
-> Module Video: TBD (GCP walkthrough)
+> Module Video: <a href="https://youtu.be/IImFXvMWzM8" target="_blank">Lab 1 Overview (Setup / Virtual Machines) [21:31]</a>
 
 Time for your first lab assignment!  This will get you up and running with a Google Cloud account, walk you through the web interface, and have you create a web server.  
 
