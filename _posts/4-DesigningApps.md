@@ -148,6 +148,8 @@ You have multiple instances of services, with different versions if necessary, t
 
 The purpose of this lab is to demonstrate how we might turn a web server into a microservice *that can be deployed and updated without touching the application itself*.  We are creating the microservice using `Flask`, a Python-based web server.  We'll also be using the cloud shell to deploy/re-deploy our microservice.  Again, the lab manual will have screenshots and extensions you'll need to follow as well!
 
+> One thing you should keep in mind when working through this lab.  At present, [you can't delete an app once it is created in Google Cloud](https://stackoverflow.com/questions/42512/deleting-a-google-app-engine-application).  It can be disabled, however you should read the fine print to understand what is going on.
+
 ## Migrating from Monolithic to Microlithic (or at least Microservice-based)
 
 This bullet list is directly from [Google here](https://cloud.google.com/appengine/docs/standard/python/microservice-migration), but it is a good procedure/heuristic to follow when migrating from a massive application to one that is centered around microservices:
