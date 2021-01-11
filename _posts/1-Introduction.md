@@ -8,6 +8,8 @@ For this course we will be using [Google Cloud Platform](https://cloud.google.co
 
 Plus, assuming you are registered for the course at GVSU, you will receive free cloud computing credits (contact me on Blackboard).  If you somehow stumbled across this you can get [free credits via Google](https://cloud.google.com/free), however you're on your own with those.
 
+What is the cloud?  [Put this lovely video on in the background and listen to it! [42:36]](https://www.youtube.com/watch?v=JtUIQz_EkUw)
+
 ## Cloud Computing Costs
 
 > Module Video: <a href="https://youtu.be/huFVLTuPbrs" target="_blank">Cloud Computing Costs [14:40]</a>

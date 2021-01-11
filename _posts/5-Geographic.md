@@ -7,6 +7,8 @@
 
 ## Geographic Concerns
 
+### Export Controls
+
 ## Additional Resources
 
 * TBD
