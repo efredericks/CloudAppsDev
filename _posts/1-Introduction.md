@@ -10,6 +10,26 @@ Plus, assuming you are registered for the course at GVSU, you will receive free 
 
 What is the cloud?  [Put this lovely video on in the background and listen to it! [42:36]](https://www.youtube.com/watch?v=JtUIQz_EkUw)
 
+## What is Cloud Computing?
+
+> Module video: TBD
+
+Hi there!  For this course I'm going to assume you have some base knowledge of what cloud computing is in theory.  You'll be getting a lot of practice to flesh that out! If not, watch the 'What is the cloud' video above!
+
+To summarize, there are approximately five fundamental characteristics for cloud computing (c/o Google).  This list will most likely evolve over time (much like the 5 V's of Big Data have somehow become thiry-something), however they present a nice starting point:
+
+![Five fundamental characteristics](/CloudAppsDev/assets/images/1-characteristics.png "Five fundamental characteristics")
+
+> Figure 1: Five fundamental characteristics
+
+One of the core benefits is that the cloud computing resources are (generally) always online.  They are *on-demand* and *self-service*, meaning that the user/customer does not need to worry about the massive infrastructure necessary to support it.  You get the benefits of the service without the configuration!
+
+They are also accessible (over a network) from any location, generally via some sort of API call or browser interface.
+
+Scalability is a lovely feature as well.  Consumers are allocated resources via a large pool of available resources, enabling scalability as necessary.  Moreover, this scalability is available wherever the resources are, worldwide.  You select the region and you receive the resources at that location, enabling geographic considerations as well.  For example, if you wanted a load-balanced web server, you could host it at a location near your clients and provide secondary access points at other locations, if necessary.
+
+Elasticity is another cloud feature, meaning that you can easily scale upwards and downwards as necessary.  You pay for what you use, no matter how large or how small the workload.  Once you shut off or disable the resource, you no longer have to pay (unless if it is some sort of persistent storage).
+
 ## Cloud Computing Costs
 
 > Module Video: <a href="https://youtu.be/huFVLTuPbrs" target="_blank">Cloud Computing Costs [14:40]</a>
@@ -28,7 +48,7 @@ Here is a screenshot of an Ubuntu 20 virtual machine with a default configuratio
 
 ![GCP cost calculator](/CloudAppsDev/assets/images/1-costs.png "GCP cost calculator")
 
-> Figure 1: Cost Calculator
+> Figure 2: Cost Calculator
 
 
 2. Set up stringent access rights to all your API calls, cloud functions, etc.
@@ -96,3 +116,7 @@ Time for your first lab assignment!  This will get you up and running with a Goo
 **Ensure you download the lab manual from Blackboard!**
 
 Click here for your first lab [CIS680 Lab 1 - Intro. to Google Cloud](https://efredericks.github.io/CloudAppsDev/codelabs/CIS680-Lab1-Setup)
+
+<hr size="1" />
+
+*The original content was provided by Google LLC and modified for the purpose of the course, without input or endorsement from Google LLC*.
