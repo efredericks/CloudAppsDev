@@ -54,7 +54,10 @@ With VMs comes other options as well, such as virtual networks, persistent stora
 
 > Figure 4: VPC network
 
+Note there are different regions specified as well!  These can correlate to geographic locations of your customers/clients and provide a better quality of service.
+
 ### Internet of Things [IaaS/PaaS]
+
 
 ### Microservices [PaaS/SaaS/Somewhere In-Between]
 
