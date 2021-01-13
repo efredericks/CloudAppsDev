@@ -71,15 +71,21 @@ Both approaches are completely feasible and both rely on code development.  Figu
 
 ### Containers / Orchestration
 
-[Kubernetes](https://kubernetes.io/) (or K8s)
+Containers and [Kubernetes](https://kubernetes.io/) (or K8s) are a discussion in and of themselves, however they offer an extremely attractive proposition for both IT and developers alike: a sane environment that can be deployed anywhere without needing to worry about specifics like machine type or operating system.  Effectively containers become a light VM environment that enables cross-platform deployments.  Kubernetes offers orchestration of containers, in essence, container management at scale.  Figure X (c/o [DZone](https://dzone.com/articles/how-kubernetes-works)) shows a sample Kubernetes architecture, including multiple worker nodes that contain Docker containers. 
+
+![Kubernetes Sample Architecture](/CloudAppsDev/assets/images/2-k8s-dzone.png "Kubernetes Sample Architecture")
+
+> Figure X: Kubernetes Sample Architecture
 
 ### Analytics / Artificial Intelligence / Machine Learning [SaaS]
 
+
+
 ### Data Management [SaaS]
 
-### Recovery
+Many of the APIs available in the cloud provide some sort of data management and/or transformational capabilities.  When we talk about management however, we generally are discussing some form of data storage.  In Google Cloud this is BigQuery, a data management system that scales up to the big data range.  As you'll see later, there is also a specific Cloud shell program (`bq`) to interact directly with your data.  With BigQuery comes application interaction, varying forms of database commands (both SQL and BigQuery specific), and analytics capabilities.  We'll go into more detail on BigQuery (and its associated storage technique BigTable) later on. 
 
-### Performance
+### Recovery and Performance
 
 
 > Demos - website hosting, failover network, API, cloud shell
@@ -96,7 +102,7 @@ Cloud Shell (or th eCloud SDK) is a command-line interface (CLI) for interacting
 
 * `gsutil`
 
-`gsutil` allows you to work with Cloud Storage buckets and objects.  Effectively, this is your program for working with files and data that you are keeping in persistent storage.
+`gsutil` allows you to work with [Cloud Storage buckets](https://cloud.google.com/storage/docs/json_api/v1/buckets) and objects.  Effectively, this is your program for working with files and data that you are keeping in persistent storage.
 
 * `bq`
 
@@ -135,6 +141,7 @@ Colabs are an interesting aside in that they are effectively Jupyter notebooks d
 * [Codelab: Getting Started with Cloud Shell & gcloud](https://codelabs.developers.google.com/codelabs/cloud-shell/#0)
 * [Running gcloud Commands with Cloud Shell](https://cloud.google.com/shell/docs/running-gcloud-commands)
 * [IaaS vs PaaS vs SaaS Enter the Ecommerce Vernacular: What You Need to Know, Examples & More](https://www.bigcommerce.com/blog/saas-vs-paas-vs-iaas/)
+* [How Kubernetes Works](https://dzone.com/articles/how-kubernetes-works)
 
 <hr size="1" />
 
