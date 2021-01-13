@@ -61,7 +61,7 @@ Ah, the Internet of Things (IoT), what may be considered to be the latest in mov
 
 There are multiple components available, however at its core you are transmitting, analyzing, and receiving the data between devices.  This particular page lists out the highlights of [Google Cloud IoT](https://cloud.google.com/solutions/iot/).  Note that competing providers have similar services as well!
 
-![Google Cloud IoT Technologies](https://cloudx-bricks-prod-bucket.storage.googleapis.com/ad81a1c799604fe7c34dc27efe14fededcf49a419b466d05d208066df626bd56.svg "Google Cloud IoT Technologies)
+![Google Cloud IoT Technologies](https://cloudx-bricks-prod-bucket.storage.googleapis.com/ad81a1c799604fe7c34dc27efe14fededcf49a419b466d05d208066df626bd56.svg "Google Cloud IoT Technologies")
 
 > Figure X: Google Cloud IoT Technologies
 
