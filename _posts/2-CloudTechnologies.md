@@ -55,6 +55,20 @@ With VMs comes other options as well, such as virtual networks, persistent stora
 
 Note there are different regions specified as well!  These can correlate to geographic locations of your customers/clients and provide a better quality of service.
 
+#### AutoScaling
+
+Everything we've talked about so far, really, could be accomplished in a simple virtual environment.  One of the reasons to move to the cloud though are the *elastic benefits*.  One example is autoscaling.  Figure 5 (c/o Google) demonstrates an architecture for enabling autoscaling. Here, the Compute Engine is used in combination with an operating system image to provide templated VMs.  Together with Cloud Storage for scripting capabilities, these form an instance group that is tied to the Autoscaler.
+
+![Autoscaling](/CloudAppsDev/assets/images/2-autoscaling.png "Autoscaling")
+
+> Figure 5: Autoscaling
+
+To use Autoscaling, you require a *policy* to specify *how* scaling should work.  If you define a **Scale-out policy** as shown in Figure 6 (c/o Google), you will see that VMs can be provisioned based on the target CPU utilization.  On the left are three VMs running at 100% and one at 85%.  On average, CPU utilization is at 96.25% (385/4), meaning that it is above the target value of 75% utilization.  When detected, the Autoscaler will provision additional machines as necessary to be under that threshold (in this case, 385/6 = 64.16%)!
+
+![Scale-out policy](/CloudAppsDev/assets/images/2-scale-out.png "Scale-out policy")
+
+> Figure 6: Scale-out policy
+
 ### Internet of Things [IaaS/PaaS]
 
 Ah, the Internet of Things (IoT), what may be considered to be the latest in moving infrastructure up to the cloud.  All of the tiny networked devices that we have available (smart watches, sensors, monitors, etc.) have been turned into a cloud service as well.  However, the devices themselves are not necessarily made into a virtual infrastructure service.  However, the *telemetry* sent between devices has been, turning this topic into something that falls between IaaS and PaaS (at least, to me).
@@ -63,25 +77,25 @@ There are multiple components available, however at its core you are transmittin
 
 <img src="https://cloudx-bricks-prod-bucket.storage.googleapis.com/ad81a1c799604fe7c34dc27efe14fededcf49a419b466d05d208066df626bd56.svg" alt="Google Cloud IoT Technologies"  title="Google Cloud IoT Technologies" style="background-color:#fff" />
 
-> Figure X: Google Cloud IoT Technologies
+> Figure 7: Google Cloud IoT Technologies
 
 ### Microservices [PaaS/SaaS/Somewhere In-Between]
 
 Microservices tend to fall into the buzzwordy camp (for me at least), but at their core they tend to be the result of breaking up larger applications into more bite-sized pieces.  Typically the end up being small portions of an application that have been migrated to functions that accept data and transform it (or relay it) in some fashion.  There are multiple approaches for creating microservices, however in the cloud realm you may wish to consider using a serverless technology such as Cloud Functions (or Lambda/Azure Functions) or an App Engine (PaaS) type of environment.  
 
-Both approaches are completely feasible and both rely on code development.  Figure X shows an example of a microservice architecture (c/o microservices.io).  Here, you see multiple aspects of what typically would be a monolithic application broken down into manageable services, each accessible via some sort of endpoint (e.g., web, API, RESTful call, etc.).
+Both approaches are completely feasible and both rely on code development.  Figure 8 shows an example of a microservice architecture (c/o microservices.io).  Here, you see multiple aspects of what typically would be a monolithic application broken down into manageable services, each accessible via some sort of endpoint (e.g., web, API, RESTful call, etc.).
 
 ![Microservice Architecture](https://microservices.io/i/Microservice_Architecture.png "Microservice Architecture")
 
-> Figure X: Microservice Architecture
+> Figure 8: Microservice Architecture
 
 ### Containers / Orchestration
 
-Containers and [Kubernetes](https://kubernetes.io/) (or K8s) are a discussion in and of themselves, however they offer an extremely attractive proposition for both IT and developers alike: a sane environment that can be deployed anywhere without needing to worry about specifics like machine type or operating system.  Effectively containers become a light VM environment that enables cross-platform deployments.  Kubernetes offers orchestration of containers, in essence, container management at scale.  Figure X (c/o [DZone](https://dzone.com/articles/how-kubernetes-works)) shows a sample Kubernetes architecture, including multiple worker nodes that contain Docker containers. 
+Containers and [Kubernetes](https://kubernetes.io/) (or K8s) are a discussion in and of themselves, however they offer an extremely attractive proposition for both IT and developers alike: a sane environment that can be deployed anywhere without needing to worry about specifics like machine type or operating system.  Effectively containers become a light VM environment that enables cross-platform deployments.  Kubernetes offers orchestration of containers, in essence, container management at scale.  Figure 9 (c/o [DZone](https://dzone.com/articles/how-kubernetes-works)) shows a sample Kubernetes architecture, including multiple worker nodes that contain Docker containers. 
 
 ![Kubernetes Sample Architecture](/CloudAppsDev/assets/images/2-k8s-dzone.png "Kubernetes Sample Architecture")
 
-> Figure X: Kubernetes Sample Architecture
+> Figure 9: Kubernetes Sample Architecture
 
 ### Analytics / Artificial Intelligence / Machine Learning [SaaS]
 
@@ -114,11 +128,11 @@ Cloud Shell (or th eCloud SDK) is a command-line interface (CLI) for interacting
 
 `bq` interacts with [BigQuery](https://cloud.google.com/bigquery/), Google's service for interacting with large datasets.  Here, you can run queries, manipulate datasets/tables, and other entities that are part of the BigQuery ecosystem.
 
-Figure X shows a sample screenshot of my Google Cloud console, with Cloud Shell activated.  Note that you can open it by clicking the little terminal icon at the top right, and it will pop open the shell in the bottom of your screen.  
+Figure 10 shows a sample screenshot of my Google Cloud console, with Cloud Shell activated.  Note that you can open it by clicking the little terminal icon at the top right, and it will pop open the shell in the bottom of your screen.  
 
 ![Cloud Shell Screenshot](/CloudAppsDev/assets/images/2-cloud-shell.png "Cloud Shell Screenshot")
 
-> Figure X: Cloud Shell Screenshot
+> Figure 10: Cloud Shell Screenshot
 
 Note, for each of these commands, you can add the `--help` parameter to get more information about the tool and how it can be used.  For example, entering `gcloud --help` shows information about the `gcloud` command itself, and `gcloud app --help` shows information about how to interact with App Engine via `gcloud`.  Further note, as this is effectively a Linux terminal, hitting `q` will escape the manual page that pops up whenever you look at the help files.
 
