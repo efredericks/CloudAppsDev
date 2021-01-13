@@ -79,13 +79,13 @@ Containers and [Kubernetes](https://kubernetes.io/) (or K8s) are a discussion in
 
 ### Analytics / Artificial Intelligence / Machine Learning [SaaS]
 
+There are a plethora of available SaaS technologies available in Google Cloud, ranging from the most basic data analytics to advanced TensorFlow capabilities that can make accurate predictions based on an input dataset.  Tools such as these will enable you to create highly-targeted applications and microservices with a highly-cohesive goal.  We will be digging into these later on, however [peruse this page to get a feel for some of the different technologies available](https://cloud.google.com/products/ai/).
 
+Why are these categorized as SaaS you may ask?  Well, you're not writing the application right?  You may be tweaking it, configuring it, etc., however you're mainly feeding it *data* and expecting data out.  Software as a service means that the software itself has been cloudified (naturally, along with the platform and infrastructure as well)!
 
 ### Data Management [SaaS]
 
 Many of the APIs available in the cloud provide some sort of data management and/or transformational capabilities.  When we talk about management however, we generally are discussing some form of data storage.  In Google Cloud this is BigQuery, a data management system that scales up to the big data range.  As you'll see later, there is also a specific Cloud shell program (`bq`) to interact directly with your data.  With BigQuery comes application interaction, varying forms of database commands (both SQL and BigQuery specific), and analytics capabilities.  We'll go into more detail on BigQuery (and its associated storage technique BigTable) later on. 
-
-### Recovery and Performance
 
 
 > Demos - website hosting, failover network, API, cloud shell
