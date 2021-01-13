@@ -99,3 +99,7 @@ recovery
 * [Codelab: Getting Started with Cloud Shell & gcloud](https://codelabs.developers.google.com/codelabs/cloud-shell/#0)
 * [Running gcloud Commands with Cloud Shell](https://cloud.google.com/shell/docs/running-gcloud-commands)
 * [IaaS vs PaaS vs SaaS Enter the Ecommerce Vernacular: What You Need to Know, Examples & More](https://www.bigcommerce.com/blog/saas-vs-paas-vs-iaas/)
+
+<hr size="1" />
+
+*Where noted, the original content was provided by Google LLC and modified for the purpose of the course, without input or endorsement from Google LLC*.

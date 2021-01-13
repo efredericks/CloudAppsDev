@@ -119,4 +119,4 @@ Click here for your first lab [CIS680 Lab 1 - Intro. to Google Cloud](https://ef
 
 <hr size="1" />
 
-*The original content was provided by Google LLC and modified for the purpose of the course, without input or endorsement from Google LLC*.
+*Where noted, the original content was provided by Google LLC and modified for the purpose of the course, without input or endorsement from Google LLC*.
