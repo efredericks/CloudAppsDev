@@ -38,15 +38,21 @@ Next, we'll highlight some of the more common aspects of cloud computing that yo
 
 One of the more common cloud services that are available are virtual machines (VM).   These are effectively computers that you can setup that are accessible anywhere you have a network connection (and the necessary technology to access it -- for Google Cloud it is simply a browser).   Figure 2 shows you a common VM concept, normal vs. sole tenancy.  The concept here is that sole tenant nodes are strictly provisioned to you and your workloads -- there are no other users sharing that host.  
 
-![Google Cloud Normal Host vs. Sole-tenant node](https://cloudx-bricks-prod-bucket.storage.googleapis.com/d5c9cad33f729dc110d8b907db5a695ca9cf6b0f4b692f44f0f2c0e276d78369.svg "Google Cloud Normal Host vs. Sole-tenant node]")
+![Google Cloud Normal Host vs. Sole-tenant node](https://cloudx-bricks-prod-bucket.storage.googleapis.com/d5c9cad33f729dc110d8b907db5a695ca9cf6b0f4b692f44f0f2c0e276d78369.svg "Google Cloud Normal Host vs. Sole-tenant node")
 
 > Figure 2: Normal vs. Sole-tenant nodes
 
 Figure 3 then shows off a sample VM that I created for one of the labs we're working through.  Here, you see the instance name, a bit of information about the VM that is relevant (machine type, logging availability, CPU, etc.).  Effectively, you can pick what type of machines you want, where you want them located, and what operating systems to load onto them.  These can be provisioned as necessary for your environment, including scaling as needed.
 
-### Virtual Networks [IaaS]
+![Sample Virtual Machine](/CloudAppsDev/assets/images/1-sample-vm.png "Sample Virtual Machine")
 
-### Cloud Storage [IaaS]
+> Figure 3: Sample Virtual Machine
+
+With VMs comes other options as well, such as virtual networks, persistent storage, and everything you need to make a fully virtualized ecosystem.  For example, Figure 4 shows off a virtual private cloud (VPC) network architecture (c/o Google). Here, you can specify firewalls, subnets, etc.:
+
+![VPC network](https://cloud.google.com/vpc/images/vpc-overview-example.svg "VPC network")
+
+> Figure 4: VPC network
 
 ### Internet of Things [IaaS/PaaS]
 
