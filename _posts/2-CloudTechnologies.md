@@ -13,7 +13,6 @@ Since we are using Google Cloud for this course, we are going to focus on the te
 
 You will notice a lot of overlap!  Consider that each are competing for *cloud dominance* and that each provider wants *you* to pay for their service.
 
-
 ASSIGNMENT: WRITEUP 5 SERVICES
 
 ### IaaS vs. PaaS vs. SaaS
@@ -59,6 +58,7 @@ Note there are different regions specified as well!  These can correlate to geog
 ### Internet of Things [IaaS/PaaS]
 
 
+
 ### Microservices [PaaS/SaaS/Somewhere In-Between]
 
 Microservices tend to fall into the buzzwordy camp (for me at least), but at their core they tend to be the result of breaking up larger applications into more bite-sized pieces.  Typically the end up being small portions of an application that have been migrated to functions that accept data and transform it (or relay it) in some fashion.  There are multiple approaches for creating microservices, however in the cloud realm you may wish to consider using a serverless technology such as Cloud Functions (or Lambda/Azure Functions) or an App Engine (PaaS) type of environment.  
@@ -81,27 +81,54 @@ Both approaches are completely feasible and both rely on code development.  Figu
 
 ### Performance
 
-vms
-virt networks
-services
-iot
-microservices
-containers
-analytics
-data mgmt
-recovery
-
 
 > Demos - website hosting, failover network, API, cloud shell
 
 ## Cloud Shell
 
-  
-## Codelabs
+> Module video: TBD
 
-## QwikLabs
+Cloud Shell (or th eCloud SDK) is a command-line interface (CLI) for interacting with Google Cloud services, plus it provides a Linux-like interface that you may be familiar with.  Here are the Google-specific commands to become familiar with:
 
-## Colabs
+* `gcloud`
+
+`gcloud` is your main interface with Google Cloud via the CLI.  You can perform authentication, change your local configuration (e.g., project ID, user account, etc.), and interact with the various APIs.  For instance, one of your labs will have you using `gcloud` to deploy and re-deploy App Engine programs.
+
+* `gsutil`
+
+`gsutil` allows you to work with Cloud Storage buckets and objects.  Effectively, this is your program for working with files and data that you are keeping in persistent storage.
+
+* `bq`
+
+`bq` interacts with [BigQuery](https://cloud.google.com/bigquery/), Google's service for interacting with large datasets.  Here, you can run queries, manipulate datasets/tables, and other entities that are part of the BigQuery ecosystem.
+
+Figure X shows a sample screenshot of my Google Cloud console, with Cloud Shell activated.  Note that you can open it by clicking the little terminal icon at the top right, and it will pop open the shell in the bottom of your screen.  
+
+![Cloud Shell Screenshot](/CloudAppsDev/assets/images/2-cloud-shell.png "Cloud Shell Screenshot")
+
+> Figure X: Cloud Shell Screenshot
+
+Note, for each of these commands, you can add the `--help` parameter to get more information about the tool and how it can be used.  For example, entering `gcloud --help` shows information about the `gcloud` command itself, and `gcloud app --help` shows information about how to interact with App Engine via `gcloud`.  Further note, as this is effectively a Linux terminal, hitting `q` will escape the manual page that pops up whenever you look at the help files.
+
+### Text Editing
+
+One thing you will be doing often in this course is writing/updatining files within the Cloud shell.  You can use your favorite text editor of choice (`vim`, `nano`, `emacs`, etc.), or you can use the Cloud shell editor.  To launch this, you can either click the `Open Editor` button in the Cloud shell interface, or type `cloudshell edit <file>`, where you replace `<file>` with whatever file you're trying to edit.  This action gives you a Notepad-like environment with a file browser on the side.  Use this if you're unfamiliar with CLI-based text editing.
+
+> Note: I will be using `vim` in all my demos.  Don't feel obligated to learn it, just be aware that's how I prefer to edit files.
+
+## Codelabs, QuikLabs, and Colabs
+
+This is a slight aside but I wanted to clarify the difference between these three "lab-ish" technologies we'll be mainly using.  You already have experience with Codelabs already if you did the VM setup assignment, however...
+
+* [Codelabs](https://codelabs.developers.google.com/)
+* [Quiklabs](https://www.qwiklabs.com/)
+* [Colabs](https://colab.research.google.com/)
+
+Codelabs are effectively tutorial-style manuals that walk you through a task.  These can be developed by anybody (and the [tools for doing so have been made open source](https://github.com/googlecodelabs/tools)) and focus on a particular topic.  We will be using a lot of these for our assignments.  Of note is that these are **free** to participate in.
+
+Qwiklabs are **paid-for** labs that are similar in style to Codelabs, however they are better structured and generally will focus around a theme (called Quests).  Qwiklabs can be used to get badges that you can share on social media noting that you have experience with a particular topic.  There also tend to be videos associated with Quests as well.  Of note is that these are **not free**, however if you are enrolled in class with me you will receive credits to apply to Qwiklabs as needed.
+
+Colabs are an interesting aside in that they are effectively Jupyter notebooks demonstrating some topic.  A Colab will typically have Markdown and executable code interspersed in a single document that you can interact with.  These are free to the point that you will be charged cloud credits to use (i.e., the executing code runs against your billing account).
 
 ## Additional Resources
 

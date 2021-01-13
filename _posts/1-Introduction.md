@@ -50,10 +50,9 @@ Here is a screenshot of an Ubuntu 20 virtual machine with a default configuratio
 
 > Figure 2: Cost Calculator
 
-
 2. Set up stringent access rights to all your API calls, cloud functions, etc.
 3. Do not publish any access keys, API ID's, passwords, etc. to version control (e.g., GitHub, BitBucket, etc.).  Keep in mind that if you *accidentally* push something identifiable that it can be **easily discovered** by checking commit history.  
-
+4. Set *quotas* for your users to ensure that they don't accidentally drain your account!
 
 ## Google Cloud vs. AWS vs. Azure
 
