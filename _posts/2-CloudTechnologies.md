@@ -57,7 +57,13 @@ Note there are different regions specified as well!  These can correlate to geog
 
 ### Internet of Things [IaaS/PaaS]
 
+Ah, the Internet of Things (IoT), what may be considered to be the latest in moving infrastructure up to the cloud.  All of the tiny networked devices that we have available (smart watches, sensors, monitors, etc.) have been turned into a cloud service as well.  However, the devices themselves are not necessarily made into a virtual infrastructure service.  However, the *telemetry* sent between devices has been, turning this topic into something that falls between IaaS and PaaS (at least, to me).
 
+There are multiple components available, however at its core you are transmitting, analyzing, and receiving the data between devices.  This particular page lists out the highlights of [Google Cloud IoT](https://cloud.google.com/solutions/iot/).  Note that competing providers have similar services as well!
+
+![Google Cloud IoT Technologies](https://cloudx-bricks-prod-bucket.storage.googleapis.com/ad81a1c799604fe7c34dc27efe14fededcf49a419b466d05d208066df626bd56.svg "Google Cloud IoT Technologies)
+
+> Figure X: Google Cloud IoT Technologies
 
 ### Microservices [PaaS/SaaS/Somewhere In-Between]
 
