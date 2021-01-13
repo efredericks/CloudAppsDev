@@ -69,6 +69,8 @@ To use Autoscaling, you require a *policy* to specify *how* scaling should work.
 
 > Figure 6: Scale-out policy
 
+*Note: scale-in policies are available as well, however I assume you can make the mental leap that you may also want your VMs to be over-utilized as well*.
+
 ### Internet of Things [IaaS/PaaS]
 
 Ah, the Internet of Things (IoT), what may be considered to be the latest in moving infrastructure up to the cloud.  All of the tiny networked devices that we have available (smart watches, sensors, monitors, etc.) have been turned into a cloud service as well.  However, the devices themselves are not necessarily made into a virtual infrastructure service.  However, the *telemetry* sent between devices has been, turning this topic into something that falls between IaaS and PaaS (at least, to me).

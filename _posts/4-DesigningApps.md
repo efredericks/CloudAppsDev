@@ -167,6 +167,8 @@ This bullet list is directly from [Google here](https://cloud.google.com/appengi
 > * Verifying that everything works as expected and that you don't need to roll back to the legacy application.
 > * Removing any dead code from the legacy application.
 
+App Engine provides two different environments to choose from when designing your application.  It can be "standard" in that everything is fully-managed and you simply write your application.  There also is a *flexible* environment where Docker container support is available, enabling greater customization possibilities for your applications.
+
 ## Additional Resources
 
 * [Google Cloud - 5 Principles for Cloud-Native Architecture](https://cloud.google.com/blog/products/application-development/5-principles-for-cloud-native-architecture-what-it-is-and-how-to-master-it)
