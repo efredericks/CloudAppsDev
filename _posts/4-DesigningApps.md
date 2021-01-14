@@ -182,3 +182,7 @@ App Engine provides two different environments to choose from when designing you
 * [Microservices Architecture on Google App Engine](https://cloud.google.com/appengine/docs/standard/python/microservices-on-app-engine)
 * [Microservice Performance Optimization](https://cloud.google.com/appengine/docs/standard/python/microservice-performance)
 * [Monolithic to Microlithic](https://cloud.google.com/appengine/docs/standard/python/microservice-migration)
+
+<hr size="1" />
+
+*Where noted, the original content was provided by Google LLC and modified for the purpose of the course, without input or endorsement from Google LLC*.

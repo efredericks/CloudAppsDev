@@ -264,3 +264,7 @@ The following link will take you to a Google-created Codelab.
 * [Microsoft Azure Serverless Functions Overview](https://docs.microsoft.com/en-us/azure/architecture/serverless-quest/serverless-overview)
 * [SnipCart - A Serverless Function Example: Why & How to Get Started](https://snipcart.com/blog/why-serverless-example)
 * [HubSpot - Serverless Functions](https://developers.hubspot.com/docs/cms/features/serverless-functions)
+
+<hr size="1" />
+
+*Where noted, the original content was provided by Google LLC and modified for the purpose of the course, without input or endorsement from Google LLC*.
