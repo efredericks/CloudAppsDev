@@ -115,7 +115,7 @@ Many of the APIs available in the cloud provide some sort of data management and
 ## Cloud Shell
 
 > Module video: <a href="https://youtu.be/8UkNo5_61Ws" target="_blank">Using the Cloud Shell Pt. 1/2 [11:38]</a>
-> Module video: <a href="https://youtu.be/jZxT-qqBUlA" target="_blank">Using the Cloud Shell Pt. 2/2 []</a>
+> Module video: <a href="https://youtu.be/jZxT-qqBUlA" target="_blank">Using the Cloud Shell Pt. 2/2 [16:07]</a>
 > [Codelab: Getting Started with Cloud Shell and gcloud](https://codelabs.developers.google.com/codelabs/cloud-shell/)
 > [Codelab: Load and Query Data with the bq command-line tool for BigQuery](https://codelabs.developers.google.com/codelabs/bigquery-cli)
 
