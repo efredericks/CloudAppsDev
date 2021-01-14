@@ -142,6 +142,11 @@ Note here that services can also talk to services!  Let's do a practical example
 
 You have multiple instances of services, with different versions if necessary, to support whatever target application you have.  Now, let's do another web server project, this time with App Engine instead of virtual machines.
 
+I have a couple of videos for you walking you through the next-linked Codelab on App Engine.  It is split into two videos as it was starting to get long.  Of note I left in two mistakes that I made when walking through the demo -- to me watching how to fix problems as they arise is far more useful than cutting them out, so you get to see my process for debugging.
+
+> Module Video - <a href="https://youtu.be/p7l_7GlFxas" target="_blank">App Engine Demo (1/2) [10:46]</a>
+> Module Video - <a href="https://youtu.be/qQF93W_guXU" target="_blank">App Engine Demo (2/2) [10:58]</a>
+
 [Google Codelab - App Engine](https://codelabs.developers.google.com/codelabs/cloud-app-engine-python3/)
 
 (**You may note that there is ... another lab for you in Blackboard!**)

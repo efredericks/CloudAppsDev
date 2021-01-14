@@ -17,7 +17,7 @@ ASSIGNMENT: WRITEUP 5 SERVICES
 
 ### IaaS vs. PaaS vs. SaaS
 
-> Module video TBD
+> Module video: <a href="https://youtu.be/0fQOztcte-4" target="_blank">Cloud Infrastructure [11:53]</a>
 
 There are three different (main) paradigms when it comes to cloud computing.  You more than likely have seen these acronyms before, however we should still define them for propriety's sake.  First, we have **Infrastructure as a Service (IaaS)**, then **Platform as a Service (PaaS)**, and **Software as a Service (SaaS)**.  Each of these terms effectively means transitioning your *thing* to become a cloud-based service. 
 
@@ -114,7 +114,11 @@ Many of the APIs available in the cloud provide some sort of data management and
 
 ## Cloud Shell
 
-> Module video: TBD
+> Module video: <a href="https://youtu.be/8UkNo5_61Ws" target="_blank">Using the Cloud Shell Pt. 1/2 [11:38]</a>
+> Module video: <a href="https://youtu.be/jZxT-qqBUlA" target="_blank">Using the Cloud Shell Pt. 2/2 []</a>
+> [Codelab: Getting Started with Cloud Shell and gcloud](https://codelabs.developers.google.com/codelabs/cloud-shell/)
+> [Codelab: Load and Query Data with the bq command-line tool for BigQuery](https://codelabs.developers.google.com/codelabs/bigquery-cli)
+
 
 Cloud Shell (or th eCloud SDK) is a command-line interface (CLI) for interacting with Google Cloud services, plus it provides a Linux-like interface that you may be familiar with.  Here are the Google-specific commands to become familiar with:
 
@@ -164,6 +168,7 @@ Colabs are an interesting aside in that they are effectively Jupyter notebooks d
 * [Running gcloud Commands with Cloud Shell](https://cloud.google.com/shell/docs/running-gcloud-commands)
 * [IaaS vs PaaS vs SaaS Enter the Ecommerce Vernacular: What You Need to Know, Examples & More](https://www.bigcommerce.com/blog/saas-vs-paas-vs-iaas/)
 * [How Kubernetes Works](https://dzone.com/articles/how-kubernetes-works)
+* [YouTube Playlist (from Google) on Kubernetes](https://www.youtube.com/playlist?list=PLIivdWyY5sqLmnGdKSdQIXq2sd_1bWSnx)
 
 <hr size="1" />
 

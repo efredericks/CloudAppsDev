@@ -2,8 +2,6 @@ Welcome to Cloud Application Development!  This module will introduce you to the
 
 > By the end of this module, you should understand the underlying concepts of cloud computing, be able to setup your GCP account and billing, and create and use a remote virtual machine.
 
-> Module Video: <a href="https://youtu.be/V4hIVODKm20" target="_blank">Cloud Billing [8:24]</a>
-
 For this course we will be using [Google Cloud Platform](https://cloud.google.com/) as our cloud provider, however others such as [Amazon Web Services (AWS)](https://aws.amazon.com/) and [Microsoft Azure](https://azure.microsoft.com/) are common as well.  While each provides their own particular flavor, understanding the basics should enable you to transition between one and the other as necessary.
 
 Plus, assuming you are registered for the course at GVSU, you will receive free cloud computing credits (contact me on Blackboard).  If you somehow stumbled across this you can get [free credits via Google](https://cloud.google.com/free), however you're on your own with those.
@@ -12,7 +10,7 @@ What is the cloud?  [Put this lovely video on in the background and listen to it
 
 ## What is Cloud Computing?
 
-> Module video: TBD
+> Module Video: <a href="https://youtu.be/AtRZiBrxKnI" target="_blank">Intro to the Cloud [8:14]</a>
 
 Hi there!  For this course I'm going to assume you have some base knowledge of what cloud computing is in theory.  You'll be getting a lot of practice to flesh that out! If not, watch the 'What is the cloud' video above!
 
@@ -31,6 +29,8 @@ Scalability is a lovely feature as well.  Consumers are allocated resources via 
 Elasticity is another cloud feature, meaning that you can easily scale upwards and downwards as necessary.  You pay for what you use, no matter how large or how small the workload.  Once you shut off or disable the resource, you no longer have to pay (unless if it is some sort of persistent storage).
 
 ## Cloud Computing Costs
+
+> Module Video: <a href="https://youtu.be/V4hIVODKm20" target="_blank">Cloud Billing [8:24]</a>
 
 > Module Video: <a href="https://youtu.be/huFVLTuPbrs" target="_blank">Cloud Computing Costs [14:40]</a>
 
@@ -56,7 +56,7 @@ Here is a screenshot of an Ubuntu 20 virtual machine with a default configuratio
 
 ## Google Cloud vs. AWS vs. Azure
 
-> Module Video: TBD
+> Module Video: <a href="https://youtu.be/NvYXa7RM658" target="_blank">Cloud Providers [7:46]</a>
 
 There are several players in the game (i.e., the battle for cloud dominance) as of this point, however the big three are Google, Microsoft, and Amazon.  Whichever you end up using is more than likely going to come down to enumerating a list of tradeoffs, business decisions, and personal preferences.  
 
@@ -109,6 +109,8 @@ Considerations consistently change with respect to cloud providers.  Here, I am 
 ## Google Cloud Account Setup (Lab)
 
 > Module Video: <a href="https://youtu.be/IImFXvMWzM8" target="_blank">Lab 1 Overview (Setup / Virtual Machines) [21:31]</a>
+
+> (Another) Module Video: <a href="https://youtu.be/PEjyIlvl-88" target="_blank">Lab Environments [8:36]</a>
 
 Time for your first lab assignment!  This will get you up and running with a Google Cloud account, walk you through the web interface, and have you create a web server.  
 
