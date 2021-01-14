@@ -57,25 +57,25 @@ Common relational database systems include MySQL/MariaDB, PostGreSQL, SQLite, an
 
 Common non-relational/unstructured/NoSQL databases include MongoDB, CouchDB, Neo4J, and BigTable.  These types of databases generally have their own particular methods of access and manipulation, whereas the relational databases all implement some form of SQL.  For example, Neo4J uses the Cypher language to manipulate a database graph, whereas MongoDB uses JSON-style objects to store information and can be manipulated via API calls.
 
-Figure X (c/o Google) presents a view of structured vs. unstructured data.  
+Figure 4 (c/o Google) presents a view of structured vs. unstructured data.  
 
-![Google Cloud - Structured vs. Unstructured Data](/CloudAppsDev/assets/images/6-cloud-data-type.png "Google Cloud - Structured vs. Unstructured Data)
+![Google Cloud - Structured vs. Unstructured Data](/CloudAppsDev/assets/images/6-cloud-data-type.png "Google Cloud - Structured vs. Unstructured Data")
 
-> Figure X: Google Cloud - Structured vs. Unstructured Data
+> Figure 4: Google Cloud - Structured vs. Unstructured Data
 
-To illustrate the difference that you may see with an unstructured database environment, Figure X (c/o Neo4j) shows a graph-based database.  In this system, the *relationships* between objects are generally most important, with each object being a self-contained entity.
+To illustrate the difference that you may see with an unstructured database environment, Figure 5 (c/o Neo4j) shows a graph-based database.  In this system, the *relationships* between objects are generally most important, with each object being a self-contained entity.
 
 ![Sample Neo4j database](https://dist.neo4j.com/wp-content/uploads/20180103014233/data-profiling-neo4j-apoc-library.png "Sample Neo4j database")
 
-> Figure X: Sample Neo4j database
+> Figure 5: Sample Neo4j database
 
 ## What do I use?
 
-This is the "hard" question, as there are just so many available services and technologies out there to use.  Figure X shows a decision tree (c/o Google) for picking a Google-specific storage technology.  Note that you can use this flowchart to make similar decisions in other cloud provider ecosystems!
+This is the "hard" question, as there are just so many available services and technologies out there to use.  Figure 6 shows a decision tree (c/o Google) for picking a Google-specific storage technology.  Note that you can use this flowchart to make similar decisions in other cloud provider ecosystems!
 
 ![Google Cloud Storage Selection Strategy](/CloudAppsDev/assets/images/6-cloud-selection.png "Google Cloud Selection Strategy")
 
-> Figure X: Google Cloud Storage Selection Strategy
+> Figure 6: Google Cloud Storage Selection Strategy
 
 The figure is fairly self-explanatory, however some key decisions you must consider are:
 
