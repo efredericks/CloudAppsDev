@@ -91,3 +91,7 @@ Next, we'll do a couple of examples with the different technologies available in
 ## Additional Resources
 
 * TBD
+
+<hr size="1" />
+
+*Where noted, the original content was provided by Google LLC and modified for the purpose of the course, without input or endorsement from Google LLC*.
