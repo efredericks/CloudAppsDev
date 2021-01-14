@@ -20,6 +20,16 @@ You can take it further as well to non-relational databases (NoSQL databases), d
 
 ## Storage
 
+Focusing on Google now, let's take a look at what options are available to you as a developer.
+
+> Note: you can interact with all of these products via the Cloud console (web interface) or the Cloud shell (CLI).
+
+Figure 2 shows the currently-available options (c/o Google):
+
+![Google Cloud Storage Options](/CloudAppsDev/assets/images/6-cloud-storage.png "Cloud Storage Options")
+
+> Figure 2: Google Cloud Storage Options
+
 ## Additional Resources
 
 * TBD
