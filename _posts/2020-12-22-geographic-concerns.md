@@ -1,8 +1,8 @@
 ---
-title: Week 2/Module 2 - Geographic Concerns and Asynchronous Processes
+title: Week 2/Module 2 - Geographic Concerns
 tags: week2
 excerpt: 
-        <p>This module will get you thinking about taking those cloud apps worldwide, plus how we can add in asynchrocity.</p>
+        <p>This module will get you thinking about taking those cloud apps worldwide.</p>
 
         <h2>Module Videos</h2>
         <h2>Module Labs</h2>
