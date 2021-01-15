@@ -45,7 +45,7 @@ Let's take a look at the big three in terms of regional availability.  *Note tha
 
 [AWS Regions](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
 
-![Microsoft Azure Regions (c/o Microsoft)](https://azurecomcdn.azureedge.net/cvt-501c9a38819bd9ffc1ed855f2ed8b5db5e8936aed3e3a6732ff13f313a6c0ca4/images/shared/regions-map-desktop.svg "Microsoft Azure Regions")
+<img src="https://azurecomcdn.azureedge.net/cvt-501c9a38819bd9ffc1ed855f2ed8b5db5e8936aed3e3a6732ff13f313a6c0ca4/images/shared/regions-map-desktop.svg alt="Microsoft Azure Regions" title="Microsoft Azure Regions" style="background-color:#fff" />
 
 > Figure X: Microsoft Azure Regions
 
