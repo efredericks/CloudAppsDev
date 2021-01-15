@@ -73,7 +73,7 @@ Another major concern lies in exporting your data to other countries.  We'll tal
 
 Now that you're moving to the cloud, a major consideration (that doesn't seem to be often discussed) are export controls.  This topic is one that I'm going to tread lightly on, as I am not a lawyer or intimately familiar with government procedures.  However, you must be cognizant of who can access your data and where it can be accessed from.
 
-![US Export Controls and Economic Sanctions](https://slideplayer.com/slide/14093205/86/images/42/Export+Controls+are+Particularly+Problematic+for+Cloud+Computing.jpg "US Export Controls and Economic Sanctions)
+![US Export Controls and Economic Sanctions](https://slideplayer.com/slide/14093205/86/images/42/Export+Controls+are+Particularly+Problematic+for+Cloud+Computing.jpg "US Export Controls and Economic Sanctions")
 
 > Figure X: US Export Controls and Economic Sanctions
 
