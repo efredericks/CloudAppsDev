@@ -51,6 +51,24 @@ Let's take a look at the big three in terms of regional availability.  *Note tha
 
 [Microsoft Azure Regions](https://azure.microsoft.com/en-us/global-infrastructure/geographies/)
 
+Now, you may be wondering why I'm making such a big deal out of regional information.  Sure, you say.  We'll pick a region by our users.  Silly question, move on to the next thing.
+
+Well, to that I would say that there is more to it than just location!  There are two *other* concerns to worry about!  First there is **pricing**.  Different regions may have different pricing structures and that is one aspect to be absolutely sure of before selecting a region.
+
+For instance, Figure X shows a snippet from the [Google Cloud free tier page](https://cloud.google.com/free) specifying how to get a *free* VM microinstance.  Note that you must select from a list of specific regions; not necessarily every region is available! 
+
+![Google Cloud Free Tier Pricing](/CloudAppsDev/assets/images/5-gcp-pricing-2.png "Google Cloud Free Tier Pricing")
+
+> Figure X: Google Cloud Free Tier Pricing
+
+You may also find pricing and availability are tied into other products as well.  For instance, Figure X shows a comparison for Cloud Storage attributes -- note that regions can be tied to data availability!
+
+![Google Cloud - Regions and Storage](/CloudAppsDev/assets/images/5-gcp-pricing.PNG)
+
+> Figure X: Google Cloud - Regions and Storage
+
+Another major concern lies in exporting your data to other countries.  We'll talk about that in the next section.
+
 ### Export Controls
 
 ## Additional Resources
