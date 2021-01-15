@@ -71,6 +71,18 @@ Another major concern lies in exporting your data to other countries.  We'll tal
 
 ### Export Controls
 
+Now that you're moving to the cloud, a major consideration (that doesn't seem to be often discussed) are export controls.  This topic is one that I'm going to tread lightly on, as I am not a lawyer or intimately familiar with government procedures.  However, you must be cognizant of who can access your data and where it can be accessed from.
+
+![US Export Controls and Economic Sanctions](https://slideplayer.com/slide/14093205/86/images/42/Export+Controls+are+Particularly+Problematic+for+Cloud+Computing.jpg "US Export Controls and Economic Sanctions)
+
+> Figure X: US Export Controls and Economic Sanctions
+
+Read the following two links!
+
+[Export Controls and Cloud Computing](https://www.bis.doc.gov/documents/bis-annual-conference-2018/2239-cloudy-with-a-chance-of-technology-transfer-breakout-rev-13may2018/file)
+
+[Microsoft Azure - Managing export controls in Azure and Azure Government](:https://devblogs.microsoft.com/azuregov/managing-export-controls-in-azure-and-azure-government/)
+
 ## Additional Resources
 
 * TBD
