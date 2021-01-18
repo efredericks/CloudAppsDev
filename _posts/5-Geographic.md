@@ -82,6 +82,10 @@ Read the following two links!
 
 [Microsoft Azure - Managing export controls in Azure and Azure Government](:https://devblogs.microsoft.com/azuregov/managing-export-controls-in-azure-and-azure-government/)
 
+## Lab!
+
+> Setup a worldwide load-balanced website.  
+
 ## Additional Resources
 
 * TBD
