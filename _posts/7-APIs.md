@@ -103,11 +103,11 @@ Let's get some practical experience.
 
 Figure X (c/o Google) demonstrates how data moves from clients at the Endpoint to internal services and then back to users.  What generally happens, from a service perspective, is that data comes in, something *happens* to that data (i.e., it is transformed in some way), and then data comes out.  In the cloud world, this procedure needs to happen quickly and reliably.
 
-![Data Ingestion](/CloudAppsDev/assets/images/7-data-mgmt.png "Data Ingestion")
+![Data Ingestion](/CloudAppsDev/assets/images/7-data-mgmt.pnkill "Data Ingestion")
 
 > Figure X: Data Ingestion
 
-Consider a streaming gaming platform.  There must exist a handshake between 
+Consider a streaming gaming platform (publicity photo as shown in Figure X).  There must exist a handshake between client and server, with services interspersed between along the way.  In this example (Google Stadia, though others exist), the core processing occurs on cloud servers and the game experience is transmitted to the player, leveraging high speed internet to deliver a high quality of service.
 
 ![Google Stadia Publicity (c/o Forbes/Google)](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fkevinmurnane%2Ffiles%2F2019%2F06%2FMultiple-platforms_Stadia.jpg "Google Stadia Publicity (c/o Forbes/Google))
 
