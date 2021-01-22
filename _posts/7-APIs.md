@@ -109,9 +109,26 @@ Figure X (c/o Google) demonstrates how data moves from clients at the Endpoint t
 
 Consider a streaming gaming platform (publicity photo as shown in Figure X).  There must exist a handshake between client and server, with services interspersed between along the way.  In this example (Google Stadia, though others exist), the core processing occurs on cloud servers and the game experience is transmitted to the player, leveraging high speed internet to deliver a high quality of service.
 
-![Google Stadia Publicity (c/o Forbes/Google)](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fkevinmurnane%2Ffiles%2F2019%2F06%2FMultiple-platforms_Stadia.jpg "Google Stadia Publicity (c/o Forbes/Google))
+![Google Stadia Publicity (c/o Forbes/Google)](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fkevinmurnane%2Ffiles%2F2019%2F06%2FMultiple-platforms_Stadia.jpg "Google Stadia Publicity (c/o Forbes/Google)")
 
 > Figure X: Google Stadia Publicity (c/o Forbes/Google)
+
+Let us assume we can solve the 'speed' issues here (hint: games need to run fast otherwise you have a poor player experience).  However, there is so much more going on here.  You might be interested in 'how' players are interacting with the game.  For instance, you might be interested to see what keypresses they make most often, which areas they are drawn to, how they solve puzzles, etc.  This type of information can be gleaned from user input via analytics.  Using such information, you can tailor the experience to the user, create innovative experiences, gain business insights, etc.
+
+Another example is in music streaming services (or some other complex orchestration task specific to *your* business).  Let's say a user wants to play a song on whichever of the multiple audio-ready devices they own.  The service itself must do a lot in the background!  The record company needs to be paid for royalties, music catalogues require updating, song recommendations need updating, analytics must be performed on user actions, and so on.  What started as a simple task (play a song) has transformed into a massive set of interacting service activities.  Figure X (c/o Google) shows such an interaction:
+
+![Complex Business Processes](/CloudAppsDev/assets/images/7-complicated.png "Complex Business Processes")
+
+> Figure X : Complex Business Processes
+
+One approach for handling such a complex orchestration is in a **managed messaging system**.  One of the more common ways of implementing such a service is the **publish/subscribe** model (Pub/Sub).  Figure X shows off Pub/Sub (c/o Amazon):
+
+![Pub/Sub Messaging](https://d1.awsstatic.com/product-marketing/Messaging/sns_img_topic.e024462ec88e79ed63d690a2eed6e050e33fb36f.png "Pub/Sub Messaging")
+
+> Figure X: Pub/Sub Messaging
+
+> For another perspective, here is [Amazon's explanation of Pub/Sub](https://aws.amazon.com/pub-sub-messaging/).
+
 
 
 
