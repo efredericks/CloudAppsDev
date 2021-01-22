@@ -2,13 +2,16 @@
 
 > Module videos:
 
+> Module labs:
+* Create and use a Cloud Endpoint
+
 ## Let's be RESTful
 
 RESTful services are more than likely a phrase you've heard in the past.  If you already know what they are, wonderful, however we should talk about what they exactly are and how we can use them to interact with our cloud services.
 
 First of all, what is it to be **RESTful**?
 
-A RESTful (Reppresentational State Transfer)-ful service follows a standardized approach for enabling interaction.  
+A RESTful (REpresentational State Transfer)-ful service follows a standardized approach for enabling interaction.  
 
 [Wikipedia has a delightful overview of what REST means](https://en.wikipedia.org/wiki/Representational_state_transfer)!
 
@@ -92,7 +95,24 @@ Figure X (c/o Google) demonstrates how they (i.e., Cloud Endpoints) fit into the
 
 > Figure X: Where Cloud Endpoints fit
 
+Let's get some practical experience.  
+
+> Lab: Create and use a Cloud Endpoint
+
 ## Managed Message Services and Pub/Sub
+
+Figure X (c/o Google) demonstrates how data moves from clients at the Endpoint to internal services and then back to users.  What generally happens, from a service perspective, is that data comes in, something *happens* to that data (i.e., it is transformed in some way), and then data comes out.  In the cloud world, this procedure needs to happen quickly and reliably.
+
+![Data Ingestion](/CloudAppsDev/assets/images/7-data-mgmt.png "Data Ingestion")
+
+> Figure X: Data Ingestion
+
+Consider a streaming gaming platform.  There must exist a handshake between 
+
+![Google Stadia Publicity (c/o Forbes/Google)](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fkevinmurnane%2Ffiles%2F2019%2F06%2FMultiple-platforms_Stadia.jpg "Google Stadia Publicity (c/o Forbes/Google))
+
+> Figure X: Google Stadia Publicity (c/o Forbes/Google)
+
 
 
 ## Additional Resources
