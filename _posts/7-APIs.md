@@ -77,6 +77,8 @@ Will your API scale to meet user demand, both upwards and downwards?  As you are
 
 Keeping an eye on what your API is doing and how it is being used is also a major consideration.  You must have traceable evidence of exactly what your API has been doing so that you can properly manage your service and usage patterns.
 
+> Lab: [Display the first 100 files & folders in your Google Drive](https://codelabs.developers.google.com/codelabs/gsuite-apis-intro#8)
+
 ## Cloud Endpoints
 
 Time to look at what is available to us in the cloud!  Figure 4 (c/o Google) demonstrates Cloud Endpoints, their approach for handling cloud-based APIs.  In this figure you see what is available via Endpoints.
@@ -95,9 +97,9 @@ Figure 5 (c/o Google) demonstrates how they (i.e., Cloud Endpoints) fit into the
 
 > Figure 5: Where Cloud Endpoints fit
 
-Let's get some practical experience.  
+Let's get some practical experience using QwikLabs.  
 
-> Lab: Create and use a Cloud Endpoint
+> [QwikLabs - Cloud Endpoints: Qwik Start (GSP164) [1 Credit]](https://www.qwiklabs.com/focuses/767?catalog_rank=%7B%22rank%22%3A2%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=8674034)
 
 ## Managed Message Services and Pub/Sub
 
@@ -163,9 +165,10 @@ To give you an idea as to where Pub/Sub sits in the cloud hierarchy (i.e., where
 
 > Figure 14: Pub/Sub Location
 
-Time for a Pub/Sub lab!
+Time for a Pub/Sub lab!  For this I'd like to have you get experience with Pub/Sub in two different forms - the Cloud Console/Shell and Python.  Note that you can run Python in the Cloud Shell, so nothing needed locally!
 
-> Pub/Sub lab!
+> [QwikLabs - Google Cloud Pub/Sub: Qwik Start - Console (GSP096) [Free]](https://www.qwiklabs.com/focuses/3719?catalog_rank=%7B%22rank%22%3A4%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=8673991)
+> [QwikLabs - Google Cloud Pub/Sub: Qwik Start - Python (GSP094) [1 Credit]](https://www.qwiklabs.com/focuses/2775?catalog_rank=%7B%22rank%22%3A3%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=8673991)
 
 ## Additional Resources
 
