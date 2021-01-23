@@ -17,11 +17,11 @@ A RESTful (REpresentational State Transfer)-ful service follows a standardized a
 
 Effectively, a service accepts 
 
-Figure X shows an example of a RESTful interaction between an application and an API (c/o TowardsDataScience): 
+Figure 1 shows an example of a RESTful interaction between an application and an API (c/o TowardsDataScience): 
 
 ![RESTful API](https://miro.medium.com/max/5230/1*ZU1EQ7tYeQNQlhOhyonHFA.png "RESTful API")
 
-> Figure X: RESTful API
+> Figure 1: RESTful API
 
 Here, you can get a feel for how a RESTful call is constructed.  The URL is built as you normally would expect for accessing a website, however instead the service is accepting the URL as an instruction sequence for how to parse the request.  *Note, a RESTful call can also accomodate data payloads (e.g., via JSON packets), however we'll just focus on simple commands here*.
 
@@ -43,21 +43,21 @@ To get this information, do you need to understand the complex inner-workings of
 
 We could use a RESTful query as previously described (perhaps your query looks like `https://maps.cloud-provider.com/getRestaurants/ZIP-CODE`) and that returns a JSON packet of all the information you need.  Or, you might need to write a script that authenticates with the service, calls something along the lines of `data = service.getRestaurants(ZIP-CODE)`, and then parse out what is in `data`.  There is not one specific way to interact with a service -- it depends on the service itself!  Let us use that lovely internet acronym of RTFM, and I'll let you look up what that means.  Basically, read the manual!
 
-Figure X (c/o Google Cloud) shows a logical API that demonstrates how users interact with some service, with an API sitting in between to abstract away the details of the service itself.
+Figure 2 (c/o Google Cloud) shows a logical API that demonstrates how users interact with some service, with an API sitting in between to abstract away the details of the service itself.
 
 ![APIs hide the details and enforce contracts](/CloudAppsDev/assets/images/7-api.png "APIs hide the details and enforce contracts")
 
-> Figure X: APIs hide the details and enforce contracts
+> Figure 2: APIs hide the details and enforce contracts
 
 *What is a contract* you may ask?  Depending on the specification being followed, a *contract*  is a specific method exactly how an API functions, how to interact with it, and how to receive data from it.  [Check out this article for some of the different ways of specifying contracts](https://medium.com/theagilemanager/development-what-is-an-api-contract-683ced58e06f).
 
 ### Is there more to it than just interaction?
 
-Oh my yes.  Figure X (c/o Google) shows you a high-level of the concerns we have with APIs.
+Oh my yes.  Figure 3 (c/o Google) shows you a high-level of the concerns we have with APIs.
 
 ![Deploying and Managing APIs can be difficult](/CloudAppsDev/assets/images/7-api-mgmt.png "Deploying and Managing APIs can be difficult")
 
-> Figure X: Deploying and Managing APIs can be difficult
+> Figure 3: Deploying and Managing APIs can be difficult
 
 In the context of this class, an API is simply the interface for your cloud service.  As such, we care about:
 
@@ -79,21 +79,21 @@ Keeping an eye on what your API is doing and how it is being used is also a majo
 
 ## Cloud Endpoints
 
-Time to look at what is available to us in the cloud!  Figure X (c/o Google) demonstrates Cloud Endpoints, their approach for handling cloud-based APIs.  In this figure you see what is available via Endpoints.
+Time to look at what is available to us in the cloud!  Figure 4 (c/o Google) demonstrates Cloud Endpoints, their approach for handling cloud-based APIs.  In this figure you see what is available via Endpoints.
 
 ![Cloud Endpoints help you create and maintain APIs](/CloudAppsDev/assets/images/7-endpoints.png "Cloud Endpoints help you create and maintain APIs")
 
-> Figure X: Cloud Endpoints help you create and maintain APIs
+> Figure 4: Cloud Endpoints help you create and maintain APIs
 
 Here, you see the concerns described above, fully managed.  You can generate keys for authentication/authorization, handle scalability concerns, monitor/log your API, and integrate with the various API specifications available.  Now, you can use whatever API framework/implementation that you wish, however using a service such as Endpoints can significantly speed up your development process.
 
 > Note: AWS' version is called '[Service Endpoints](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/using-govcloud-endpoints.html)' and Azure calls it '[API Management](https://azure.microsoft.com/en-us/services/api-management/).'
 
-Figure X (c/o Google) demonstrates how they (i.e., Cloud Endpoints) fit into the general Google Cloud ecosystem.  Essentially, consider Endpoints (or similar) a cloud service for interacting with your cloud services.
+Figure 5 (c/o Google) demonstrates how they (i.e., Cloud Endpoints) fit into the general Google Cloud ecosystem.  Essentially, consider Endpoints (or similar) a cloud service for interacting with your cloud services.
 
 ![Where Cloud Endpoints fit](/CloudAppsDev/assets/images/7-endpoints2.png "Where Cloud Endpoints fit")
 
-> Figure X: Where Cloud Endpoints fit
+> Figure 5: Where Cloud Endpoints fit
 
 Let's get some practical experience.  
 
@@ -101,58 +101,71 @@ Let's get some practical experience.
 
 ## Managed Message Services and Pub/Sub
 
-Figure X (c/o Google) demonstrates how data moves from clients at the Endpoint to internal services and then back to users.  What generally happens, from a service perspective, is that data comes in, something *happens* to that data (i.e., it is transformed in some way), and then data comes out.  In the cloud world, this procedure needs to happen quickly and reliably.
+Figure 6 (c/o Google) demonstrates how data moves from clients at the Endpoint to internal services and then back to users.  What generally happens, from a service perspective, is that data comes in, something *happens* to that data (i.e., it is transformed in some way), and then data comes out.  In the cloud world, this procedure needs to happen quickly and reliably.
 
 ![Data Ingestion](/CloudAppsDev/assets/images/7-data-mgmt.pnkill "Data Ingestion")
 
-> Figure X: Data Ingestion
+> Figure 6: Data Ingestion
 
-Consider a streaming gaming platform (publicity photo as shown in Figure X).  There must exist a handshake between client and server, with services interspersed between along the way.  In this example (Google Stadia, though others exist), the core processing occurs on cloud servers and the game experience is transmitted to the player, leveraging high speed internet to deliver a high quality of service.
+Consider a streaming gaming platform (publicity photo as shown in Figure 7).  There must exist a handshake between client and server, with services interspersed between along the way.  In this example (Google Stadia, though others exist), the core processing occurs on cloud servers and the game experience is transmitted to the player, leveraging high speed internet to deliver a high quality of service.
 
 ![Google Stadia Publicity (c/o Forbes/Google)](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fkevinmurnane%2Ffiles%2F2019%2F06%2FMultiple-platforms_Stadia.jpg "Google Stadia Publicity (c/o Forbes/Google)")
 
-> Figure X: Google Stadia Publicity (c/o Forbes/Google)
+> Figure 7: Google Stadia Publicity (c/o Forbes/Google)
 
 Let us assume we can solve the 'speed' issues here (hint: games need to run fast otherwise you have a poor player experience).  However, there is so much more going on here.  You might be interested in 'how' players are interacting with the game.  For instance, you might be interested to see what keypresses they make most often, which areas they are drawn to, how they solve puzzles, etc.  This type of information can be gleaned from user input via analytics.  Using such information, you can tailor the experience to the user, create innovative experiences, gain business insights, etc.
 
-Another example is in music streaming services (or some other complex orchestration task specific to *your* business).  Let's say a user wants to play a song on whichever of the multiple audio-ready devices they own.  The service itself must do a lot in the background!  The record company needs to be paid for royalties, music catalogues require updating, song recommendations need updating, analytics must be performed on user actions, and so on.  What started as a simple task (play a song) has transformed into a massive set of interacting service activities.  Figure X (c/o Google) shows such an interaction:
+Another example is in music streaming services (or some other complex orchestration task specific to *your* business).  Let's say a user wants to play a song on whichever of the multiple audio-ready devices they own.  The service itself must do a lot in the background!  The record company needs to be paid for royalties, music catalogues require updating, song recommendations need updating, analytics must be performed on user actions, and so on.  What started as a simple task (play a song) has transformed into a massive set of interacting service activities.  Figure 8 (c/o Google) shows such an interaction:
 
 ![Complex Business Processes](/CloudAppsDev/assets/images/7-complicated.png "Complex Business Processes")
 
-> Figure X : Complex Business Processes
+> Figure 8 : Complex Business Processes
 
-One approach for handling such a complex orchestration is in a **managed messaging system**.  One of the more common ways of implementing such a service is the **publish/subscribe** model (Pub/Sub).  Figure X shows off Pub/Sub (c/o Amazon):
+One approach for handling such a complex orchestration is in a **managed messaging system**.  One of the more common ways of implementing such a service is the **publish/subscribe** model (Pub/Sub).  Figure 9 shows off Pub/Sub (c/o Amazon):
 
 ![Pub/Sub Messaging](https://d1.awsstatic.com/product-marketing/Messaging/sns_img_topic.e024462ec88e79ed63d690a2eed6e050e33fb36f.png "Pub/Sub Messaging")
 
-> Figure X: Pub/Sub Messaging
+> Figure 9: Pub/Sub Messaging
 
 > For another perspective, here is [Amazon's explanation of Pub/Sub](https://aws.amazon.com/pub-sub-messaging/).
 
-TODO
+Pub/Sub enables messages (data payloads) to be broadcast to whichever recipients are interested in the data/message.  Pub/Sub tends to be very lightweight, making it attractive for embedded applications as well.  This process works by splitting up services into *publishers* and *subscribers*.  Depending on your Pub/Sub implementation, there may be a *broker* in the middle as well that manages subscriptions as well.
 
-The Pub/Sub design pattern is illustrated in Figure X (c/o Google).  In this design pattern, publishers and subscribers are both (generally separate) applications.  The *publisher* sends message to a topic, and subscribers *subscribe* to a topic to receive messages.  Note that this activity can happen asynchronously.
+> Note that Pub/Sub can also specify how important messages are, if the message must be acknowledged by the receiver, etc.  For this post we won't do a deep dive on the design pattern itself, however. 
 
-
-Publisher applications can send messages to a topic and subscriber applications can subscribe to that topic to receive the message when the subscriber is ready. This can take place asynchronously.
-
-It’s important to understand that subscribers only receive messages from the initial publisher. 
-
-It’s best practice when using Pub/Sub with Google Cloud tools to specify a subscription instead of a topic for reading.
+The Pub/Sub design pattern is illustrated in Figure 10 (c/o Google).  In this design pattern, publishers and subscribers are both (generally separate) applications.  The *publisher* sends message to a topic, and subscribers *subscribe* to a topic to receive messages.  Note that this activity can happen asynchronously, and that subscribers only receive messages from the initial publisher.  At least with Google Cloud (you can set this up without cloud services -- e.g., via [Python and the MQTT library](http://www.steves-internet-guide.com/publishing-messages-mqtt-client/)), you should specify a *subscription service* rather than a topic for reading data.
 
 ![Publish-Subscribe Pattern](/CloudAppsDev/assets/images/7-pubsub-pattern.png "Publish-Subscribe Pattern")
 
-> Figure X: Publish-Subscribe Pattern
+> Figure 10: Publish-Subscribe Pattern
 
-
-Figure X (c/o Google) demonstrates an example of Pub/Sub.  Here, a company is using Pub/Sub to handle employee hiring procedures system-wide.  In this example, the employee information needs to be spread throughout the system to the relevant systems.  A `message` is published to a `topic`, and all services that subscribe to that topic (and that have the proper authorization) receive the `message` that the new employee has been hired.  The services listed in the figure (e.g., badge, email accounts, etc.) can all be turned into cloud-based microservices, rather than separate, isolated systems. 
+Figure 11 (c/o Google) demonstrates an example of Pub/Sub.  Here, a company is using Pub/Sub to handle employee hiring procedures system-wide.  In this example, the employee information needs to be spread throughout the system to the relevant systems.  A `message` is published to a `topic`, and all services that subscribe to that topic (and that have the proper authorization) receive the `message` that the new employee has been hired.  The services listed in the figure (e.g., badge, email accounts, etc.) can all be turned into cloud-based microservices, rather than separate, isolated systems. 
 
 ![Pub/Sub Example](/CloudAppsDev/assets/images/7-pubsub-ex.png "Pub/Sub Example")
 
-> Figure X: Pub/Sub Example
+> Figure 11: Pub/Sub Example
 
+Figure 12 (c/o Google) demonstrates multiple pub/sub activities in the context of HTTP.  In this figure, there exist two subscriptions: `push` and `pull`.  In the case of `push`, the subscriber is receiving information at the whim of the publisher (i.e., a `push` event, via HTTP `POST`).  In the case of `pull`, the subscriber is receiving data as the result of a request for information (via an HTTP `GET` request).  In either case, Google Pub/Sub is acting as a buffer/shock absorber in terms of ensuring all services/applications receive/transmit the data necessary, as well as scaling as necessary in the case of a sudden influx of users/events.
 
+![Pub/Sub Subscriptions](/CloudAppsDev/assets/images/7-pubsub-buffer.png "Pub/Sub Subscriptions")
 
+> Figure 12: Pub/Sub Subscriptions
+
+To further illustrate this concept, Figure 13 (c/o Google) shows a bit more of a complex Pub/Sub setup.  Everything in the middle green box is part of the Google Pub/Sub managed service, and everything else is outside of the framework.  "Outside of the framework" means that you provide the applications/services to interact with Pub/Sub -- they could be internal to other Google services, use external cloud services (e.g., via AWS/Azure), or use external applications (e.g., a Raspberry Pi local application).
+
+![Pub/Sub Complex Example](/CloudAppsDev/assets/images/7-complicated.png "Pub/Sub Complex Example")
+
+> Figure 13: Pub/Sub Complex Example
+
+To give you an idea as to where Pub/Sub sits in the cloud hierarchy (i.e., where we would use it when processing big data), Figure 14 (c/o Google) shows you its place.  Effectively, you can consider Pub/Sub to be part of the *Ingestion* phase, where data needs to be captured and brought into the system.  If you're not in the mood to deal with big data, Pub/Sub can be used nicely in Internet of Things applications where data needs to be passed from device to device.  However, this figure also presents some interesting implications.  For instance, we can see the tools we can leverage to process data, to store it, and to analyze it within the Google Cloud ecosystem.  As always, there exist parallel services in AWS and Azure that could be used if you are in that environment.
+
+![Pub/Sub Location](/CloudAppsDev/assets/images/7-pubsub-loc.png "Pub/Sub Location")
+
+> Figure 14: Pub/Sub Location
+
+Time for a Pub/Sub lab!
+
+> Pub/Sub lab!
 
 ## Additional Resources
 
