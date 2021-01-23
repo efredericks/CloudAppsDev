@@ -129,6 +129,28 @@ One approach for handling such a complex orchestration is in a **managed messagi
 
 > For another perspective, here is [Amazon's explanation of Pub/Sub](https://aws.amazon.com/pub-sub-messaging/).
 
+TODO
+
+The Pub/Sub design pattern is illustrated in Figure X (c/o Google).  In this design pattern, publishers and subscribers are both (generally separate) applications.  The *publisher* sends message to a topic, and subscribers *subscribe* to a topic to receive messages.  Note that this activity can happen asynchronously.
+
+
+Publisher applications can send messages to a topic and subscriber applications can subscribe to that topic to receive the message when the subscriber is ready. This can take place asynchronously.
+
+It’s important to understand that subscribers only receive messages from the initial publisher. 
+
+It’s best practice when using Pub/Sub with Google Cloud tools to specify a subscription instead of a topic for reading.
+
+![Publish-Subscribe Pattern](/CloudAppsDev/assets/images/7-pubsub-pattern.png "Publish-Subscribe Pattern")
+
+> Figure X: Publish-Subscribe Pattern
+
+
+Figure X (c/o Google) demonstrates an example of Pub/Sub.  Here, a company is using Pub/Sub to handle employee hiring procedures system-wide.  In this example, the employee information needs to be spread throughout the system to the relevant systems.  A `message` is published to a `topic`, and all services that subscribe to that topic (and that have the proper authorization) receive the `message` that the new employee has been hired.  The services listed in the figure (e.g., badge, email accounts, etc.) can all be turned into cloud-based microservices, rather than separate, isolated systems. 
+
+![Pub/Sub Example](/CloudAppsDev/assets/images/7-pubsub-ex.png "Pub/Sub Example")
+
+> Figure X: Pub/Sub Example
+
 
 
 
