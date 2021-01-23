@@ -168,6 +168,7 @@ To give you an idea as to where Pub/Sub sits in the cloud hierarchy (i.e., where
 Time for a Pub/Sub lab!  For this I'd like to have you get experience with Pub/Sub in two different forms - the Cloud Console/Shell and Python.  Note that you can run Python in the Cloud Shell, so nothing needed locally!
 
 > [QwikLabs - Google Cloud Pub/Sub: Qwik Start - Console (GSP096) [Free]](https://www.qwiklabs.com/focuses/3719?catalog_rank=%7B%22rank%22%3A4%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=8673991)
+
 > [QwikLabs - Google Cloud Pub/Sub: Qwik Start - Python (GSP094) [1 Credit]](https://www.qwiklabs.com/focuses/2775?catalog_rank=%7B%22rank%22%3A3%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=8673991)
 
 ## Additional Resources
