@@ -7,15 +7,15 @@
 
 ## Let's be RESTful
 
-RESTful services are more than likely a phrase you've heard in the past.  If you already know what they are, wonderful, however we should talk about what they exactly are and how we can use them to interact with our cloud services.
+[RESTful services](https://restfulapi.net/) are more than likely a phrase you've heard in the past.  If you already know what they are, wonderful, however we should talk about what they exactly are and how we can use them to interact with our cloud services.
 
 First of all, what is it to be **RESTful**?
 
-A RESTful (REpresentational State Transfer)-ful service follows a standardized approach for enabling interaction.  
+A RESTful (REpresentational State Transfer)-ful service follows a [standardized approach](https://www.w3.org/2001/sw/wiki/REST) for enabling interaction.  
 
 [Wikipedia has a delightful overview of what REST means](https://en.wikipedia.org/wiki/Representational_state_transfer)!
 
-Effectively, a service accepts 
+Effectively, REST is a set of constraints that a service follows to allow other services/applications/users to use it via common HTTP requests.  Specifically, a RESTful API can be queried via `GET`, `POST`, `PUT`, and `DELETE` calls.  Given that the greater web is HTTP-based, a RESTful API provides a very familiar approach to interaction.  Another nice benefit is that REST is stateless -- nothing state-related needs to be stored/referenced to work.  You can also perform authentication/authorization with REST as well, OAuth or other token-based approaches can be used to enable security for RESTful services. 
 
 Figure 1 shows an example of a RESTful interaction between an application and an API (c/o TowardsDataScience): 
 
@@ -25,9 +25,9 @@ Figure 1 shows an example of a RESTful interaction between an application and an
 
 Here, you can get a feel for how a RESTful call is constructed.  The URL is built as you normally would expect for accessing a website, however instead the service is accepting the URL as an instruction sequence for how to parse the request.  *Note, a RESTful call can also accomodate data payloads (e.g., via JSON packets), however we'll just focus on simple commands here*.
 
-We will assume the protocol (`http`) and domain (`www.somewebsite.com`) are known to you at this point ... they give you a human-readable method for accessing the server that your service is hosted upon.
+We will assume the protocol (`http`) and domain (`www.somewebsite.com`) are known to you at this point ... they give you a human-readable method for accessing the server that your service is hosted upon.  The `Path` noted in the figure demonstrate how the API should be handling the request -- in this example `api/v3/jobs` means *something* to the API.  The last portion of the URI is `datascience` (again, meaning *something* to the API).  It should be of note that defining the HTTP request is completely up to the API itself.  In this example, the service most likely is a website route that renders `datascience` specific information to the user.
 
-NOT DONE HERE!
+A similar example would be querying an embedded system with a temperature sensor to get the current room temperature in your unit of choice.  For instance, I might have a Raspberry Pi outfitted with an appropriate sensor at `192.168.1.1`.  I could run a RESTful API, where I can query the device for information simply by accessing `http://192.168.1.1/getTemperature`.  The HTTP response from the device would simply be the current room temperature.  I could extend this API as well by adding a unit -- `http://192.168.1.1/getTemperature/Fahrenheit` or `http://192.168.1.1/getTemperature/Celsius`.  Again, it is up to the API to understand what this route means and how to accept or return data.  We could access the data via a web browser or via the `curl` command, as you'll see in a forthcoming lab (e.g., `curl http://192.168.1.1/getTemperature`).
 
 ### But was is an API?
 
