@@ -103,7 +103,7 @@ Let's get some practical experience.
 
 Figure 6 (c/o Google) demonstrates how data moves from clients at the Endpoint to internal services and then back to users.  What generally happens, from a service perspective, is that data comes in, something *happens* to that data (i.e., it is transformed in some way), and then data comes out.  In the cloud world, this procedure needs to happen quickly and reliably.
 
-![Data Ingestion](/CloudAppsDev/assets/images/7-data-mgmt.pnkill "Data Ingestion")
+![Data Ingestion](/CloudAppsDev/assets/images/7-data-mgmt.png "Data Ingestion")
 
 > Figure 6: Data Ingestion
 
