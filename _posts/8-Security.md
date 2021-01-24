@@ -38,7 +38,33 @@ Ok, soapboxing complete.  Let's look at what Google does from a security perspec
 
 This figure demonstrates that security must be built into **every single layer of the system as a whole**, from hardware to operational security.  Essentially, security must be distributed throughout all aspects of a project, thereby reducing single points of failure!
 
+From the cloud provider's perspective, consider the sheer number of users (i.e., you) that want to leverage what is possible to build their own applications.  They will sandbox each user to the best of their ability, meaning that you will not have access (unless otherwise allowed, either via authorization, delegation, or access via encrypted remote procedure calls) to anybody else's account!  
+
+Another consideration is that many cloud providers will have some sort of 'bug bounty' program in place, where if you discover a problem or bug you may be rewarded for it.  In this regard, both providers and the community (either from industry or research) can advance the state of the art when it comes to security.
+
+## Shared Security Model
+
+It is now time to really dig into shared security!  But what does it mean to share security?  If you create a 'normal' application, you are in charge of security of all aspects, from physical access to terminals to remote access to data.  In a shared security model, some responsibility falls on the provider and some falls on the developer (or architect).  Figure X (c/o Google) next illustrates the shared security responsibility between Google and the user (note: this model *may* not hold for all providers -- check with whichever host you select!).
+
+![Google Cloud Shared Security Model](/CloudAppsDev/assets/images/8-shared-security.png "Google Cloud Shared Security Model")
+
+> Figure X: Google Cloud Shared Security Model
+
+Note that Google's responsibility for security increases with the amount of their provided service.  Generally, your cloud provider will secure the physical infrastructure necessary (e.g., the servers, disks, etc.).  However, the provider won't usually be responsible for securing your users' accounts, ensuring that you protect valuable resources, require you to use authorization/authentication on your public-facing services, etc.  Note that you *can* set a Cloud Function to be triggered via a public HTML call, however this means that *anybody* can trigger it (and as many times as they want).  Pay attention to security please!
+
+What we've been mainly discussing so far is how you configure your applications and how you enable your customers to use your world-changing cloud application.  However, we have yet to really discuss **data**.  One point to keep well in mind is that data access is pretty much **always** going to be **your** responsibility to manage.  You the cloud customer can distribute access as necessary, however the cloud provider isn't going to intuitively know who needs what access; that's your job!  The provider does provide the tools necessary to manage access rights (e.g., Cloud Identity, Access Management, etc.), however it is up to you to configure that.
+
+Next, let's go over encryption possibilities.
+
 ## Encryption
+
+This is not a class on encryption, so therefore I am going to make the assumption that you understand (or can understand) how encryption and decryption of information works. [If not, here's a nice overview](https://www.geeksforgeeks.org/difference-between-encryption-and-decryption/).  Figure X (c/o Google) demonstrates the encryption options available to you as a developer:
+
+![Google Cloud Encryption Options](/CloudAppsDev/assets/images/8-encryption.png "Google Cloud Encryption Options")
+
+> Figure X: Google Cloud Encryption Options
+
+Looking at this figure you realize you have a range of options available to you.  You might select a simpler option that uses default encryption procedures, however the cost is that you the developer have less control over encryption procedures.
 
 ## Cloud Identity and Access Management (IAM)
 
