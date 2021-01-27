@@ -29,6 +29,29 @@ We will assume the protocol (`http`) and domain (`www.somewebsite.com`) are know
 
 A similar example would be querying an embedded system with a temperature sensor to get the current room temperature in your unit of choice.  For instance, I might have a Raspberry Pi outfitted with an appropriate sensor at `192.168.1.1`.  I could run a RESTful API, where I can query the device for information simply by accessing `http://192.168.1.1/getTemperature`.  The HTTP response from the device would simply be the current room temperature.  I could extend this API as well by adding a unit -- `http://192.168.1.1/getTemperature/Fahrenheit` or `http://192.168.1.1/getTemperature/Celsius`.  Again, it is up to the API to understand what this route means and how to accept or return data.  We could access the data via a web browser or via the `curl` command, as you'll see in a forthcoming lab (e.g., `curl http://192.168.1.1/getTemperature`).
 
+Here is a [tutorial on building a RESTful API with Flask (Python) and Postman](https://www.kite.com/blog/python/flask-restful-api-tutorial/).
+
+And here is a [simpler one](https://medium.com/@onejohi/building-a-simple-rest-api-with-python-and-flask-b404371dc699)!
+
+> Video on Python / Flask RESTful calls
+
+> Python Source files: [main1.py](/CloudAppsDev/assets/code/REST/main1.py), [main2.py](/CloudAppsDev/assets/code/REST/main2.py)
+> Python Requirements file: [requirements.txt](/CloudAppsDev/assets/code/REST/requirements.txt)
+
+*Variables to set and how to run*
+
+```
+$ export FLASK_ENV=development
+$ export FLASK_APP=main1.py
+$ python3 -m flask run
+
+... open a browser with http://localhost:5000
+```
+
+> Notes: *Change main1 to main2 when going to the second example*, and your method of running Flask may be different (mine is mainly because I have several versions of Python installed on my machine)
+
+
+
 ### But was is an API?
 
 An application programming interface (API) is a programming construct that hides the back-end details for multiple reasons.  They simplify communication from service to service, enable code reuse, and enhance portability (at minimum)!  An API enables easier interaction with a service -- you (the programmer) have no worries about what is happening behind the scenes.  All you are aware of is that you need to call particular functions to interact with some service.  

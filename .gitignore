@@ -1,4 +1,5 @@
 *.code-workspace
+*.pyc
 
 _site
 .sass-cache

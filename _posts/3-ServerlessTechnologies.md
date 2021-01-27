@@ -24,7 +24,6 @@ The following screenshot shows the list of *currently available* triggers for a 
 
 > Figure 1: Cloud Function triggers
 
-
 We will be mainly using HTTP for this section.  
 
 ### What are they?
