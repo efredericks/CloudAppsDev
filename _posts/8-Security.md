@@ -64,9 +64,20 @@ This is not a class on encryption, so therefore I am going to make the assumptio
 
 > Figure X: Google Cloud Encryption Options
 
-Looking at this figure you realize you have a range of options available to you.  You might select a simpler option that uses default encryption procedures, however the cost is that you the developer have less control over encryption procedures.
+Looking at this figure you realize you have a range of options available to you.  You might select a simpler option that uses default encryption procedures, however the cost is that you the developer have less control over encryption procedures.  Essentially, the question here is if you want to manage encryption fully by yourself (customer-supplied encryption keys) or do you want your provider to handle some of the burden.  
+
+By default, Google will encrypt data in transit (i.e., being sent/received to/from the servers) using TLS encryption.  Data *at rest* (i.e., lounging about on the servers) is encrypted via AES-256.  Both happen automatically.  Figure X (c/o Google) provides an illustration of this procedure:
+
+![Google Cloud Server-Side Encryption](/CloudAppsDev/assets/images/8-encryption-types.png "Google Cloud Server-Side Encryption")
+
+> Figure X: Google Cloud Server-Side Encryption
+
+Now to the developer-selectable options.  You can choose to either use **customer-managed encryption keys** (CMEK) or **customer-supplied encryption keys** (CSEK).  CMEK uses [Google Cloud's key management service (Cloud KMS)](https://cloud.google.com/security-key-management) to automate and simplify key generation and management.  Cloud KMS supports encryption, decryption, signing, and data verification from a cloud-based API, among other services.  CSEK, on the other hand, enables you to generate and manage encryption keys by yourself.  In this regard, you provide the keys, send them to Google for use with your applications/services, and rotate as necessary.  The question here is if you want to manage keys yourself or have your provider manage them, and can really only be answered based on your own internal security procedures and feelings on who should have access to the keys themselves (i.e., should your own team, should your cloud provider?).
 
 ## Cloud Identity and Access Management (IAM)
+
+Another facet of security is authentication (you are who you say you are) and authorization (you have the rights to do <X> activity).  This activity is very common on computing infrastructures in general; in the cloud it extends to who can use which cloud-based resource as well!  Cloud providers will generally provide a service to support this activity. 
+
 
 ## Additional Resources
 

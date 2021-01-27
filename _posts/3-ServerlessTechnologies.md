@@ -259,6 +259,10 @@ The following link will take you to a Google-created Codelab.
 
 ## Additional Resources
 
+* Code Example -- Calling a Cloud Function from Python with Requests/Multiprocessing
+  * [Python 3 Script](/CloudAppsDev/assets/code/cloud-functions/cloud-function-caller.py)
+  * [Python 3 Requirements](/CloudAppsDev/assets/code/cloud-functions/requirements.txt)
+
 * [AWS Lambda Functions](https://aws.amazon.com/lambda/)
 * [Google Cloud Functions](https://cloud.google.com/functions/)
 * [Microsoft Azure Serverless Functions Overview](https://docs.microsoft.com/en-us/azure/architecture/serverless-quest/serverless-overview)
