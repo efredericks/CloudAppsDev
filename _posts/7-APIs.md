@@ -1,6 +1,7 @@
 > By the end of this module, you'll gain experience with interacting with the cloud via application programming interfaces (APIs), learn a bit about managed messaging, and look at the Publish/Subscribe (PubSub) service.
 
 > Module videos:
+* [Python / Flask RESTful calls [11:18]](https://youtu.be/YLTTi9WpVCY)
 
 > Module labs:
 * Create and use a Cloud Endpoint
@@ -33,7 +34,7 @@ Here is a [tutorial on building a RESTful API with Flask (Python) and Postman](h
 
 And here is a [simpler one](https://medium.com/@onejohi/building-a-simple-rest-api-with-python-and-flask-b404371dc699)!
 
-> Video on Python / Flask RESTful calls
+> [Video on Python / Flask RESTful calls [11:18]](https://youtu.be/YLTTi9WpVCY)
 
 > Python Source files: [main1.py](/CloudAppsDev/assets/code/REST/main1.py), [main2.py](/CloudAppsDev/assets/code/REST/main2.py)
 > Python Requirements file: [requirements.txt](/CloudAppsDev/assets/code/REST/requirements.txt)
@@ -45,7 +46,7 @@ $ export FLASK_ENV=development
 $ export FLASK_APP=main1.py
 $ python3 -m flask run
 
-... open a browser with http://localhost:5000
+... open a browser with http://localhost:5000 to see the results.
 ```
 
 > Notes: *Change main1 to main2 when going to the second example*, and your method of running Flask may be different (mine is mainly because I have several versions of Python installed on my machine)

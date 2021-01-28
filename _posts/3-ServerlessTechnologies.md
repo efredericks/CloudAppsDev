@@ -2,7 +2,9 @@
 
 > Module videos:
 > * Core concepts
+> * [Serverless Functions [14:45]](https://youtu.be/yVYwg1IHlPY)
 > * Cloud Functions Codelab Demo 
+> * [Calling Cloud Functions from Python (with multiprocessing and requests) [7:36]](https://youtu.be/TkF07-_H3wA)
 
 >**Note -- interchangeable terms!**
 >
@@ -17,6 +19,8 @@
 A *serverless* function effectively is just a function call you make to a remote server.  The nifty thing here is that you don't have to worry about the whole pesky *setting up a machine to run that function* type of concern.  You simply reference an API endpoint of some sort (e.g., an HTTP call, a RESTful call, a pub/sub trigger, etc.) and then receive data.
 
 > *External video (1:37)*: [A Google Intro to Cloud Functions](https://youtu.be/1r3vMYywNLk)
+
+> *And one by me!: [Serverless Functions [14:45]](https://youtu.be/yVYwg1IHlPY)
 
 The following screenshot shows the list of *currently available* triggers for a Cloud Function.  Note that some are in beta, meaning they are not necessarily ready for prime time yet.
 
@@ -255,6 +259,10 @@ Download the appropriate lab manual from Blackboard and keep it open while you w
 The following link will take you to a Google-created Codelab.  
 
 [Google CodeLab -- Stackdriver Logging and Stackdriver Trace for Cloud Functions](https://codelabs.developers.google.com/codelabs/cloud-function-logs-traces)
+
+### Extra Video
+
+[Calling Cloud Functions from Python (with multiprocessing and requests) [7:36]](https://youtu.be/TkF07-_H3wA)
 
 ## Additional Resources
 
