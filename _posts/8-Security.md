@@ -170,7 +170,40 @@ Last but not least with service accounts, you can grant service accounts access 
 
 ## Best Practices
 
+Let's talk about some best practices now.  Note that these are provided by Google, however they can be definitely applied across the gamut of cloud providers.
 
+### Resource Hierarchy
+
+1. Use Projects to group resources
+2. Check the policy granted on each resource
+3. Use "principle of least privilege
+4. Use logs
+5. Audit membership
+
+These steps follow guidelines similar to what is seem in common system administration practices.  Ensure that you sandbox your environments as necessary, grouping those that may share a trust boundary (Step 1).  Ensure that each resource has the correct policies (i.e., inheritance) applied (Step 2).  Ensure that resources only have the privileges necessary to do their job -- don't go above and beyond (Step 3).  Lastly, ensure policies are routinely audited to ensure they and their memberships are still valid, using logs and audit memberships (Steps 4 and 5).
+
+One other point, generally it is better to grant roles to groups rather than individual users, as users may come and go and cause a maintenance nightmare.  Better to assign roles to groups and then add/remove users to those groups as necessary!  Figure X (c/o Google) shows this process:
+
+[Group-Based Role](/CloudAppsDev/assets/images/8-gc-grouprole.png "Group-Based Role")
+
+> Figure X: Group-Based Role
+
+### Service Accounts
+
+Now, time for service account best practices (again, c/o Google)!
+
+1. Be very careful granting `serviceAccountUser` role
+
+`serviceAccountUser` has all access to all resources tied to that service account -- generally a violation of the 'principle of least privilege!'
+
+2. When you create a service account, give it a display name that clearly identifies its purpose
+3. Establish a naming convention for service accounts
+
+For Steps 2 and 3, a naming convention and purpose of naming can make your life much easier -- you can quickly identify the account and its purpose by intelligently naming them (rather than going through an arduous lookup process!).
+
+4. Establish key rotation policies and methods
+
+Another hopefully self-evident task, but ensure your access keys expire regularly and are rotated!  Not rotating keys is a great way of opening up your cloud accounts to intrusion.
 
 ## Additional Resources
 
