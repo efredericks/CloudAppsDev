@@ -32,11 +32,11 @@ The point of this little diversion is that your cloud provider will do its best 
 
 Keep in mind that lost data not only introduces technical concerns, but the trust you may have built with your users is completely lost.  Would you trust a company with your business if they can't be bothered to practice basic security principles?  
 
-Ok, soapboxing complete.  Let's look at what Google does from a security perspective.   Figure X (c/o Google) presents a view of their infrastructure security layers:
+Ok, soapboxing complete.  Let's look at what Google does from a security perspective.   Figure 1 (c/o Google) presents a view of their infrastructure security layers:
 
 ![Google Infrastructure Security Layers](/CloudAppsDev/assets/images/8-google-layers.png "Google Infrastructure Security Layers")
 
-> Figure X: Google Infrastructure Security Layers
+> Figure 1: Google Infrastructure Security Layers
 
 This figure demonstrates that security must be built into **every single layer of the system as a whole**, from hardware to operational security.  Essentially, security must be distributed throughout all aspects of a project, thereby reducing single points of failure!
 
@@ -46,11 +46,11 @@ Another consideration is that many cloud providers will have some sort of 'bug b
 
 ## Shared Security Model
 
-It is now time to really dig into shared security!  But what does it mean to share security?  If you create a 'normal' application, you are in charge of security of all aspects, from physical access to terminals to remote access to data.  In a shared security model, some responsibility falls on the provider and some falls on the developer (or architect).  Figure X (c/o Google) next illustrates the shared security responsibility between Google and the user (note: this model *may* not hold for all providers -- check with whichever host you select!).
+It is now time to really dig into shared security!  But what does it mean to share security?  If you create a 'normal' application, you are in charge of security of all aspects, from physical access to terminals to remote access to data.  In a shared security model, some responsibility falls on the provider and some falls on the developer (or architect).  Figure 2 (c/o Google) next illustrates the shared security responsibility between Google and the user (note: this model *may* not hold for all providers -- check with whichever host you select!).
 
 ![Google Cloud Shared Security Model](/CloudAppsDev/assets/images/8-shared-security.png "Google Cloud Shared Security Model")
 
-> Figure X: Google Cloud Shared Security Model
+> Figure 2: Google Cloud Shared Security Model
 
 Note that Google's responsibility for security increases with the amount of their provided service.  Generally, your cloud provider will secure the physical infrastructure necessary (e.g., the servers, disks, etc.).  However, the provider won't usually be responsible for securing your users' accounts, ensuring that you protect valuable resources, require you to use authorization/authentication on your public-facing services, etc.  Note that you *can* set a Cloud Function to be triggered via a public HTML call, however this means that *anybody* can trigger it (and as many times as they want).  Pay attention to security please!
 
@@ -60,43 +60,43 @@ Next, let's go over encryption possibilities.
 
 ## Encryption
 
-This is not a class on encryption, so therefore I am going to make the assumption that you understand (or can understand) how encryption and decryption of information works. [If not, here's a nice overview](https://www.geeksforgeeks.org/difference-between-encryption-and-decryption/).  Figure X (c/o Google) demonstrates the encryption options available to you as a developer:
+This is not a class on encryption, so therefore I am going to make the assumption that you understand (or can understand) how encryption and decryption of information works. [If not, here's a nice overview](https://www.geeksforgeeks.org/difference-between-encryption-and-decryption/).  Figure 3 (c/o Google) demonstrates the encryption options available to you as a developer:
 
 ![Google Cloud Encryption Options](/CloudAppsDev/assets/images/8-encryption.png "Google Cloud Encryption Options")
 
-> Figure X: Google Cloud Encryption Options
+> Figure 3: Google Cloud Encryption Options
 
 Looking at this figure you realize you have a range of options available to you.  You might select a simpler option that uses default encryption procedures, however the cost is that you the developer have less control over encryption procedures.  Essentially, the question here is if you want to manage encryption fully by yourself (customer-supplied encryption keys) or do you want your provider to handle some of the burden.  
 
-By default, Google will encrypt data in transit (i.e., being sent/received to/from the servers) using TLS encryption.  Data *at rest* (i.e., lounging about on the servers) is encrypted via AES-256.  Both happen automatically.  Figure X (c/o Google) provides an illustration of this procedure:
+By default, Google will encrypt data in transit (i.e., being sent/received to/from the servers) using TLS encryption.  Data *at rest* (i.e., lounging about on the servers) is encrypted via AES-256.  Both happen automatically.  Figure 4 (c/o Google) provides an illustration of this procedure:
 
 ![Google Cloud Server-Side Encryption](/CloudAppsDev/assets/images/8-encryption-types.png "Google Cloud Server-Side Encryption")
 
-> Figure X: Google Cloud Server-Side Encryption
+> Figure 4: Google Cloud Server-Side Encryption
 
 Now to the developer-selectable options.  You can choose to either use **customer-managed encryption keys** (CMEK) or **customer-supplied encryption keys** (CSEK).  CMEK uses [Google Cloud's key management service (Cloud KMS)](https://cloud.google.com/security-key-management) to automate and simplify key generation and management.  Cloud KMS supports encryption, decryption, signing, and data verification from a cloud-based API, among other services.  CSEK, on the other hand, enables you to generate and manage encryption keys by yourself.  In this regard, you provide the keys, send them to Google for use with your applications/services, and rotate as necessary.  The question here is if you want to manage keys yourself or have your provider manage them, and can really only be answered based on your own internal security procedures and feelings on who should have access to the keys themselves (i.e., should your own team, should your cloud provider?).
 
 ## Cloud Identity and Access Management (IAM)
 
-Another facet of security is authentication (you are who you say you are) and authorization (you have the rights to do <X> activity).  This activity is very common on computing infrastructures in general; in the cloud it extends to who can use which cloud-based resource as well!  Cloud providers will generally provide a service to support this activity.  Figure X (c/o Google) highlights this activity:
+Another facet of security is authentication (you are who you say you are) and authorization (you have the rights to do <X> activity).  This activity is very common on computing infrastructures in general; in the cloud it extends to who can use which cloud-based resource as well!  Cloud providers will generally provide a service to support this activity.  Figure 5 (c/o Google) highlights this activity:
 
 ![Google Cloud IAM](/CloudAppsDev/assets/images/8-iam-overview.png "Google Cloud IAM")
 
-> Figure X: Google Cloud IAM
+> Figure 5: Google Cloud IAM
 
 > Warning, Google Cloud screenshots ahead!
 
-Figure X shows what the **who** in this activity means.  Defining what a "who" is will differ based on your cloud provider.  For Google Cloud, we'll be using a Google account (@gmail.com), a Cloud Identity user (basically, a GSuite account with your own domain), a service account, a Google Group, or some other Workspace domain.  Figure X (c/o Google) highlights these possibilities:
+Figure 6 shows what the **who** in this activity means.  Defining what a "who" is will differ based on your cloud provider.  For Google Cloud, we'll be using a Google account (@gmail.com), a Cloud Identity user (basically, a GSuite account with your own domain), a service account, a Google Group, or some other Workspace domain.  Figure 6 (c/o Google) highlights these possibilities:
 
 ![Google Cloud "Who"](/CloudAppsDev/assets/images/8-gc-who.png "Google Cloud Who")
 
-> Figure X: Google Cloud "Who"
+> Figure 6: Google Cloud "Who"
 
-We'll do a demo of cloud security with Google soon enough, but what if this isn't feasible for your environment.  Perhaps you're rolling your own LDAP/Active Directory environment and you'd rather migrate that in.  This is also possible to do as well!  Figure X (c/o Google) the process flow for routing your own centralized user management service into Google Cloud by way of Cloud Directory Sync:
+We'll do a demo of cloud security with Google soon enough, but what if this isn't feasible for your environment.  Perhaps you're rolling your own LDAP/Active Directory environment and you'd rather migrate that in.  This is also possible to do as well!  Figure 7 (c/o Google) the process flow for routing your own centralized user management service into Google Cloud by way of Cloud Directory Sync:
 
 ![Cloud Directory Sync](/CloudAppsDev/assets/images/8-gc-cloudsync.png "Cloud Directory Sync")
 
-> Figure X: Cloud Directory Sync
+> Figure 7: Cloud Directory Sync
 
 This synchronization approach is only one-way however; Cloud Directory Sync can't make updates to your local environment.  However, you can schedule a synchronization process regularly (e.g., once per day).  Read more about [Cloud Directory Sync](https://support.google.com/a/answer/106368?hl=en) here.
 
@@ -108,63 +108,63 @@ Regardless, what we are getting towards with all this authentication/authorizati
 
 ### Google Cloud IAM
 
-Now let's take a look at Google Cloud IAM.  Figure X (c/o Google) demonstrates how IAM roles and permissions are linked together.  Here, permissions are very fine-grained, enabling you the cloud application developer to give very specific permissions as necessary.
+Now let's take a look at Google Cloud IAM.  Figure 8 (c/o Google) demonstrates how IAM roles and permissions are linked together.  Here, permissions are very fine-grained, enabling you the cloud application developer to give very specific permissions as necessary.
 
 ![Google Cloud IAM Example](/CloudAppsDev/assets/images/8-gc-iam-roles.png "Google Cloud IAM Example")
 
-> Figure X: Google Cloud IAM Example
+> Figure 8: Google Cloud IAM Example
 
 For example, virtual machine management requires the permissions to *create*, *delete*, *start*, *stop*, and *change* an instance.  While there are built-in roles that support these permissions (saving you time), you also can assign very specific permissions as necessary.
 
-Figure X (c/o Google) next shows the resource-specific aspects that are a part of IAM.  Here, we are demonstrating that permissions granted to a specific resource hierarchy also applies to elements below it!  
+Figure 9 (c/o Google) next shows the resource-specific aspects that are a part of IAM.  Here, we are demonstrating that permissions granted to a specific resource hierarchy also applies to elements below it!  
 
 ![Google Cloud IAM Hierarchy Example](/CloudAppsDev/assets/images/8-gc-iam-hierarchy.png "Google Cloud IAM Hierarchy Example")
 
-> Figure X: Google Cloud IAM Hierarchy Example
+> Figure 9: Google Cloud IAM Hierarchy Example
 
 There are three types of roles in Google Cloud: **basic**, **predefined**, and **custom**.  
 
 #### Google Cloud IAM - Basic Role
 
-Figure X (c/o Google) shows the different types of **basic** roles, plus what they are able to do within Google Cloud (by default):
+Figure 10 (c/o Google) shows the different types of **basic** roles, plus what they are able to do within Google Cloud (by default):
 
 ![Google Cloud - Basic Role](/CloudAppsDev/assets/images/8-gc-roles.png "Google Cloud - Basic Roles")
 
-> Figure X: Google Cloud - Basic Roles
+> Figure 10: Google Cloud - Basic Roles
 
 The Viewer role can examine resources, but cannot change their state.  The Editor role can do everything a Viewer can do plus modify state.  The Owner role can do everything an editor can do, plus manage roles and permissions. The Owner role on a project also gives you control over billing and cost management.  Often organizations want someone to be able to control the billing for a project without the right to change the resources in the project. You can grant someone the Billing Administrator role which grants access to billing information, but does not grant access to resources inside the project.
 
 #### Google Cloud IAM - Predefined Role
 
-The **predefined** roles apply to a *specific Google Cloud service* within a project.  Depending on the service, you will have the choice of various roles (similar to Basic roles).  However, again these are specific to a service and not Google Cloud in general!  Figure X (c/o Google) shows how predefined roles can be tweaked as necessary.  For this example, all users assigned to the Google Group shown will have the access rights specified. 
+The **predefined** roles apply to a *specific Google Cloud service* within a project.  Depending on the service, you will have the choice of various roles (similar to Basic roles).  However, again these are specific to a service and not Google Cloud in general!  Figure 11 (c/o Google) shows how predefined roles can be tweaked as necessary.  For this example, all users assigned to the Google Group shown will have the access rights specified. 
 
 ![Google Cloud - Predefined Role](/CloudAppsDev/assets/images/8-gc-predefined.png "Google Cloud - Predefined Role")
 
-> Figure X: Google Cloud - Predefined Role
+> Figure 11: Google Cloud - Predefined Role
 
 #### Google Cloud IAM - Custom Role
 
-The **custom** role offers more granularity than the prior two.  Effectively, it is up to you to design the permissions necessary for this role.  If you decide to go this route, ensure that the role you are specifying only has access to the resources it needs -- don't go overboard and unintentionally introduce a security risk! Figure X (c/o Google) demonstrates the custom role being applied to a Google Group.
+The **custom** role offers more granularity than the prior two.  Effectively, it is up to you to design the permissions necessary for this role.  If you decide to go this route, ensure that the role you are specifying only has access to the resources it needs -- don't go overboard and unintentionally introduce a security risk! Figure 12 (c/o Google) demonstrates the custom role being applied to a Google Group.
 
 ![Google Cloud - Custom Role](/CloudAppsDev/assets/images/8-gc-custom.png "Google Cloud - Custom Role")
 
-Figure X: Google Cloud - Custom Role
+Figure 12: Google Cloud - Custom Role
 
 ### Service Accounts
 
 Thus far we've been discussing IAM roles, however **service accounts** provide another method for cloud security.  These accounts enable **service-to-service** communication/interaction.  For example, an application running in a virtual machine needs to access data in Cloud Storage, however you only want that virtual machine to have access to the data. You can create a service account that's authorized to access that data in Cloud Storage and then attach that service account to the virtual machine.  Such service accounts are named with an email address, often ending in \*.gserviceaccount.com (e.g., PROJECT_NUMBER-compute@developer.gserviceaccount.com).  Think of this as similar to creating a user account for a service in Windows Server or a Linux server.  
 
-> Keep in mind that service accounts can be assigned IAM roles as well.  Figure X (c/o Google) shows a service account being granted the **InstanceAdmin** role over Compute instances.
+> Keep in mind that service accounts can be assigned IAM roles as well.  Figure 13 (c/o Google) shows a service account being granted the **InstanceAdmin** role over Compute instances.
 
 ![Google Cloud - Service IAM](/CloudAppsDev/assets/images/8-gc-service-iam.png "Google Cloud - Service IAM")
 
-> Figure X: Google Cloud - Service IAM
+> Figure 13: Google Cloud - Service IAM
 
-Last but not least with service accounts, you can grant service accounts access to different components within different projects.  Figure X (c/o Google) shows this activity.  
+Last but not least with service accounts, you can grant service accounts access to different components within different projects.  Figure 14 (c/o Google) shows this activity.  
 
 ![Google Cloud - Multiple Service Accounts](/CloudAppsDev/assets/images/8-gc-multiple.png "Google Cloud - Multiple Service Accounts")
 
-> Figure X: Google Cloud - Multiple Service Accounts 
+> Figure 14: Google Cloud - Multiple Service Accounts 
 
 > Here’s a more complex scenario. Say you have an application that’s implemented across a group of virtual machines. One component of your application requires the editor role on another project, `project_b` but another component doesn’t need any permissions on `project_b`. You would create two different service accounts, one for each subgroup of virtual machines. In this example, VMs running `component 1` are granted Editor access to `project B` using Service Account 1. VMs running `component 2` are granted `objectViewer` access to `bucket 1` using Service Account 2. Service account permissions can be changed without recreating VMs.
 
@@ -184,7 +184,7 @@ These steps follow guidelines similar to what is seem in common system administr
 
 One other point, generally it is better to grant roles to groups rather than individual users, as users may come and go and cause a maintenance nightmare.  Better to assign roles to groups and then add/remove users to those groups as necessary!  Figure X (c/o Google) shows this process:
 
-[Group-Based Role](/CloudAppsDev/assets/images/8-gc-grouprole.png "Group-Based Role")
+![Group-Based Role](/CloudAppsDev/assets/images/8-gc-grouprole.png "Group-Based Role")
 
 > Figure X: Group-Based Role
 
