@@ -6,6 +6,8 @@
 
 ## Cloud Security
 
+TODO
+
 
 ## Google Cloud Security Model
 
@@ -76,7 +78,31 @@ Now to the developer-selectable options.  You can choose to either use **custome
 
 ## Cloud Identity and Access Management (IAM)
 
-Another facet of security is authentication (you are who you say you are) and authorization (you have the rights to do <X> activity).  This activity is very common on computing infrastructures in general; in the cloud it extends to who can use which cloud-based resource as well!  Cloud providers will generally provide a service to support this activity. 
+Another facet of security is authentication (you are who you say you are) and authorization (you have the rights to do <X> activity).  This activity is very common on computing infrastructures in general; in the cloud it extends to who can use which cloud-based resource as well!  Cloud providers will generally provide a service to support this activity.  Figure X (c/o Google) highlights this activity:
+
+![Google Cloud IAM](/CloudAppsDev/assets/images/8-iam-overview.png "Google Cloud IAM")
+
+> Figure X: Google Cloud IAM
+
+> Warning, Google Cloud screenshots ahead!
+
+Figure X shows what the **who** in this activity means.  Defining what a "who" is will differ based on your cloud provider.  For Google Cloud, we'll be using a Google account (@gmail.com), a Cloud Identity user (basically, a GSuite account with your own domain), a service account, a Google Group, or some other Workspace domain.  Figure X (c/o Google) highlights these possibilities:
+
+![Google Cloud "Who"](/CloudAppsDev/assets/images/8-gc-who.png "Google Cloud Who")
+
+> Figure X: Google Cloud "Who"
+
+We'll do a demo of cloud security with Google soon enough, but what if this isn't feasible for your environment.  Perhaps you're rolling your own LDAP/Active Directory environment and you'd rather migrate that in.  This is also possible to do as well!  Figure X (c/o Google) the process flow for routing your own centralized user management service into Google Cloud by way of Cloud Directory Sync:
+
+![Cloud Directory Sync](/CloudAppsDev/assets/images/8-gc-cloudsync.png "Cloud Directory Sync")
+
+> Figure X: Cloud Directory Sync
+
+This synchronization approach is only one-way however; Cloud Directory Sync can't make updates to your local environment.  However, you can schedule a synchronization process regularly (e.g., once per day).  Read more about [Cloud Directory Sync](https://support.google.com/a/answer/106368?hl=en) here.
+
+*But what if we don't want to use Google Cloud*? the student asks nervously?
+
+Azure and AWS provide similar cloud identity management possibilities.  While we won't go into detail on them, here are links to the [AWS approach](https://docs.aws.amazon.com/clouddirectory/latest/developerguide/iam_auth_access.html) and [Azure approach](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods).  Note that, if you happen to be a "Windows shop" already, you can take advantage of a nice handshake between Windows Server and Active Directory for authentication.
 
 
 ## Additional Resources
