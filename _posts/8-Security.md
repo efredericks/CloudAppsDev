@@ -104,6 +104,73 @@ This synchronization approach is only one-way however; Cloud Directory Sync can'
 
 Azure and AWS provide similar cloud identity management possibilities.  While we won't go into detail on them, here are links to the [AWS approach](https://docs.aws.amazon.com/clouddirectory/latest/developerguide/iam_auth_access.html) and [Azure approach](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods).  Note that, if you happen to be a "Windows shop" already, you can take advantage of a nice handshake between Windows Server and Active Directory for authentication.
 
+Regardless, what we are getting towards with all this authentication/authorization business is **Identity as a Service** (IDaaS).  You are effectively off-loading security to the cloud service provider, allowing their services to manage access rights.  Neat!
+
+### Google Cloud IAM
+
+Now let's take a look at Google Cloud IAM.  Figure X (c/o Google) demonstrates how IAM roles and permissions are linked together.  Here, permissions are very fine-grained, enabling you the cloud application developer to give very specific permissions as necessary.
+
+![Google Cloud IAM Example](/CloudAppsDev/assets/images/8-gc-iam-roles.png "Google Cloud IAM Example")
+
+> Figure X: Google Cloud IAM Example
+
+For example, virtual machine management requires the permissions to *create*, *delete*, *start*, *stop*, and *change* an instance.  While there are built-in roles that support these permissions (saving you time), you also can assign very specific permissions as necessary.
+
+Figure X (c/o Google) next shows the resource-specific aspects that are a part of IAM.  Here, we are demonstrating that permissions granted to a specific resource hierarchy also applies to elements below it!  
+
+![Google Cloud IAM Hierarchy Example](/CloudAppsDev/assets/images/8-gc-iam-hierarchy.png "Google Cloud IAM Hierarchy Example")
+
+> Figure X: Google Cloud IAM Hierarchy Example
+
+There are three types of roles in Google Cloud: **basic**, **predefined**, and **custom**.  
+
+#### Google Cloud IAM - Basic Role
+
+Figure X (c/o Google) shows the different types of **basic** roles, plus what they are able to do within Google Cloud (by default):
+
+![Google Cloud - Basic Role](/CloudAppsDev/assets/images/8-gc-roles.png "Google Cloud - Basic Roles")
+
+> Figure X: Google Cloud - Basic Roles
+
+The Viewer role can examine resources, but cannot change their state.  The Editor role can do everything a Viewer can do plus modify state.  The Owner role can do everything an editor can do, plus manage roles and permissions. The Owner role on a project also gives you control over billing and cost management.  Often organizations want someone to be able to control the billing for a project without the right to change the resources in the project. You can grant someone the Billing Administrator role which grants access to billing information, but does not grant access to resources inside the project.
+
+#### Google Cloud IAM - Predefined Role
+
+The **predefined** roles apply to a *specific Google Cloud service* within a project.  Depending on the service, you will have the choice of various roles (similar to Basic roles).  However, again these are specific to a service and not Google Cloud in general!  Figure X (c/o Google) shows how predefined roles can be tweaked as necessary.  For this example, all users assigned to the Google Group shown will have the access rights specified. 
+
+![Google Cloud - Predefined Role](/CloudAppsDev/assets/images/8-gc-predefined.png "Google Cloud - Predefined Role")
+
+> Figure X: Google Cloud - Predefined Role
+
+#### Google Cloud IAM - Custom Role
+
+The **custom** role offers more granularity than the prior two.  Effectively, it is up to you to design the permissions necessary for this role.  If you decide to go this route, ensure that the role you are specifying only has access to the resources it needs -- don't go overboard and unintentionally introduce a security risk! Figure X (c/o Google) demonstrates the custom role being applied to a Google Group.
+
+![Google Cloud - Custom Role](/CloudAppsDev/assets/images/8-gc-custom.png "Google Cloud - Custom Role")
+
+Figure X: Google Cloud - Custom Role
+
+### Service Accounts
+
+Thus far we've been discussing IAM roles, however **service accounts** provide another method for cloud security.  These accounts enable **service-to-service** communication/interaction.  For example, an application running in a virtual machine needs to access data in Cloud Storage, however you only want that virtual machine to have access to the data. You can create a service account that's authorized to access that data in Cloud Storage and then attach that service account to the virtual machine.  Such service accounts are named with an email address, often ending in \*.gserviceaccount.com (e.g., PROJECT_NUMBER-compute@developer.gserviceaccount.com).  Think of this as similar to creating a user account for a service in Windows Server or a Linux server.  
+
+> Keep in mind that service accounts can be assigned IAM roles as well.  Figure X (c/o Google) shows a service account being granted the **InstanceAdmin** role over Compute instances.
+
+![Google Cloud - Service IAM](/CloudAppsDev/assets/images/8-gc-service-iam.png "Google Cloud - Service IAM")
+
+> Figure X: Google Cloud - Service IAM
+
+Last but not least with service accounts, you can grant service accounts access to different components within different projects.  Figure X (c/o Google) shows this activity.  
+
+![Google Cloud - Multiple Service Accounts](/CloudAppsDev/assets/images/8-gc-multiple.png "Google Cloud - Multiple Service Accounts")
+
+> Figure X: Google Cloud - Multiple Service Accounts 
+
+> Here’s a more complex scenario. Say you have an application that’s implemented across a group of virtual machines. One component of your application requires the editor role on another project, `project_b` but another component doesn’t need any permissions on `project_b`. You would create two different service accounts, one for each subgroup of virtual machines. In this example, VMs running `component 1` are granted Editor access to `project B` using Service Account 1. VMs running `component 2` are granted `objectViewer` access to `bucket 1` using Service Account 2. Service account permissions can be changed without recreating VMs.
+
+## Best Practices
+
+
 
 ## Additional Resources
 
