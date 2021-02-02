@@ -168,10 +168,6 @@ To help you understand load balancing, we'll run through two more QwikLabs.  The
 > Lab 3: [QwikLabs - HTTP Load Balancer with Cloud Armor (GSP215)](https://run.qwiklabs.com/focuses/1232?parent=catalog)
 > Lab 4: [QwikLabs - Create an Internal Load Balancer (GSP216)](https://run.qwiklabs.com/focuses/1250?parent=catalog)
 
-
-
-
-
 ## Additional Resources
 
 * TBD
