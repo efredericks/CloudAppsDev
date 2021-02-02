@@ -4,6 +4,12 @@
 
 > Module labs:
 
+* Lab 1: [QwikLabs - Multiple VPC Networks (GSP211)](https://run.qwiklabs.com/focuses/1230?parent=catalog)
+* Lab 2: [QwikLabs - VPC Networks: Controlling Access (GSP213)](https://run.qwiklabs.com/focuses/1231?parent=catalog)
+* Lab 3: [QwikLabs - HTTP Load Balancer with Cloud Armor (GSP215)](https://run.qwiklabs.com/focuses/1232?parent=catalog)
+* Lab 4: [QwikLabs - Create an Internal Load Balancer (GSP216)](https://run.qwiklabs.com/focuses/1250?parent=catalog)
+
+
 ## Cloud Networking
 
 Time to discuss networking!  Sure would be a shame if all those nifty services you're working on couldn't talk to the rest of the world, right?  Well, here we're going to cover how to get them all talking. 
@@ -135,6 +141,9 @@ Basically, the point to keep in mind is that there is an implied `Deny All` rule
 
 However, the best way to get comfortable with VPC networking is with hands-on activities.  Here are two labs I'd like you to run through (see assignments in Blackboard for deliverables).  They will give you experience with VPC connectivity and access control, respectively:
 
+* Lab 1: [QwikLabs - Multiple VPC Networks (GSP211)](https://run.qwiklabs.com/focuses/1230?parent=catalog)
+* Lab 2: [QwikLabs - VPC Networks: Controlling Access (GSP213)](https://run.qwiklabs.com/focuses/1231?parent=catalog)
+
 
 ## Load Balancing
 
@@ -157,6 +166,8 @@ Essentially, you can set how you want your network load to be distributed (and y
 
 To help you understand load balancing, we'll run through two more QwikLabs.  These will help you learn how to setup an HTTP load balancer (similar to the above figure) and load balance based on internal workloads, respectively (again, see Blackboard for deliverable expectations).
 
+* Lab 3: [QwikLabs - HTTP Load Balancer with Cloud Armor (GSP215)](https://run.qwiklabs.com/focuses/1232?parent=catalog)
+* Lab 4: [QwikLabs - Create an Internal Load Balancer (GSP216)](https://run.qwiklabs.com/focuses/1250?parent=catalog)
 
 
 ## Additional Resources
