@@ -155,7 +155,7 @@ Since you're building your apps in the cloud, you're probably going to expect to
 
 Essentially, you can set how you want your network load to be distributed (and yes, this can be based on the routes that we talked about earlier).  Let's take a look at an HTTP load balancer (i.e., distributing traffic amongst web servers) in Figure X (c/o Google) - note that the numbers in the figure demonstrate the order in which traffic is routed:
 
-![HTTP Load Balancer](/CloudApsDev/assets/images/9-http-load-balancer.png "HTTP Load Balancer")
+![HTTP Load Balancer](/CloudAppsDev/assets/images/9-http-load-balancer.png "HTTP Load Balancer")
 
 > Figure X: HTTP Load Balancer
 

@@ -118,7 +118,7 @@ For example, virtual machine management requires the permissions to *create*, *d
 
 Figure 9 (c/o Google) next shows the resource-specific aspects that are a part of IAM.  Here, we are demonstrating that permissions granted to a specific resource hierarchy also applies to elements below it!  
 
-![Google Cloud IAM Hierarchy Example](/CloudAppsDev/assets/images/8-gc-iam-hierarchy.png "Google Cloud IAM Hierarchy Example")
+![Google Cloud IAM Hierarchy Example](/CloudAppsDev/assets/images/8-gc-iam-role-hierarchy.png "Google Cloud IAM Hierarchy Example")
 
 > Figure 9: Google Cloud IAM Hierarchy Example
 
@@ -128,7 +128,7 @@ There are three types of roles in Google Cloud: **basic**, **predefined**, and *
 
 Figure 10 (c/o Google) shows the different types of **basic** roles, plus what they are able to do within Google Cloud (by default):
 
-![Google Cloud - Basic Role](/CloudAppsDev/assets/images/8-gc-roles.png "Google Cloud - Basic Roles")
+![Google Cloud - Basic Role](/CloudAppsDev/assets/images/8-roles.png "Google Cloud - Basic Roles")
 
 > Figure 10: Google Cloud - Basic Roles
 
@@ -156,7 +156,7 @@ Thus far we've been discussing IAM roles, however **service accounts** provide a
 
 > Keep in mind that service accounts can be assigned IAM roles as well.  Figure 13 (c/o Google) shows a service account being granted the **InstanceAdmin** role over Compute instances.
 
-![Google Cloud - Service IAM](/CloudAppsDev/assets/images/8-gc-service-iam.png "Google Cloud - Service IAM")
+![Google Cloud - Service IAM](/CloudAppsDev/assets/images/8-gc-sa-iam.png "Google Cloud - Service IAM")
 
 > Figure 13: Google Cloud - Service IAM
 
