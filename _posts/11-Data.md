@@ -81,11 +81,87 @@ First of all, let's talk about [Hadoop](https://hadoop.apache.org/) and [Spark](
 Here are some quotes from Google on the key Dataproc features:
 
 > Dataproc is priced at 1 cent per virtual CPU per cluster per hour, on top of any other Google Cloud resources you use. In addition, Dataproc clusters can include preemptible instances that have lower compute prices. You use and pay for things only when you need them.
+
 > Dataproc clusters are quick to start, scale, and shutdown, with each of these operations taking 90 seconds or less, on average. Clusters can be created and scaled quickly with a variety of virtual machine types, disk sizes, number of nodes, and networking options.
+
 > You can use Spark and Hadoop tools, libraries, and documentation with Dataproc. Dataproc provides frequent updates to native versions of Spark, Hadoop, Pig, and Hive, so there’s no need to learn new tools or APIs, and it’s possible to move existing projects or ETL pipelines without redevelopment.
+
 > You can easily interact with clusters and Spark or Hadoop jobs, without the assistance of an administrator or special software, through the Cloud Console, the Cloud SDK, or the Dataproc REST API. When you're done with a cluster, simply turn it off, so money isn’t spent on an idle cluster.
+
 > Image versioning allows you to switch between different versions of Apache Spark, Apache Hadoop, and other tools.
+
 > The built-in integration with Cloud Storage, BigQuery, and Cloud Bigtable ensures data will not be lost. This, together with Cloud Logging and Cloud Monitoring, provides a complete data platform and not just a Spark or Hadoop cluster. For example, you can use Dataproc to effortlessly ETL terabytes of raw log data directly into BigQuery for business reporting.
+
+Figure X (c/o Google) shows the "typical" Spark/Hadoop workflow you might use if you weren't looking to the cloud for service management.
+
+![Typical Spark/Hadoop Workflow](/CloudAppsDev/assets/images/11-spark-hadoop-flow.png "Typical Spark/Hadoop Workflow")
+
+> Figure X: Typical Spark/Hadoop Workflow
+
+Essentially, you are in charge of managing and configuring your infrastructure and services, optimizing and debugging for your particular needs, and only *then* running your big data processing applications.  Dataproc mimics the above flow, however the process is managed by Google (or your provider) to support your needs.  This process not only reduces the infrastructure overhead but also the cost.  If you recall, all these services are ephemeral, meaning that they'll be running efficiently and cost-effectively (or, as needed).
+
+Another nice aspect is that the *compute* and *storage* aspects are neatly separated, whereas in traditional deployments it is possible that they are on the same server.  If a server is down for maintenance for some reason, then there is the chance that your data is unavailable as well.  In Dataproc storage is handled via Cloud Storage, enabling that neat separation.  Another benefit is that the time from job submission to start is very small (approximately 90 seconds on average) resulting from this separation as well.
+
+### Dataproc Workflows
+
+Figure X (c/o Google) shows the relationship between cluster, job, and output.  Here, you can see how the cluster agent fit together to create jobs (of varying types), resulting in the outputs you need for your cloud applications.
+
+![Spark/Hadoop Jobs](/CloudAppsDev/assets/images/11-spark-hadoop-jobs.png "Spark/Hadoop Jobs")
+
+> Figure X: Spark/Hadoop Jobs
+
+* [Dataproc Workflow Templates](https://cloud.google.com/dataproc/docs/concepts/workflows/overview)
+* [Life of a Dataproc job](https://cloud.google.com/dataproc/docs/concepts/jobs/life-of-a-job)
+
+Next, Figure X (c/o Google) shows the specific cloud services that are used for each aspect of Dataproc, from your data source to monitoring to analytics.   Depending on the compute/query you need to perform, there is a managed service that can be used to support your application.  For instance, if you need to log or monitor your job Cloud Logging/Cloud Monitoring could be used, respectively (in addition to whatever else you prefer).
+
+![Dataproc Pieces](/CloudAppsDev/assets/images/11-dataproc-no-maintenance.png "Dataproc Pieces")
+
+> Figure X: Dataproc Pieces
+
+Next, you'll be blasted with a series of slides and quotes from Google, as they provide guidance on how to use Dataproc in various situations you will indubitably find yourself in.
+
+### Dataproc Use Cases
+
+> Quote warning: this all comes directly from Google (yet the advice is still applicable for AWS/Microsoft).
+
+![Dataproc/Log Processing](/CloudAppsDev/assets/images/11-dataproc-log.png "Dataproc/Log Processing")
+
+> Figure X: "Dataproc/Log Processing"
+
+> Let's look at a few use cases. In this example, a customer processes 50 gigabytes of text log data per day from several sources, to produce aggregated data that are then loaded into databases from which metrics are gathered for daily reporting, management dashboards, and analysis. Up until now, they have used a dedicated on-premises cluster to store and process the logs with MapReduce.
+
+> So what's the solution? Firstly, Cloud Storage can act as a landing zone for the log data at a low cost. A Dataproc cluster can then be created in less than 2 minutes to process this data with their existing MapReduce. Once completed, the Dataproc cluster can be removed immediately.
+
+> In terms of value, instead of running all the time and incurring costs even when not used, Dataproc only runs to process the logs, which saves money and reduces complexity.
+
+![Dataproc/Ad Hoc Analysis](/CloudAppsDev/assets/images/11-dataproc-ad-hoc.png "Dataproc/Ad Hoc Analysis")
+
+> Figure X: "Dataproc/Ad Hoc Analysis"
+
+> In this organization, analysts rely on, and are comfortable using, Spark Shell. However, their IT department is concerned about the increase in usage, and how to scale their cluster, which is running in Standalone mode.
+
+> As a solution, Dataproc can create clusters that scale for speed and mitigate any single point of failure. Since Dataproc supports Spark, Spark SQL, and PySpark, they could use the web interface, Cloud SDK, or the native Spark Shell via SSH.
+
+> In terms of value, Dataproc quickly unlocks the power of the cloud for anyone without added technical complexity. Running complex computations now take seconds instead of minutes or hours.
+
+> * Additional information on [Spark Shell](https://spark.apache.org/docs/latest/quick-start.html#interactive-analysis-with-the-spark-shell)
+> * Additional information on [Spark Standalone Mode](https://spark.apache.org/docs/latest/spark-standalone.html)
+
+![Dataproc/Machine Learning](/CloudAppsDev/assets/images/11-dataproc-ml.png "Dataproc/Machine Learning")
+
+> Figure X: "Dataproc/Machine Learning"
+
+> In this third example, a customer uses the Spark Machine Learning Libraries (MLlib) to run classification algorithms on very large datasets. They rely on cloud-based machines where they install and customize Spark.
+
+> Because Spark and the MLlib can be installed on any Dataproc cluster, the customer can save time by quickly creating Dataproc clusters. Any additional customizations can be applied easily to the entire cluster through initialization actions. To keep an eye on workflows, they can use the built-in Cloud Logging and Monitoring.
+
+> In terms of value, resources can be focused on the data with Dataproc, not spent on cluster creation and management. Integrations with new Google Cloud products also unlock new features for Spark clusters.
+
+> * Additional information on the [Spark Machine Learning Libraries (MLlib)](http://spark.apache.org/docs/latest/mllib-guide.html)
+
+
+
 
 
 ## Additional Resources
