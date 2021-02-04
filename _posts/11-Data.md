@@ -2,6 +2,8 @@
 
 > Module videos:
 
+* [Google BigQuery - Analytics Data Warehouse (1:58)](https://youtu.be/eyBK9nj-7AA)
+
 > Module labs:
 
 ## Data (More Specifically - of the Big Variety)
@@ -169,10 +171,67 @@ Ok, enough preamble.  Let's do some Dataproc work!
 * [Dataproc: Qwik Start (Console)](https://run.qwiklabs.com/focuses/586?parent=catalog)
 * [Dataproc: Hadoop/Spark](https://www.qwiklabs.com/focuses/672?parent=catalog)
 
-## Dataflow (or, how I learned to stop worrying and love the datastream)
+## Dataflow (*or, how I learned to stop worrying and love the datastream*)
 
 > NO MOM, IT'S NOT A DATED REFERENCE THEY'LL UNDERSTAND. ಠ_ಠ
 
+Time to talk about a massive pipeline of data flowing through your applications!  Dataflow is based on [Apache Beam](https://beam.apache.org/) and support workflows such as extract-transform-load, batch, and streaming.  Dataflow can be used to build pipelines for data, including monitoring and analysis.  Nicely, these pipelines support batch and stream processing, so you are able to specify your preferred method of data ingress/egress.  As with all Google Cloud services, scalability and on-demand access are built in to support your needs.  
+
+If you want to extend your data pipeline, you can incorporate it with other cloud services, including logging, Cloud Storage, Pub/Sub, BigQuery, and even external services such as [Apache Kafka](https://kafka.apache.org/) and HDFS.
+
+There are also pre-baked templates for you to select to get quickly up and running with Dataflow, including streaming and batch templates.  Figure X (c/o Google) shows some of those that are available.
+
+![Dataflow Templates](/CloudAppsDev/assets/images/11-dataflow-templates.png "Dataflow Templates")
+
+> Figure X: Dataflow Templates
+
+One of the side benefits of using templates is the reduction in effort for pipeline code development and management.  But what is a pipeline you ask?  Well..
+
+![A pipeline (c/o Google)](/CloudAppsDev/assets/images/11-pipeline.png "A pipeline (c/o Google)")
+
+> Figure X: A pipeline (c/o Google)
+
+A pipeline is a **complete** process on 1+ datasets, starting from a **source** (of some data) and ending with a **sink** (where your data is going to).  Along the way there may be a series of transformations applied to finesse/understand the data (e.g., filter, join, aggregate, etc.).  The data may also be shaped into a form understandable by your application(s).  The **sink** is where the data needs to end up -- either internal to Google Cloud, external to some other location, or even your original **source**!  The pipeline is typically modeled as a directed acyclic graph (DAG).  
+
+In the figure you also see a `PCollection`.  This object is a container of near-unlimited size representing the data within the pipeline.  They can be bounded or unbounded and represent the inputs/outputs to transformations.  A transformation acts on one or more PCollections, transforming each piece of data in that collection, and then deliver a new PCollection as output.  
+
+Sources/Sinks generally have an API that provide the capabilities for reading data into and out of a pipeline.  For Google Cloud Dataflow, you have the ability to use built-in sinks/sources or provide your own custom interface.  
+
+Figure X (c/o Google) shows a pipeline with multiple transform paths with a bit more detail on what can be inside of a PCollection:
+
+![Dataflow - Multiple Paths](/CloudAppsDev/assets/images/11-pipeline-multiple.png "Dataflow - Multiple Paths")
+
+> Figure X: Dataflow - Multiple Paths
+
+Note here that the transform is essentially filtering based on the first letter of a name.  We assume a sink exists along this pipeline, however it is not shown here for presentation purposes.   Figure X (c/o Google) next shows an additional transform (`flatten`) where the two separate data flows are merged into a single PCollection (essentially joining our two prior PCollections).  
+
+![Dataflow - Merge Paths](/CloudAppsDev/assets/images/11-pipeline-merge.png "Dataflow - Merge Paths")
+
+> Figure X: Dataflow - Merge Paths
+
+Are we limited to a single source or sink?  Nope!  You can feed your pipeline from multiple sources and deposit those PCollections wherever you'd like.  You can use internal (to Google Cloud) or external (data feeds) sources to seed your pipeline and transform them as you'd like. 
+
+Now let's take a look at a full example.  Figure X (c/o Google) shows a full pipeline, reading data from BigQuery and sending it towards Cloud Storage.  Transforms along the path include map and reduce operations (to effectively filter and join) -- these are fairly common transforms in such an environment.  Of interest to you, the cloud developer, is that each step is *elastically-scaled*.  You do not need to create and manage a cluster!  Resources are provisioned on demand, rebalanced as necessary, and spun down when done.  
+
+## Last but not least (for Dataproc/Dataflow at least)...
+
+How do you choose, Dataproc or Dataflow?  Figure X (c/o Google) shows a decision tree you can use to select the appropriate service:
+
+![Dataproc vs. Dataflow](/CloudAppsDev/assets/images/11-dataproc-v-dataflow.png "Dataproc vs. Dataflow")
+
+> Figure X: Dataproc vs. Dataflo  w
+
+Each service can perform the traditional map-reduce operations necessary for big data management.  The key difference here is that Dataflow is *serverless*, whereas Dataproc is more akin to managing a Hadoop/Spark cluster (albeit, as a service).   
+
+**Lab Choices**
+
+* [Dataflow: Qwik Start - Templates](https://run.qwiklabs.com/focuses/1101?parent=catalog)
+* [Dataflow: Qwik Start - Python](https://run.qwiklabs.com/focuses/1100?parent=catalog)
+* [Processing Data with Dataflow](https://www.qwiklabs.com/focuses/1159?parent=catalog)
+
+## BigQuery
+
+First off, watch this video: [Google BigQuery - Analytics Data Warehouse (1:58)](https://youtu.be/eyBK9nj-7AA)
 
 
 
