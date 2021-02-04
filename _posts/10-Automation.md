@@ -6,7 +6,7 @@
 
 ## Cloud Automation
 
-##   Additional Resources
+## Additional Resources
 
 * TBD
 
