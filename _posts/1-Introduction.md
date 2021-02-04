@@ -8,6 +8,8 @@ Plus, assuming you are registered for the course at GVSU, you will receive free 
 
 What is the cloud?  [Put this lovely video on in the background and listen to it! [42:36]](https://www.youtube.com/watch?v=JtUIQz_EkUw)
 
+> Note, this material is liberally based upon the materials provided by [Google's Cloud Computing Fundamentals course](https://edu.google.com/programs/cloud-computing-curriculum/?modal_active=none).
+
 ## What is Cloud Computing?
 
 > Module Video: <a href="https://youtu.be/AtRZiBrxKnI" target="_blank">Intro to the Cloud [8:14]</a>
