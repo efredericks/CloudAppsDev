@@ -160,6 +160,20 @@ Next, you'll be blasted with a series of slides and quotes from Google, as they 
 
 > * Additional information on the [Spark Machine Learning Libraries (MLlib)](http://spark.apache.org/docs/latest/mllib-guide.html)
 
+Ok, enough preamble.  Let's do some Dataproc work!
+
+> TODO: LAB
+
+**Lab choices**
+
+* [Dataproc: Qwik Start (Console)](https://run.qwiklabs.com/focuses/586?parent=catalog)
+* [Dataproc: Hadoop/Spark](https://www.qwiklabs.com/focuses/672?parent=catalog)
+
+## Dataflow (or, how I learned to stop worrying and love the datastream)
+
+> NO MOM, IT'S NOT A DATED REFERENCE THEY'LL UNDERSTAND. ಠ_ಠ
+
+
 
 
 
