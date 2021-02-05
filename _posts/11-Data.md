@@ -233,9 +233,45 @@ Each service can perform the traditional map-reduce operations necessary for big
 
 First off, watch this video: [Google BigQuery - Analytics Data Warehouse (1:58)](https://youtu.be/eyBK9nj-7AA)
 
+Now, let's take a look at BigQuery.  Figure X (c/o Google) shows how BigQuery can be used for [data warehousing](https://en.wikipedia.org/wiki/Data_warehouse).  If you're not familiar with that term, effectively it is an approach for making business decisions on datasets (and grad-level database classes thrive on such topics).
 
+![BigQuery Overview](/CloudAppsDev/assets/images/11-bq.png "BigQuery Overview")
 
+> Figure X: BigQuery Overview
 
+However, if we recall from earlier BigQuery is *serverless*, meaning you don't have to deal with that pesky infrastructure.  What you see in the above figure are what comprises BigQuery:
+
+* Datasets are just collections of tables divided amongst your analytical domains/business lines/etc.  A dataset is *tied to a Google Cloud project*.
+* Data lakes can comprise multiple objects, including Cloud Storage/Google Drive files and Cloud BigTable transactions. 
+  * You can also define a schema for BigQuery to support external data queries
+* Tables and views function similarly to a traditional data warehouse -- meaning that your (ANSI-2011 compliant) SQL queries are supported
+* Cloud IAM can be used to grant/revoke access to BigQuery as with all other services (replacing your traditional SQL `GRANT`/`REVOKE` statements)
+
+### Why BigQuery (or similar) over Data Warehousing
+
+Figure X (c/o Google) shows the differences between BigQuery and traditional data warehousing.  The biggest takeaway here is that it is serverless and therefore fully managed by Google behind the scenes, so you don't necessarily need to worry about keeping it up to date.
+
+One of the nice benefits, aside from traditional warehousing concerns such as business analytics (outside of the scope of this class), is that you can also apply machine learning and artificial intelligence algorithms to datasets within BigQuery -- meaning you can perform training and testing on datasets of a massive scale.
+
+As with all other services, resources are available on-demand and are scalable as needed.  Again, you pay for what you need.
+
+### Loading Data
+
+How do we get data *into* BigQuery?  As we've mentioned before, it can come from Cloud Storage, Google Drive files, external sources (assuming they're *federated* entities), or even publicly available datasets from Google.  You may end up using the `gsutil` program (a Python application) from the Cloud SDK.  This tool lets you talk to Cloud Storage via a command line interface and is quite helpful for BigQuery work.  Figure X (c/o Google) demonstrates the workflow:
+
+[BigQuery Workflow](/CloudAppsDev/assets/images/11-bq-flow.png "BigQuery Workflow")
+
+Figure X: BigQuery Workflow
+
+We'll play with BigQuery momentarily.  However it is worth noting you can use multiple tools for working with BigQuery, external to Google.  Figure X (c/o Google, oddly enough) shows the tools (currently partnered with Google) you can use.
+
+[BigQuery Partners](/CloudAppsDev/assets/images/11-bq-partners.png "BigQuery Partners")
+
+> Figure X: BigQuery Partners
+
+Time for practical experience!  
+
+* [QwikLabs - Dataprep: Qwik Start](https://google.qwiklabs.com/focuses/111?parent=catalog)
 
 ## Additional Resources
 
