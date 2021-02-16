@@ -27,7 +27,59 @@ Figure 1 gives an overview of the Cloud Deployment Manager.
 
 Consider all of the tasks you need to orchestrate as a budding cloud applications developer.  You will need to understand how to spin up resources in multiple locations and at multiple levels of abstraction (IaaS, PaaS, SaaS) and more than likely *need to do this more than once*!  Consider if you were to setup a set of VMs for your team.  You will need to manage not only the resources themselves, but access to those resources, ensure they are properly accessible, secure, etc.  Now consider turning all of these activities you would do by hand in a web interface into a template.  It nearly becomes your typical infrastructure-based scripting task (creating bash/PowerShell scripts to deploy resources, etc.).
 
-Deployment Manager uses [YAML](https://yaml.org/), a specification format commonly used for defining configuration files.  
+Deployment Manager uses [YAML](https://yaml.org/), a specification format commonly used for defining configuration files.  Other open-source tools are supported for performing deployments, including [Terraform](https://www.terraform.io/), [Puppet](https://puppet.com/), [Ansible](https://www.ansible.com/), [Packer](https://www.packer.io/), and [Chef](https://www.chef.io/products/chef-automate).
+
+## Things we care about
+
+When performing deployments, we are mainly interested in ensuring that our deployments are running correctly, however we'll also need to be concerned about what is happening while they do so.  Figure 2 (c/o Google) shows some of the activities we'll need to keep up with.
+
+![Critical Monitoring and Management Activities](/CloudAppsDev/assets/images/10-critical.png "Critical Monitoring and Management Activities")
+
+> Figure 2: Critical Monitoring and Management Activities
+
+These activities include:
+
+* Performance monitoring
+* Logging/error reporting
+* Performance bottlenecks
+* Real-time debugging
+
+Let's say we've done a successful deployment of some web application, infrastructure, service, etc. (hint: you'll be doing this very shortly).  You will care about providing an acceptable level of performance, uptime, and health of your deployed service.  How do we know that and/or measure that?
+
+We'll need to gather **metrics**, **events**, and **metadata** from the various components you already have experience with.  These can include cloud-based logging services that you've seen already, or custom logs that you create as part of your service/application.  If an error occurs then you should raise an alert so that it can be easily identified when parsing through your logs.  Applying filters to your logs will help immensely as well given that there will be a **lot** of it to get through...
+
+But what about that quality of service (QoS)?  QoS can manifest through laggy requests, seemingly-slow performance, etc.  Effectively, you will need to be able to triangulate where bottlenecks occur and how to manage them.
+
+How do we do these things (at least, in Google Cloud)?  Well....Figure 3 (c/o Google) shows the tools you can use to do this:
+
+![Google Cloud Operations Suite](/CloudAppsDev/assets/images/10-ops.png "Google Cloud Operations Suite")
+
+> Figure 3: Google Cloud Operations Suite
+
+We'll now go into what these tools do for you, however they effectively provide insights into your various services, deployments, containers, etc.
+
+Forewarning: lots of Google-provided slides in the following sections!
+
+### Cloud Monitoring
+
+Cloud Monitoring is a full-stack monitoring service that provides insights into your cloud-based resources automatically.  Expect dashboards and visualization tools to give you nice overviews (and detailed views) of trends that may impact your applications.  Effectively, you get an aggregated view of your cloud that prevents you from having to go into each separate service to perform your monitoring/analysis tasks.  You can drill down to get more information as needed.
+
+![Google Cloud Monitoring](/CloudAppsDev/assets/images/10-cloudmon.png "Google Cloud Monitoring")
+
+> Figure 4: Google Cloud Monitoring
+
+### Cloud Logging
+
+You should have experience Cloud Logging already, however it features fully in the operations suite.  It integrates with the other tools here (Monitoring, Trace, Error Reporting, and Debugger) to enable you to quickly root cause problems.  Think of it as a nice interface to logs you may already experience in your common IT tasks, however cloud-focused and centralized.
+
+![Google Cloud Logging](/CloudAppsDev/assets/images/10-cloudlog.png "Google Cloud Logging")
+
+> Figure 4: Google Cloud Logging
+
+As we are in the cloud, the Logging service is intended to very quickly provide you with metrics that you need (for instance, latency monitoring, real-time system logging, etc.).  You can also get into advanced log analytics (as you might with a tool such as [Splunk](https://www.splunk.com/)).
+
+### Cloud Error Reporting
+
 
 ## Additional Resources
 
