@@ -80,6 +80,19 @@ As we are in the cloud, the Logging service is intended to very quickly provide 
 
 ### Cloud Error Reporting
 
+With Error Reporting you can get alerts as to exceptions in real time, as well as aggregated in a dashboard for later analysis.  Error Reporting essentially analyzes the exceptions flowing through your cloud services and aggregates them in a manner suitable to the needs of your language/framework.  Multiple languages, such as Go, Java, .NET, Node.js, Python, PHP, and Ruby are currently supported for monitoring.  RESTful calls are also supported from your language of choice.
+
+![Google Cloud Error Reporting](/CloudAppsDev/assets/images/10-clouderr.png "Google Cloud Error Reporting")
+
+> Figure 4: Google Cloud Error Reporting
+
+### Cloud Trace
+
+![Google Cloud Trace](/CloudAppsDev/assets/images/10-cloudtrace.png "Google Cloud Trace")
+
+> Figure 4: Google Cloud Trace
+
+
 
 ## Additional Resources
 
