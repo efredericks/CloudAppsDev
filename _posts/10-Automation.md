@@ -114,9 +114,9 @@ Last but not least, we have Profiler.  This service watches CPU and memory of yo
 
 Let's get up and running with Cloud Monitoring.  This lab will help you understand some of these tools we've shown you.
 
-> [QwikLabs - Cloud Monitoring: Qwik Start ()](https://google.qwiklabs.com/focuses/10600?parent=catalog)
-> [QwikLabs - Monitoring and Logging for Cloud Functions ()](https://www.qwiklabs.com/focuses/1833?parent=catalog)
-> [Codelabs - Analyze Production Performance with Cloud Profiler](https://codelabs.developers.google.com/codelabs/cloud-profiler)
+* [QwikLabs - Cloud Monitoring: Qwik Start ()](https://google.qwiklabs.com/focuses/10600?parent=catalog)
+* [QwikLabs - Monitoring and Logging for Cloud Functions ()](https://www.qwiklabs.com/focuses/1833?parent=catalog)
+* [Codelabs - Analyze Production Performance with Cloud Profiler](https://codelabs.developers.google.com/codelabs/cloud-profiler)
 
 
 ## Additional Resources
