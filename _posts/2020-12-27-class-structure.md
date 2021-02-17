@@ -17,7 +17,7 @@ Given the little time we have together, this class is going to comprise a lot of
 
 * This website
 
-This is intended to be your "textbook" for the class.  It will comprise a series of blog posts ordered by week and module number.  I will do my best to give you as much written information as possible to search through, with additional 10-15 minute videos to support each post.  Generally I will be creating the videos to explain a concept or walk you through a technique.
+This is intended to be your "textbook" for the class.  It will comprise a series of blog posts ordered by week and module number.  I will do my best to give you as much written information as possible to search through, with additional 10-15 minute videos to support each post.  Generally I will be creating the videos to explain a concept or walk you through a technique. 
 
 * Codelabs
 
