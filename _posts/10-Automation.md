@@ -74,7 +74,7 @@ You should have experience Cloud Logging already, however it features fully in t
 
 ![Google Cloud Logging](/CloudAppsDev/assets/images/10-cloudlog.png "Google Cloud Logging")
 
-> Figure 4: Google Cloud Logging
+> Figure 5: Google Cloud Logging
 
 As we are in the cloud, the Logging service is intended to very quickly provide you with metrics that you need (for instance, latency monitoring, real-time system logging, etc.).  You can also get into advanced log analytics (as you might with a tool such as [Splunk](https://www.splunk.com/)).
 
@@ -84,14 +84,39 @@ With Error Reporting you can get alerts as to exceptions in real time, as well a
 
 ![Google Cloud Error Reporting](/CloudAppsDev/assets/images/10-clouderr.png "Google Cloud Error Reporting")
 
-> Figure 4: Google Cloud Error Reporting
+> Figure 6: Google Cloud Error Reporting
 
 ### Cloud Trace
 
+Cloud Trace is a service for *tracing* your applications/services and aggregating latency information within the Cloud Console.  You can use this service for checking responsiveness, bottlenecks, etc.  Here, reports can also be generated as well.  Definitely a useful tool for profiling your cloud applications!
+
 ![Google Cloud Trace](/CloudAppsDev/assets/images/10-cloudtrace.png "Google Cloud Trace")
 
-> Figure 4: Google Cloud Trace
+> Figure 7: Google Cloud Trace
 
+### Cloud Debugger
+
+Debugger enables you to debug your applications in real time without stopping it.  Here, you can take a snapshot of your running application and inject logging statements, where the new logging statements are then output as though they were part of the running application.  One nice aspect is that debug sessions can be shared as well by sharing the URL of the console in question.
+
+![Google Cloud Debugger](/CloudAppsDev/assets/images/10-clouddebugger.png "Google Cloud Debugger")
+
+> Figure 8: Google Cloud Debugger
+
+### Cloud Profiler
+
+Last but not least, we have Profiler.  This service watches CPU and memory of your running applications, using statistical techniques to determine where problems may lie within your application.  You can actually use this in and outside of the Google environment (e.g., check other cloud services).
+
+![Google Cloud Profiler](/CloudAppsDev/assets/images/10-cloudprofiler.png "Google Cloud Profiler")
+
+> Figure 9: Google Cloud Profiler
+
+### Lab!
+
+Let's get up and running with Cloud Monitoring.  This lab will help you understand some of these tools we've shown you.
+
+> [QwikLabs - Cloud Monitoring: Qwik Start ()](https://google.qwiklabs.com/focuses/10600?parent=catalog)
+> [QwikLabs - Monitoring and Logging for Cloud Functions ()](https://www.qwiklabs.com/focuses/1833?parent=catalog)
+> [Codelabs - Analyze Production Performance with Cloud Profiler](https://codelabs.developers.google.com/codelabs/cloud-profiler)
 
 
 ## Additional Resources
