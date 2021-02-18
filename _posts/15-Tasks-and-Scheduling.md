@@ -42,19 +42,43 @@ The payload options will change based on which type of target you select.  For e
 
 Why would we use this service other than for the obvious reason of centralizing our repetitive tasks?  There is a nice list of use cases in [this article (Task Scheduling made easy by Google Cloud Scheduler — A managed cron service)](https://medium.com/pankaj-khuranas-blog/task-scheduling-made-easy-by-google-cloud-scheduler-a-managed-cron-service-136bdf8b3111) (that I highly recommend you read).  
 
+One consideration you **should** have is that this service is not free (nor is anything in the cloud, really -- you just need to plan appropriately).  At the time of writing (2021) you get 3 free jobs per month (per account, not per project), and after that it is $0.10 per job per month.  Keep this in mind when creating jobs!
+
 Next, we'll take a look at Cloud Tasks (and, how it is different from Cloud Scheduler).
 
 ## Cloud Tasks
 
+The following article does a great job at explaining Cloud Tasks if you want a deeper dive: [Asynchronous Code Execution with Google Cloud Tasks](https://medium.com/google-cloud/asynchronous-code-execution-with-google-cloud-tasks-9b73ceaf48c3).  
+
+![Cloud Tasks](https://miro.medium.com/max/875/1*9FXNzILQyAMWUT38YfxO2Q.png "Cloud Tasks")
+
+> Cloud Tasks
+
+
+
+
+## What is the difference?
+
+Check this page for a detailed list of differences ([Cloud Tasks vs. Cloud Scheduler](https://cloud.google.com/tasks/docs/comp-tasks-sched)), however do you want a repetitive job to be scheduled, or do you want a unique task to be placed into a queue for execution.  
+
+Basically, do you want to run a `cron` command or an `at` command?  Repeated or one-off?
+
+## Where do we go from here?
+
+This is the last section of this blog for this class!  Keep in mind that there is so much more that you can do in the cloud than you could with local resources (though as is the byline for this class - you have to pay for it!).  Why not consider:
+
+* [Taking a trip through Quantum Computing](https://research.google/teams/applied-science/quantum/)
+* [Use Cloud Functions to create a service-based game?]()
+* [Use Google Cloud for public good!](https://cloud.google.com/blog/products/data-analytics/publicly-available-covid-19-data-for-analytics)
+
 ## Additional Resources
-
-* TBD
-
-<hr size="1" />
-
-*Where noted, the original content was provided by Google LLC and modified for the purpose of the course, without input or endorsement from Google LLC*.
 
 * [Cloud Scheduler](https://cloud.google.com/scheduler)
 * [Cloud Tasks](https://cloud.google.com/tasks)
 * [Cloud Tasks vs. Cloud Scheduler](https://cloud.google.com/tasks/docs/comp-tasks-sched)
 * [Task Scheduling made easy by Google Cloud Scheduler](https://medium.com/pankaj-khuranas-blog/task-scheduling-made-easy-by-google-cloud-scheduler-a-managed-cron-service-136bdf8b3111)
+* [Asynchronous Code Execution with Google Cloud Tasks](https://medium.com/google-cloud/asynchronous-code-execution-with-google-cloud-tasks-9b73ceaf48c3)
+
+<hr size="1" />
+
+*Where noted, the original content was provided by Google LLC and modified for the purpose of the course, without input or endorsement from Google LLC*.
