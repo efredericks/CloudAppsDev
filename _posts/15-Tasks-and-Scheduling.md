@@ -54,8 +54,17 @@ The following article does a great job at explaining Cloud Tasks if you want a d
 
 > Cloud Tasks
 
+Whereas Scheduling was for repetitive jobs, Cloud Tasks can be used for one-off jobs (or repetitive, though it is up to you to ensure it is repeated).  A Cloud Task is a service for setting up *asynchronous* tasks in queues.  You can place many tasks into a queue (or many queues) to be executed.  But what is a Task?
 
+A Task, you may ask, is some snippet of code or application that you tell Cloud Tasks to run. Cloud Tasks is an API that you control by creating queues, setting appropriate rates and limits, and then deploying your Tasks to that queue to be run.  
 
+![Cloud Tasks Queue](/CloudAppsDev/assets/images/15-task-queue.png "Cloud Tasks Queue")
+
+> Cloud Tasks Queue
+
+You would use such a tool if you have asynchronous jobs that need to be done.  For instance, you might need to perform image processing tasks (e.g., resizing, filtering, etc.).  Or you need to perform a task at a certain point in time after an event has occurred.
+
+Essentially, Cloud Tasks is a very loosely-coupled environment that gives you a lot of flexibility in how and when to execute.  While this section may seem somewhat vague, the lab for this should help give you a clearer picture.  
 
 ## What is the difference?
 
@@ -70,6 +79,11 @@ This is the last section of this blog for this class!  Keep in mind that there i
 * [Taking a trip through Quantum Computing](https://research.google/teams/applied-science/quantum/)
 * [Use Cloud Functions to create a service-based game?]()
 * [Use Google Cloud for public good!](https://cloud.google.com/blog/products/data-analytics/publicly-available-covid-19-data-for-analytics)
+
+# Labs
+
+* [Cloud Tasks](https://codelabs.developers.google.com/codelabs/cloud-gae-python-migrate-8-cloudtasks#0)
+* [Cloud Tasks Quick Start](https://cloud.google.com/tasks/docs/quickstart)
 
 ## Additional Resources
 
