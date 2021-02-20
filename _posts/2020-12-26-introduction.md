@@ -17,6 +17,7 @@ excerpt:
 
         <h2>Module Labs</h2>
         <ul>
+          <li>Getting to know you (Internal to Blackboard)</li>
           <li><a href="https://efredericks.github.io/CloudAppsDev/codelabs/CIS680-Lab1-Setup" target="_blank">Lab 1 - Intro to Google Cloud</a></li>
         </ul>
 ---  
