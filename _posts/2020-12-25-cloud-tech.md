@@ -11,9 +11,9 @@ excerpt:
         </ul>
         <h2>Module Labs</h2>
         <ul>
-        <li><a href="https://codelabs.developers.google.com/codelabs/cloud-shell/" target="_blank">Codelab: Getting Started with Cloud Shell and gcloud</a></li>
-        <li><a href="https://codelabs.developers.google.com/codelabs/bigquery-cli" target="_blank">Codelab: Load and Query Data with the bq command-line tool for BigQuery</a></li>
-        <li><a href="https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce" target="_blank">Codelab: Autoscaling</a></li>
+        <li><a href="https://codelabs.developers.google.com/codelabs/cloud-shell/" target="_blank">Getting Started with Cloud Shell and gcloud</a></li>
+        <li><a href="https://codelabs.developers.google.com/codelabs/bigquery-cli" target="_blank">Load and Query Data with the bq command-line tool for BigQuery</a></li>
+        <li><a href="https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce" target="_blank">Autoscaling</a></li>
         </ul>
 ---  
 
