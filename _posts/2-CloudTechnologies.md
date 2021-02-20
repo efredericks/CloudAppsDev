@@ -5,7 +5,7 @@
 
 ## Cloud Technologies
 
-The benefit of using cloud technologies are that you are effectively using somebody else's servers.  The downside is that you are limited to the technologies supported by that provider.  For instance, you will probably be hard-pressed to try and use BigQuery (Google-specific technology for sifting through massive datasets) on DigitalOcean.  However, you may not need that technology!  (Again, consider all tradeoffs when selecting a provider).  
+The benefit of using cloud technologies are that you are effectively using somebody else's servers.  The downside is that you are limited to the technologies supported by that provider.  For instance, you will probably be hard-pressed to try and use BigQuery (Google-specific technology for sifting through massive datasets) on DigitalOcean.  However, you may not need that technology!  Again, consider all tradeoffs when selecting a provider.  
 
 Since we are using Google Cloud for this course, we are going to focus on the technologies supported by Google.  Here is a page with the [full list of Google Cloud services](https://cloud.google.com/products).
 
@@ -53,7 +53,7 @@ With VMs comes other options as well, such as virtual networks, persistent stora
 
 > Figure 4: VPC network
 
-Note there are different regions specified as well!  These can correlate to geographic locations of your customers/clients and provide a better quality of service.
+Note there are different regions specified as well!  These can correlate to geographic locations of your customers/clients and can provide a better quality of service.
 
 #### AutoScaling
 
@@ -71,9 +71,11 @@ To use Autoscaling, you require a *policy* to specify *how* scaling should work.
 
 *Note: scale-in policies are available as well, however I assume you can make the mental leap that you may also want your VMs to be over-utilized as well*.
 
+ASSIGNMENT: SCALE - https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce#0
+
 ### Internet of Things [IaaS/PaaS]
 
-Ah, the Internet of Things (IoT), what may be considered to be the latest in moving infrastructure up to the cloud.  All of the tiny networked devices that we have available (smart watches, sensors, monitors, etc.) have been turned into a cloud service as well.  However, the devices themselves are not necessarily made into a virtual infrastructure service.  However, the *telemetry* sent between devices has been, turning this topic into something that falls between IaaS and PaaS (at least, to me).
+Ah, the Internet of Things (IoT), what may be considered to be the latest in moving infrastructure up to the cloud.  All of the tiny networked devices that we have available (smart watches, sensors, monitors, etc.) have been turned into a cloud service as well.  However, the devices themselves are not necessarily made into a virtual infrastructure service.  The *telemetry* being sent between devices has been cloudified, turning this topic into something that falls between IaaS and PaaS (at least, to me).
 
 There are multiple components available, however at its core you are transmitting, analyzing, and receiving the data between devices.  This particular page lists out the highlights of [Google Cloud IoT](https://cloud.google.com/solutions/iot/).  Note that competing providers have similar services as well!
 
@@ -114,13 +116,13 @@ Many of the APIs available in the cloud provide some sort of data management and
 
 ## Cloud Shell
 
-> Module video: <a href="https://youtu.be/8UkNo5_61Ws" target="_blank">Using the Cloud Shell Pt. 1/2 [11:38]</a>
-> Module video: <a href="https://youtu.be/jZxT-qqBUlA" target="_blank">Using the Cloud Shell Pt. 2/2 [16:07]</a>
-> [Codelab: Getting Started with Cloud Shell and gcloud](https://codelabs.developers.google.com/codelabs/cloud-shell/)
-> [Codelab: Load and Query Data with the bq command-line tool for BigQuery](https://codelabs.developers.google.com/codelabs/bigquery-cli)
+> * Module video: <a href="https://youtu.be/8UkNo5_61Ws" target="_blank">Using the Cloud Shell Pt. 1/2 [11:38]</a>
+> * Module video: <a href="https://youtu.be/jZxT-qqBUlA" target="_blank">Using the Cloud Shell Pt. 2/2 [16:07]</a>
+> * [Codelab: Getting Started with Cloud Shell and gcloud](https://codelabs.developers.google.com/codelabs/cloud-shell/)
+> * [Codelab: Load and Query Data with the bq command-line tool for BigQuery](https://codelabs.developers.google.com/codelabs/bigquery-cli)
 
 
-Cloud Shell (or th eCloud SDK) is a command-line interface (CLI) for interacting with Google Cloud services, plus it provides a Linux-like interface that you may be familiar with.  Here are the Google-specific commands to become familiar with:
+Cloud Shell (or the Cloud SDK) is a command-line interface (CLI) for interacting with Google Cloud services, plus it provides a Linux-like interface that you may be familiar with.  Here are the Google-specific commands to become familiar with:
 
 * `gcloud`
 
@@ -132,7 +134,7 @@ Cloud Shell (or th eCloud SDK) is a command-line interface (CLI) for interacting
 
 * `bq`
 
-`bq` interacts with [BigQuery](https://cloud.google.com/bigquery/), Google's service for interacting with large datasets.  Here, you can run queries, manipulate datasets/tables, and other entities that are part of the BigQuery ecosystem.
+`bq` interacts with [BigQuery](https://cloud.google.com/bigquery/), Google's service for interacting with large datasets.  Here, you can run queries, manipulate datasets/tables, and interact with other entities that are part of the BigQuery ecosystem.
 
 Figure 10 shows a sample screenshot of my Google Cloud console, with Cloud Shell activated.  Note that you can open it by clicking the little terminal icon at the top right, and it will pop open the shell in the bottom of your screen.  
 
@@ -140,7 +142,7 @@ Figure 10 shows a sample screenshot of my Google Cloud console, with Cloud Shell
 
 > Figure 10: Cloud Shell Screenshot
 
-Note, for each of these commands, you can add the `--help` parameter to get more information about the tool and how it can be used.  For example, entering `gcloud --help` shows information about the `gcloud` command itself, and `gcloud app --help` shows information about how to interact with App Engine via `gcloud`.  Further note, as this is effectively a Linux terminal, hitting `q` will escape the manual page that pops up whenever you look at the help files.
+For each of these commands, you can add the `--help` parameter to get more information about the tool and how it can be used.  For example, entering `gcloud --help` shows information about the `gcloud` command itself, and `gcloud app --help` shows information about how to interact with App Engine via `gcloud`.  Further note, as this is essentially a glorified Linux terminal, hitting `q` will escape the manual page that pops up whenever you look at the help files.
 
 ### Text Editing
 
@@ -156,7 +158,7 @@ This is a slight aside but I wanted to clarify the difference between these thre
 * [Quiklabs](https://www.qwiklabs.com/)
 * [Colabs](https://colab.research.google.com/)
 
-Codelabs are effectively tutorial-style manuals that walk you through a task.  These can be developed by anybody (and the [tools for doing so have been made open source](https://github.com/googlecodelabs/tools)) and focus on a particular topic.  We will be using a lot of these for our assignments.  Of note is that these are **free** to participate in.
+Codelabs are tutorial-style manuals that walk you through a task.  These can be developed by anybody (and the [tools for doing so have been made open source](https://github.com/googlecodelabs/tools)) and focus on a particular topic.  We will be using a lot of these for our assignments.  Of note is that these are **free** to participate in.
 
 Qwiklabs are **paid-for** labs that are similar in style to Codelabs, however they are better structured and generally will focus around a theme (called Quests).  Qwiklabs can be used to get badges that you can share on social media noting that you have experience with a particular topic.  There also tend to be videos associated with Quests as well.  Of note is that these are **not free**, however if you are enrolled in class with me you will receive credits to apply to Qwiklabs as needed.
 
@@ -170,6 +172,6 @@ Colabs are an interesting aside in that they are effectively Jupyter notebooks d
 * [How Kubernetes Works](https://dzone.com/articles/how-kubernetes-works)
 * [YouTube Playlist (from Google) on Kubernetes](https://www.youtube.com/playlist?list=PLIivdWyY5sqLmnGdKSdQIXq2sd_1bWSnx)
 
-<hr size="1" />
+---
 
 *Where noted, the original content was provided by Google LLC and modified for the purpose of the course, without input or endorsement from Google LLC*.
