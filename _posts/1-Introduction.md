@@ -120,6 +120,6 @@ Time for your first lab assignment!  This will get you up and running with a Goo
 
 Click here for your first lab [CIS680 Lab 1 - Intro. to Google Cloud](https://efredericks.github.io/CloudAppsDev/codelabs/CIS680-Lab1-Setup)
 
-<hr size="1" />
+---
 
 *Where noted, the original content was provided by Google LLC and modified for the purpose of the course, without input or endorsement from Google LLC*.
