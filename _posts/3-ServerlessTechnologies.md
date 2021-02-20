@@ -16,7 +16,7 @@
 
 ## Serverless Functions
 
-A *serverless* function effectively is just a function call you make to a remote server.  The nifty thing here is that you don't have to worry about the whole pesky *setting up a machine to run that function* type of concern.  You simply reference an API endpoint of some sort (e.g., an HTTP call, a RESTful call, a pub/sub trigger, etc.) and then receive data.
+A *serverless* function is really just a function call you make to a remote server.  The nifty thing here is that you don't have to worry about the whole pesky *setting up a machine to run that function* type of concern.  You simply reference an API endpoint of some sort (e.g., an HTTP call, a RESTful call, a pub/sub trigger, etc.) and then receive data.
 
 > *External video (1:37)*: [A Google Intro to Cloud Functions](https://youtu.be/1r3vMYywNLk)
 
