@@ -214,7 +214,7 @@ There are a plethora of return values you can get from a serverless function.  I
 
 ## Authentication
 
-Cloud Functions can be left wide open to the world (meaning that anybody can use it) or you can lock them behind authentication.  When creating a new Cloud Function you'll be presented with two options (as of 2020 anyway):
+Cloud Functions can be left wide open to the world (meaning that anybody can use it) or you can lock them behind authentication.  When creating a new Cloud Function you'll be presented with two options (as of 2021 anyway):
 
 * Allow Unauthenticated Invocations
 
@@ -261,6 +261,8 @@ The following link will take you to a Google-created Codelab.
 [Google CodeLab -- Stackdriver Logging and Stackdriver Trace for Cloud Functions](https://codelabs.developers.google.com/codelabs/cloud-function-logs-traces)
 
 ### Extra Video
+
+I thought you might be interested in how you can interact with Cloud Functions via a local CLI.  To spice things up, I added multiprocessing (one form of parallel processing you can do in Python).  Of note with this example is that you could extend it to whatever local application you have.
 
 [Calling Cloud Functions from Python (with multiprocessing and requests) [7:36]](https://youtu.be/TkF07-_H3wA)
 
