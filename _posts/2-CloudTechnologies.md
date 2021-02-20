@@ -11,9 +11,11 @@
 > Module labs:
 > * [Codelab: Getting Started with Cloud Shell and gcloud](https://codelabs.developers.google.com/codelabs/cloud-shell/)
 > * [Codelab: Load and Query Data with the bq command-line tool for BigQuery](https://codelabs.developers.google.com/codelabs/bigquery-cli)
-> * [Codelab - Autoscaling](https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce)
+> * [Codelab: Autoscaling](https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce)
 
 ***
+
+Note: there is a **single** lab manual associated for this module in Blackboard.  You'll be doing a few Codelabs to give you experience with the technologies, however for credit they are aggregated into a single assignment.  
 
 ## Cloud Technologies
 
