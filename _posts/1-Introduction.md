@@ -1,6 +1,23 @@
 Welcome to Cloud Application Development!  This module will introduce you to the basics of cloud computing.
 
+***
+
 > By the end of this module, you should understand the underlying concepts of cloud computing, be able to setup your GCP account and billing, and create and use a remote virtual machine.
+
+> Module videos:
+> * [What is the cloud? [42:36]](https://www.youtube.com/watch?v=JtUIQz_EkUw)
+> * [Intro to the Cloud [8:14]](https://youtu.be/AtRZiBrxKnI)
+> * [Cloud Billing [8:24]](https://youtu.be/V4hIVODKm20)
+> * [Cloud Computing Costs [14:40]](https://youtu.be/huFVLTuPbrs)
+> * [Cloud Providers [7:46]](https://youtu.be/NvYXa7RM658)
+> * [Lab 1 Overview (Setup / Virtual Machines) [21:31]](https://youtu.be/IImFXvMWzM8)
+> * [Lab Environments [8:36]](https://youtu.be/PEjyIlvl-88)
+
+> Module labs:
+> * Getting to know you (Internal to Blackboard)
+> * [CIS680 Lab 1 - Intro. to Google Cloud](https://efredericks.github.io/CloudAppsDev/codelabs/CIS680-Lab1-Setup)
+
+*** 
 
 For this course we will be using [Google Cloud Platform](https://cloud.google.com/) as our cloud provider, however others such as [Amazon Web Services (AWS)](https://aws.amazon.com/) and [Microsoft Azure](https://azure.microsoft.com/) are common as well.  While each provides their own particular flavor, understanding the basics should enable you to transition between one and the other as necessary.
 
@@ -119,6 +136,13 @@ Time for your first lab assignment!  This will get you up and running with a Goo
 **Ensure you download the lab manual from Blackboard!**
 
 Click here for your first lab [CIS680 Lab 1 - Intro. to Google Cloud](https://efredericks.github.io/CloudAppsDev/codelabs/CIS680-Lab1-Setup)
+
+## Additional Resources
+* [Google Cloud Platform](https://cloud.google.com/)
+  * [Free credits via Google](https://cloud.google.com/free)
+* [Amazon Web Services (AWS)](https://aws.amazon.com/)
+* [Microsoft Azure](https://azure.microsoft.com/)
+> [Google Cloud vs AWS vs Azure](https://medium.com/weekly-webtips/google-cloud-vs-aws-vs-azure-bafb554e036)
 
 ---
 
