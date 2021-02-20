@@ -2,13 +2,13 @@
 
 > By the end of this module, you will know what cloud computing can be used for, how to enable a cloud API, and how to navigate the cloud shell.
 
-> Module Videos:
+> Module videos:
 > * [Cloud Infrastructure [11:53]](https://youtu.be/0fQOztcte-4)
 > * [Using the Cloud Shell Pt. 1/2 [11:38]](https://youtu.be/8UkNo5_61Ws)
 > * [Using the Cloud Shell Pt. 2/2 [16:07]](https://youtu.be/jZxT-qqBUlA)
 
 
-> Module Labs:
+> Module labs:
 > * [Codelab: Getting Started with Cloud Shell and gcloud](https://codelabs.developers.google.com/codelabs/cloud-shell/)
 > * [Codelab: Load and Query Data with the bq command-line tool for BigQuery](https://codelabs.developers.google.com/codelabs/bigquery-cli)
 > * [Codelab - Autoscaling](https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce)

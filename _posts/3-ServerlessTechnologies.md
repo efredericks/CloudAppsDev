@@ -1,10 +1,18 @@
+***
+
 > By the end of this module, you will gain experience with serverless technologies, understand how to create and access them, perform authentication, and logging.
 
 > Module videos:
 > * Core concepts
+> * [A Google Intro to Cloud Functions [1:37]](https://youtu.be/1r3vMYywNLk)
 > * [Serverless Functions [14:45]](https://youtu.be/yVYwg1IHlPY)
 > * Cloud Functions Codelab Demo 
 > * [Calling Cloud Functions from Python (with multiprocessing and requests) [7:36]](https://youtu.be/TkF07-_H3wA)
+
+> Module labs:
+> * [CodeLab -- Stackdriver Logging and Stackdriver Trace for Cloud Functions](https://codelabs.developers.google.com/codelabs/cloud-function-logs-traces)
+
+***
 
 >**Note -- interchangeable terms!**
 >
