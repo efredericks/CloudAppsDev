@@ -5,7 +5,7 @@ Welcome to Cloud Application Development!  This module will introduce you to the
 > By the end of this module, you should understand the underlying concepts of cloud computing, be able to setup your GCP account and billing, and create and use a remote virtual machine.
 
 > Module videos:
-> * [What is the cloud? [42:36]](https://www.youtube.com/watch?v=JtUIQz_EkUw)
+> * [Google - What is the cloud? [42:36]](https://www.youtube.com/watch?v=JtUIQz_EkUw)
 > * [Intro to the Cloud [8:14]](https://youtu.be/AtRZiBrxKnI)
 > * [Cloud Billing [8:24]](https://youtu.be/V4hIVODKm20)
 > * [Cloud Computing Costs [14:40]](https://youtu.be/huFVLTuPbrs)
