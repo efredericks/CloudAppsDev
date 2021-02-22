@@ -4,6 +4,9 @@
 > * Core concepts
 > * Microservices
 > * Introduction to App Engine
+> * [Monolithic-Microlithic Demo Pt 1 [11:31]](https://youtu.be/9xsET1j3VPI)
+> * [Monolithic-Microlithic Demo Pt 2 [18:19]](https://youtu.be/gUXSSpsvARg)
+> * [Monolithic-Microlithic Demo Pt 3 [19:01]](https://youtu.be/P_hvBGdrTqQ)
 
 ## Cloud Applications
 
@@ -173,6 +176,14 @@ This bullet list is directly from [Google here](https://cloud.google.com/appengi
 > * Removing any dead code from the legacy application.
 
 App Engine provides two different environments to choose from when designing your application.  It can be "standard" in that everything is fully-managed and you simply write your application.  There also is a *flexible* environment where Docker container support is available, enabling greater customization possibilities for your applications.
+
+There is a delightful Codelab that takes you through transitioning a monolithic to microlithic application here, however keep in mind it somewhat obfuscates the breaking apart of the "actual" application -- i.e., everything is containerized via Docker so there is little code updating to do (mainly deploying services and updating configurations).
+
+If you want to see it in action, I went through the Codelab steps in the following three videos:
+
+* [Monolithic-Microlithic Demo Pt 1 [11:31]](https://youtu.be/9xsET1j3VPI)
+* [Monolithic-Microlithic Demo Pt 2 [18:19]](https://youtu.be/gUXSSpsvARg)
+* [Monolithic-Microlithic Demo Pt 3 [19:01]](https://youtu.be/P_hvBGdrTqQ)
 
 ## Additional Resources
 
