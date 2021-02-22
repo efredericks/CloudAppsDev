@@ -34,19 +34,19 @@ Let's take a look at the big three in terms of regional availability.  *Note tha
 
 ![Google Cloud Regions (c/o Google)](/CloudAppsDev/assets/images/5-gcp-regions.png "Google Cloud Regions")
 
-> Figure X: Google Cloud Regions
+> Figure 2: Google Cloud Regions
 
 [Google Cloud Regions](https://cloud.google.com/about/locations/)
 
 ![AWS Regions (c/o Amazon)](/CloudAppsDev/assets/images/5-aws-regions.png "AWS Regions")
 
-> Figure X: AWS Regions
+> Figure 3: AWS Regions
 
 [AWS Regions](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
 
 <img src="https://azurecomcdn.azureedge.net/cvt-501c9a38819bd9ffc1ed855f2ed8b5db5e8936aed3e3a6732ff13f313a6c0ca4/images/shared/regions-map-desktop.svg alt="Microsoft Azure Regions" title="Microsoft Azure Regions" style="background-color:#fff" />
 
-> Figure X: Microsoft Azure Regions
+> Figure 4: Microsoft Azure Regions
 
 [Microsoft Azure Regions](https://azure.microsoft.com/en-us/global-infrastructure/geographies/)
 
@@ -54,17 +54,17 @@ Now, you may be wondering why I'm making such a big deal out of regional informa
 
 Well, to that I would say that there is more to it than just location!  There are two *other* concerns to worry about!  First there is **pricing**.  Different regions may have different pricing structures and that is one aspect to be absolutely sure of before selecting a region.
 
-For instance, Figure X shows a snippet from the [Google Cloud free tier page](https://cloud.google.com/free) specifying how to get a *free* VM microinstance.  Note that you must select from a list of specific regions; not necessarily every region is available! 
+For instance, Figure 5 shows a snippet from the [Google Cloud free tier page](https://cloud.google.com/free) specifying how to get a *free* VM microinstance.  Note that you must select from a list of specific regions; not necessarily every region is available! 
 
 ![Google Cloud Free Tier Pricing](/CloudAppsDev/assets/images/5-gcp-pricing-2.png "Google Cloud Free Tier Pricing")
 
-> Figure X: Google Cloud Free Tier Pricing
+> Figure 5: Google Cloud Free Tier Pricing
 
-You may also find pricing and availability are tied into other products as well.  For instance, Figure X shows a comparison for Cloud Storage attributes -- note that regions can be tied to data availability!
+You may also find pricing and availability are tied into other products as well.  For instance, Figure 6 shows a comparison for Cloud Storage attributes -- note that regions can be tied to data availability!
 
 ![Google Cloud - Regions and Storage](/CloudAppsDev/assets/images/5-gcp-pricing.PNG)
 
-> Figure X: Google Cloud - Regions and Storage
+> Figure 6: Google Cloud - Regions and Storage
 
 Another major concern lies in exporting your data to other countries.  We'll talk about that in the next section.
 
@@ -74,7 +74,7 @@ Now that you're moving to the cloud, a major consideration (that doesn't seem to
 
 ![US Export Controls and Economic Sanctions](https://slideplayer.com/slide/14093205/86/images/42/Export+Controls+are+Particularly+Problematic+for+Cloud+Computing.jpg "US Export Controls and Economic Sanctions")
 
-> Figure X: US Export Controls and Economic Sanctions
+> Figure 7: US Export Controls and Economic Sanctions
 
 Read the following two links!
 
