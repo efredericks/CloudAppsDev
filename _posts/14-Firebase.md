@@ -64,6 +64,7 @@ How does this factor in with Firebase?  GCIP can be used programmatically via Fi
 Here is a code listing based on the Medium article above (and hosted as [open-source on Github](https://gist.github.com/hiranya911/9ee933ba2233c49c76cf8dbe35a1df3d#file-create_tenant-go)).  This snippet creates a new tenant using Firebase and Google Cloud (in Go) with specifics for their email configuration:
 
 ```go
+// https://gist.github.com/hiranya911/9ee933ba2233c49c76cf8dbe35a1df3d#file-create_tenant-go
 import (
   "context"
   "log"
