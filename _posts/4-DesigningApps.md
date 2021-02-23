@@ -3,7 +3,8 @@
 > Module videos:
 > * Core concepts
 > * Microservices
-> * Introduction to App Engine
+> * [App Engine Demo (1/2) [10:46]](https://youtu.be/p7l_7GlFxas)
+> * [App Engine Demo (2/2) [10:58]](https://youtu.be/qQF93W_guXU)
 > * [Monolithic-Microlithic Demo Pt 1 [11:31]](https://youtu.be/9xsET1j3VPI)
 > * [Monolithic-Microlithic Demo Pt 2 [18:19]](https://youtu.be/gUXSSpsvARg)
 > * [Monolithic-Microlithic Demo Pt 3 [19:01]](https://youtu.be/P_hvBGdrTqQ)
@@ -177,13 +178,13 @@ This bullet list is directly from [Google here](https://cloud.google.com/appengi
 
 App Engine provides two different environments to choose from when designing your application.  It can be "standard" in that everything is fully-managed and you simply write your application.  There also is a *flexible* environment where Docker container support is available, enabling greater customization possibilities for your applications.
 
-There is a delightful Codelab that takes you through transitioning a monolithic to microlithic application here, however keep in mind it somewhat obfuscates the breaking apart of the "actual" application -- i.e., everything is containerized via Docker so there is little code updating to do (mainly deploying services and updating configurations).
+There is a [delightful Codelab that takes you through transitioning a monolithic to microlithic application here](https://codelabs.developers.google.com/codelabs/cloud-monolith-to-microservices-gke), however keep in mind it somewhat obfuscates the breaking apart of the "actual" application -- i.e., everything is containerized via Docker so there is little code updating to do (mainly deploying services and updating configurations).
 
 If you want to see it in action, I went through the Codelab steps in the following three videos:
 
-* [Monolithic-Microlithic Demo Pt 1 [11:31]](https://youtu.be/9xsET1j3VPI)
-* [Monolithic-Microlithic Demo Pt 2 [18:19]](https://youtu.be/gUXSSpsvARg)
-* [Monolithic-Microlithic Demo Pt 3 [19:01]](https://youtu.be/P_hvBGdrTqQ)
+* [Module Video - Monolithic-Microlithic Demo Pt 1 [11:31]](https://youtu.be/9xsET1j3VPI)
+* [Module Video - Monolithic-Microlithic Demo Pt 2 [18:19]](https://youtu.be/gUXSSpsvARg)
+* [Module Video - Monolithic-Microlithic Demo Pt 3 [19:01]](https://youtu.be/P_hvBGdrTqQ)
 
 ## Additional Resources
 
@@ -193,6 +194,7 @@ If you want to see it in action, I went through the Codelab steps in the followi
 * [Microservices Architecture on Google App Engine](https://cloud.google.com/appengine/docs/standard/python/microservices-on-app-engine)
 * [Microservice Performance Optimization](https://cloud.google.com/appengine/docs/standard/python/microservice-performance)
 * [Monolithic to Microlithic](https://cloud.google.com/appengine/docs/standard/python/microservice-migration)
+* [Monolithic to Microlithic Codelab](https://codelabs.developers.google.com/codelabs/cloud-monolith-to-microservices-gke)
 
 <hr size="1" />
 
