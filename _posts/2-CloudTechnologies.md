@@ -6,6 +6,7 @@
 > * [Cloud Infrastructure [11:53]](https://youtu.be/0fQOztcte-4)
 > * [Using the Cloud Shell Pt. 1/2 [11:38]](https://youtu.be/8UkNo5_61Ws)
 > * [Using the Cloud Shell Pt. 2/2 [16:07]](https://youtu.be/jZxT-qqBUlA)
+> * [Cloud Free Tiers [8:51]](https://youtu.be/2Fp6GDETmz8)
 
 
 > Module labs:

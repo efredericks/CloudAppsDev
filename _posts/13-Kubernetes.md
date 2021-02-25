@@ -7,5 +7,7 @@ Normally we can skip over the introductory material as we already have a project
 [Google Codelab - Migrating a Monolithic Website to Microservices on Google Kubernetes Engine](https://codelabs.developers.google.com/codelabs/cloud-monolith-to-microservices-gke)
 
 
+## Cloud Build and Cloud Run
+
 > * [Building a SlackBot with Cloud Build, Cloud Run, and Node.js Part 1 [13:20]](https://youtu.be/kYUUEvBT4Ms)
 > * [Building a SlackBot with Cloud Build, Cloud Run, and Node.js Part 2 [19:09]](https://youtu.be/xpPTR05Bxdc)
