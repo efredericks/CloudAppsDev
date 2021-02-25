@@ -9,6 +9,7 @@ excerpt:
         <li><a href="https://youtu.be/8UkNo5_61Ws" target="_blank">Using the Cloud Shell Pt. 1/2 [11:38]</a></li>
         <li><a href="https://youtu.be/jZxT-qqBUlA" target="_blank">Using the Cloud Shell Pt. 2/2 [16:07]</a></li>
         <li><a href="https://youtu.be/2Fp6GDETmz8" target="_blank">Cloud Free Tiers [8:51]</a></li>
+        <li><a href="https://youtu.be/yXtSev26ykw" target="_blank">Editing and Uploading [11:05]</a></li>
         </ul>
         <h2>Module Labs</h2>
         <ul>

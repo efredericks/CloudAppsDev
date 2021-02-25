@@ -1,3 +1,8 @@
+
+You are arriving at Kubernetes in an interesting time.  As of this posting, it recently announced that Kubernetes is planning to remove `dockershim` support, which enables communication between Docker containers and Kubernetes.  Docker containers will still be supported, however that support is being moved from the Kubernetes codebase.
+
+To understand how a container runtime functions, I recommend you check out [this article](https://medium.com/cri-o/container-runtimes-clarity-342b62172dc3)
+
 PUT ME RIGHT AFTER APPS!
 
 BEFORE YOU DO THIS LAB:
@@ -11,3 +16,7 @@ Normally we can skip over the introductory material as we already have a project
 
 > * [Building a SlackBot with Cloud Build, Cloud Run, and Node.js Part 1 [13:20]](https://youtu.be/kYUUEvBT4Ms)
 > * [Building a SlackBot with Cloud Build, Cloud Run, and Node.js Part 2 [19:09]](https://youtu.be/xpPTR05Bxdc)
+
+## Additional Resources
+
+* [Container runtime](https://medium.com/cri-o/container-runtimes-clarity-342b62172dc3)
