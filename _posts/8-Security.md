@@ -77,6 +77,8 @@ By default, Google will encrypt data in transit (i.e., being sent/received to/fr
 
 Now to the developer-selectable options.  You can choose to either use **customer-managed encryption keys** (CMEK) or **customer-supplied encryption keys** (CSEK).  CMEK uses [Google Cloud's key management service (Cloud KMS)](https://cloud.google.com/security-key-management) to automate and simplify key generation and management.  Cloud KMS supports encryption, decryption, signing, and data verification from a cloud-based API, among other services.  CSEK, on the other hand, enables you to generate and manage encryption keys by yourself.  In this regard, you provide the keys, send them to Google for use with your applications/services, and rotate as necessary.  The question here is if you want to manage keys yourself or have your provider manage them, and can really only be answered based on your own internal security procedures and feelings on who should have access to the keys themselves (i.e., should your own team, should your cloud provider?).
 
+The following video walks you through an encryption/decryption demo using the Cloud KMS management system, including setting up keyrings, encrypting files, decrypting files, and a late-night breakdown!
+
 > Module video: [Cloud KMS Codelabs Demo [8:20]](https://youtu.be/fEoL3pcJySc)
 
 ## Cloud Identity and Access Management (IAM)

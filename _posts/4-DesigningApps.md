@@ -2,7 +2,7 @@
 
 > Module videos:
 > * Core concepts
-> * Microservices
+> * [Microservices [11:36]](https://youtu.be/w6_zaCA0TO0)
 > * [App Engine Demo (1/2) [10:46]](https://youtu.be/p7l_7GlFxas)
 > * [App Engine Demo (2/2) [10:58]](https://youtu.be/qQF93W_guXU)
 > * [Monolithic-Microlithic Demo Pt 1 [11:31]](https://youtu.be/9xsET1j3VPI)
