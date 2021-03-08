@@ -1,7 +1,8 @@
 > By the end of this module, you will learn how to start designing cloud applciations and gain experience with microservices (via Google Cloud App Engine).
 
 > Module videos:
-> * Core concepts
+> * [What are cloud applications? [13:33]](https://youtu.be/5eYw7hgv1Fc)
+> * [App Engine Overview [14:15]](https://youtu.be/gH3m5v2Vz04)
 > * [Microservices [11:36]](https://youtu.be/w6_zaCA0TO0)
 > * [App Engine Demo (1/2) [10:46]](https://youtu.be/p7l_7GlFxas)
 > * [App Engine Demo (2/2) [10:58]](https://youtu.be/qQF93W_guXU)
@@ -148,6 +149,7 @@ You have multiple instances of services, with different versions if necessary, t
 
 I have a couple of videos for you walking you through the next-linked Codelab on App Engine.  It is split into two videos as it was starting to get long.  Of note I left in two mistakes that I made when walking through the demo -- to me watching how to fix problems as they arise is far more useful than cutting them out, so you get to see my process for debugging.
 
+> Module Video - [App Engine Overview [14:15]](https://youtu.be/gH3m5v2Vz04)
 > Module Video - <a href="https://youtu.be/p7l_7GlFxas" target="_blank">App Engine Demo (1/2) [10:46]</a>
 > Module Video - <a href="https://youtu.be/qQF93W_guXU" target="_blank">App Engine Demo (2/2) [10:58]</a>
 

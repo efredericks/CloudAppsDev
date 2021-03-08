@@ -5,6 +5,9 @@ excerpt:
         <p>This module will get you thinking about taking those cloud apps worldwide.</p>
 
         <h2>Module Videos</h2>
+        <ul>
+          <li><a href="https://youtu.be/NXLX4nIfEkQ" target="_blank">Overview of geographic concerns [10:18]</a></li>
+        </ul>
         <h2>Module Labs</h2>
 ---  
 

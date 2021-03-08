@@ -2,9 +2,11 @@
 
 > Module videos:
 > * Core concepts
-> * Geographic Concerns
+> * [Overview of geographic concerns [10:18]](https://youtu.be/NXLX4nIfEkQ)
 
 ## Geographic Concerns
+
+> Module video: [Overview of geographic concerns [10:18]](https://youtu.be/NXLX4nIfEkQ)
 
 Let us assume you are working for a company that has offices worldwide.  Typically, you would need infrastructure spread throughout each geographic region to support company activities, including application servers, file servers, database servers, etc.  Basically, each location would need to be closely located to their servers and workstations to provide an acceptable quality of service to their users.
 
