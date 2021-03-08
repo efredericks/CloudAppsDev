@@ -6,7 +6,7 @@
 > * Core concepts
 > * [A Google Intro to Cloud Functions [1:37]](https://youtu.be/1r3vMYywNLk)
 > * [Serverless Functions [14:45]](https://youtu.be/yVYwg1IHlPY)
-> * Cloud Functions Codelab Demo 
+> * [Cloud Functions/Storage Buckets Demo [12:13]](https://youtu.be/UB2KSBR3Zbk) 
 > * [Calling Cloud Functions from Python (with multiprocessing and requests) [7:36]](https://youtu.be/TkF07-_H3wA)
 
 > Module labs:
@@ -251,6 +251,10 @@ You can also perform logging in various fashions.  The simplest way is to simply
 > Figure 7: Logging Tab
 
 Anything written to `stdout` or `stderr` will go directly to the cloud console as well.  I **highly** recommend checking out this link as it will help you **immensely** with debugging your programs: [https://cloud.google.com/functions/docs/monitoring/logging](https://cloud.google.com/functions/docs/monitoring/logging)
+
+Here is a demonstration of how to use Cloud Functions with Cloud Storage Buckets, leveraging the logging capabilities of the cloud (link to the [demo code I use in the video](https://cloud.google.com/functions/docs/calling/storage)): 
+
+> Module video: [Cloud Functions/Storage Buckets Demo [12:13]](https://youtu.be/UB2KSBR3Zbk) 
 
 ## Lab - Cloud Functions (Advanced)
 

@@ -1,12 +1,14 @@
 > By the end of this module, you'll gain experience in dealing with all the data that your applications will need to generate and consume.
 
 > Module videos:
-
-* [Google BigQuery - Analytics Data Warehouse (1:58)](https://youtu.be/eyBK9nj-7AA)
+> * [Big Data Overview [14:10]](https://youtu.be/Mdh6sIxQy4U)
+> * [Google BigQuery - Analytics Data Warehouse (1:58)](https://youtu.be/eyBK9nj-7AA)
 
 > Module labs:
 
 ## Data (More Specifically - of the Big Variety)
+
+> Module video: [Big Data Overview [14:10]](https://youtu.be/Mdh6sIxQy4U)
 
 It is now time to discuss **data**, or more commonly, that thing you have to deal with on a daily basis.  Data can be anything, from user input to usage patterns to consumed weather data.  Your cloud applications will most likely be managing data of some kind.
 
