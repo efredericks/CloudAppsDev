@@ -29,7 +29,7 @@ Since we are using Google Cloud for this course, we are going to focus on the te
 
 You will notice a lot of overlap!  Consider that each are competing for *cloud dominance* and that each provider wants *you* to pay for their service.
 
-ASSIGNMENT: WRITEUP 5 SERVICES
+> Class Assignment: Check Blackboard for Assignment 2 (select and describe 5 separate services)
 
 ### IaaS vs. PaaS vs. SaaS
 
