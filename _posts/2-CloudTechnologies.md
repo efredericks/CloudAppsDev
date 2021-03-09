@@ -11,6 +11,7 @@
 
 
 > Module labs:
+> * Describe Five Services (Internal to Blackboard)
 > * [Codelab: Getting Started with Cloud Shell and gcloud](https://codelabs.developers.google.com/codelabs/cloud-shell/)
 > * [Codelab: Load and Query Data with the bq command-line tool for BigQuery](https://codelabs.developers.google.com/codelabs/bigquery-cli)
 > * [Codelab: Autoscaling](https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce)
