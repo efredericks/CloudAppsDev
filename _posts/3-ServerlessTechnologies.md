@@ -3,10 +3,10 @@
 > By the end of this module, you will gain experience with serverless technologies, understand how to create and access them, perform authentication, and logging.
 
 > Module videos:
-> * Core concepts
 > * [A Google Intro to Cloud Functions [1:37]](https://youtu.be/1r3vMYywNLk)
 > * [Serverless Functions [14:45]](https://youtu.be/yVYwg1IHlPY)
 > * [Cloud Functions/Storage Buckets Demo [12:13]](https://youtu.be/UB2KSBR3Zbk) 
+> * [Cloud Functions Authentication Demo [11:59]](https://youtu.be/hs5f3sIg69o)
 > * [Calling Cloud Functions from Python (with multiprocessing and requests) [7:36]](https://youtu.be/TkF07-_H3wA)
 
 > Module labs:
@@ -256,6 +256,10 @@ Here is a demonstration of how to use Cloud Functions with Cloud Storage Buckets
 
 > Module video: [Cloud Functions/Storage Buckets Demo [12:13]](https://youtu.be/UB2KSBR3Zbk) 
 
+Here is another for how to use authentication (internal to Google) with Cloud Functions:
+
+> Module video: [Cloud Functions Authentication Demo [11:59]](https://youtu.be/hs5f3sIg69o)
+
 ## Lab - Cloud Functions (Advanced)
 
 This codelab is going to do two things.  First, you will spin up a Cloud Function and get it up and running, learn how to access it, etc.  This part is not strictly a difficult concept and the typical `Hello World` function is beneath you. 
@@ -266,7 +270,7 @@ Here we're going to work through Stackdriver logging and trace, two components o
 
 ### Lab Instructions
 
-Download the appropriate lab manual from Blackboard and keep it open while you work through the Codelab.  I'll be asking for screenshots from your progress and also have you perform a *little extra work as well*.  
+As with our other assignments, we have a Blackboard assignment for you to provide screenshots for as you work through the Codelab.  I'll be asking for screenshots from your progress and also have you perform a *little extra work as well*.  
 
 The following link will take you to a Google-created Codelab.  
 

@@ -7,6 +7,7 @@ excerpt:
         <h2>Module Videos</h2>
         <ul>
           <li><a href="https://youtu.be/UB2KSBR3Zbk" target="_blank">Cloud Functions/Storage Buckets Demo [12:13]</a></li>
+          <li> <a href="https://youtu.be/hs5f3sIg69o" target="_blank">Cloud Functions Authentication Demo [11:59]</a></li>
         </ul>
         <h2>Module Labs</h2>
 ---  
