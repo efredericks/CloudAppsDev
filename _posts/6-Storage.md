@@ -1,6 +1,7 @@
 > By the end of this module, you'll gain experience with storing information on and around the cloud.
 
 > Module videos:
+> * [Cloud Storage Overview [9:54]](https://youtu.be/cJh_naOJ-qM)
 
 Inevitably, you'll be wanting to "store" things up in the cloud.
 
@@ -20,6 +21,8 @@ You can take it further as well to non-relational databases (NoSQL databases), d
 
 
 ## Storage
+
+> Module Video: [Cloud Storage Overview [9:54]](https://youtu.be/cJh_naOJ-qM)
 
 Focusing on Google now, let's take a look at what options are available to you as a developer.
 

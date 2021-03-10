@@ -5,6 +5,9 @@ excerpt:
         <p>By the end of this module, you'll gain experience with storing information on and around the cloud.</p>
 
         <h2>Module Videos</h2>
+        <ul>
+        <li><a href="https://youtu.be/cJh_naOJ-qM" target="_blank">Cloud Storage Overview [9:54]</a></li>
+        </ul>
         <h2>Module Labs</h2>
 ---  
 
