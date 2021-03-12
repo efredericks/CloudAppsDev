@@ -5,7 +5,7 @@
 
 Inevitably, you'll be wanting to "store" things up in the cloud.
 
-Crazy concept, yes, however sometimes we do need persistent data accessible to our various cloud (and even non-cloud) services.  Historically, data has been stored either as file-based (such as an FTP server or file share) or in databases (relational for a *long* time and non-relational for a reasonably recent time).  That's not to say that there aren't other options, but typically it'll either be files or relational data (e.g., MySQL, Microsoft SQL server, PostGreSQL, etc.).
+Crazy concept, yes, however sometimes we do need persistent data accessible to our various cloud (and even non-cloud) services.  Historically, data has been stored either as file-based (such as an FTP server or fGile share) or in databases (relational for a *long* time and non-relational for a reasonably recent time).  That's not to say that there aren't other options, but typically it'll either be files or relational data (e.g., MySQL, Microsoft SQL server, PostGreSQL, etc.).
 
 Figure 1 shows how a "typical" database (monolithic on-premises database) might be migrated to some of the various AWS options for cloud storage.
 
@@ -90,6 +90,28 @@ The figure is fairly self-explanatory, however some key decisions you must consi
 Next, we'll do a couple of examples with the different technologies available in Google Cloud.
 
 ## Example
+
+As we've discussed, you have multiple options for data storage.  Here, we'll focus on examples for the two *categories* of data: structured and unstructured.
+
+### Structured Example
+
+With structured data, typically you're looking to model something fairly *relational* in nature (i.e., a normal database).  For this example we'll take a look at Cloud Spanner, a tool that aims to give you the feel of a normal database with the scalability features of a non-relational database.
+
+> Module Video: Cloud Spanner - https://codelabs.developers.google.com/codelabs/cloud-spanner-leaderboard-go#0
+
+### Unstructured Example
+
+Here, you might go for BigTable if you're looking to manage data considered 'big data,' however we'll focus on Cloud Datastore as that may be more tenable for everyday applications.
+
+> Module Video: Cloud Datastore
+
+Cloud Datastore - https://codelabs.developers.google.com/codelabs/cloud-spring-datastore/#0
+
+## Lab
+
+Let's do something fun now that you have gained some experience with the more 'standard' methods of handling data (both structured and unstructured).  Let's use BigTable
+https://codelabs.developers.google.com/codelabs/bigtable-keyviz-art-hbase-java#0
+
 
 ## Additional Resources
 

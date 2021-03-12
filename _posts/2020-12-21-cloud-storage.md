@@ -9,6 +9,9 @@ excerpt:
         <li><a href="https://youtu.be/cJh_naOJ-qM" target="_blank">Cloud Storage Overview [9:54]</a></li>
         </ul>
         <h2>Module Labs</h2>
+        <ul>
+        <li>Synthesis -- See Blackboard</li>
+        </ul>
 ---  
 
 {% include_relative 6-Storage.md %}

@@ -3,6 +3,7 @@
 > Module videos:
 > * Core concepts
 > * [Overview of geographic concerns [10:18]](https://youtu.be/NXLX4nIfEkQ)
+> * [Load Balancing Demo []]() --> https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce#0
 
 ## Geographic Concerns
 
