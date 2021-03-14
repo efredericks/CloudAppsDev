@@ -3,7 +3,8 @@
 > Module videos:
 > * Core concepts
 > * [Overview of geographic concerns [10:18]](https://youtu.be/NXLX4nIfEkQ)
-> * [Load Balancing Demo []]() --> https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce#0
+> * [Load Balancing Demo (1/2) [10:38]](https://youtu.be/oawtW7W_T9U)
+> * [Load Balancing Demo (2/2) [10:59]](https://youtu.be/NjX1B5eOqic)
 
 ## Geographic Concerns
 
@@ -70,6 +71,12 @@ You may also find pricing and availability are tied into other products as well.
 > Figure 6: Google Cloud - Regions and Storage
 
 Another major concern lies in exporting your data to other countries.  We'll talk about that in the next section.
+
+Here's a demo on load balancing!  Try it out for some experience with the `gcloud compute` shell command (plus load balancing).
+  This demo is based on this link: [https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce](https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce)
+
+> Module video: [Load Balancing Demo (1/2) [10:38]](https://youtu.be/oawtW7W_T9U)
+> Module video: [Load Balancing Demo (2/2) [10:59]](https://youtu.be/NjX1B5eOqic)
 
 ### Export Controls
 

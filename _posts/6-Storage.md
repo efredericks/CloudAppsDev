@@ -1,7 +1,11 @@
 > By the end of this module, you'll gain experience with storing information on and around the cloud.
 
 > Module videos:
+> * [Cloud Datatypes [16:38]](https://youtu.be/HVvoLTspxzs)
 > * [Cloud Storage Overview [9:54]](https://youtu.be/cJh_naOJ-qM)
+> * [Cloud Storage / Cloud Shell Demo [8:45]](https://youtu.be/_rFd7lRsDOQ)
+> * [Cloud Datastore Demo [13:39]](https://youtu.be/y9T9Xm7oge0)
+> * [Cloud Spanner Demo [10:56]](https://youtu.be/1r7rY6BKmUY)
 
 Inevitably, you'll be wanting to "store" things up in the cloud.
 
@@ -19,6 +23,7 @@ For instance, you might simply be interested in a direct migration of your files
 
 You can take it further as well to non-relational databases (NoSQL databases), data warehousing strategies for big data and data analytics, etc.  Basically, the decision *you* need to make is *how* your data is to be stored and *what* you want to do with it.
 
+> Module video: [Cloud Datatypes [16:38]](https://youtu.be/HVvoLTspxzs)
 
 ## Storage
 
@@ -47,6 +52,8 @@ For reference, Microsoft Azure has a similar set of available options, as shown 
 ![Microsoft Azure Storage Options](https://www.dremio.com/img/explained/azure-storage/image_0.png "Microsoft Azure Storage Options")
 
 > Figure 3: Microsoft Azure Storage Options
+
+> Module video: [Cloud Storage / Cloud Shell Demo [8:45]](https://youtu.be/_rFd7lRsDOQ)
 
 ## Structured vs. Unstructured Data
 
@@ -97,15 +104,21 @@ As we've discussed, you have multiple options for data storage.  Here, we'll foc
 
 With structured data, typically you're looking to model something fairly *relational* in nature (i.e., a normal database).  For this example we'll take a look at Cloud Spanner, a tool that aims to give you the feel of a normal database with the scalability features of a non-relational database.
 
-> Module Video: Cloud Spanner - https://codelabs.developers.google.com/codelabs/cloud-spanner-leaderboard-go#0
-
 ### Unstructured Example
 
 Here, you might go for BigTable if you're looking to manage data considered 'big data,' however we'll focus on Cloud Datastore as that may be more tenable for everyday applications.
 
-> Module Video: Cloud Datastore
+> Module Video: [Cloud Datastore Demo [13:39]](https://youtu.be/y9T9Xm7oge0)
 
-Cloud Datastore - https://codelabs.developers.google.com/codelabs/cloud-spring-datastore/#0
+Cloud Datastore - [https://codelabs.developers.google.com/codelabs/cloud-spring-datastore/](https://codelabs.developers.google.com/codelabs/cloud-spring-datastore/)
+
+And a bit on Cloud Spanner:
+
+> Module video: [Cloud Spanner Demo [10:56]](https://youtu.be/1r7rY6BKmUY) 
+
+Links to the demo article: [https://cloud.google.com/spanner/docs/query-syntax#appendix_a_examples_with_sample_data](https://cloud.google.com/spanner/docs/query-syntax#appendix_a_examples_with_sample_data)
+And how to use Python with it: [https://cloud.google.com/spanner/docs/getting-started/python](https://cloud.google.com/spanner/docs/getting-started/python)
+
 
 ## Lab
 

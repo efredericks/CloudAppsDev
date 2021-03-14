@@ -1,12 +1,18 @@
 > By the end of this module, you'll gain experience with interacting with the cloud via application programming interfaces (APIs), learn a bit about managed messaging, and look at the Publish/Subscribe (PubSub) service.
 
 > Module videos:
+* [APIs / REST / Cloud Endpoints Overview [12:33]](https://youtu.be/4PXLJ1B4b-w)
 * [Python / Flask RESTful calls [11:18]](https://youtu.be/YLTTi9WpVCY)
+* [Pub/Sub Overview [11:45]](https://youtu.be/QcILsObM4LM)
 
 > Module labs:
 * Create and use a Cloud Endpoint
 
 ## Let's be RESTful
+
+Here's a video outlining the basics:
+
+> Module Video: [APIs / REST / Cloud Endpoints Overview [12:33]](https://youtu.be/4PXLJ1B4b-w)
 
 [RESTful services](https://restfulapi.net/) are more than likely a phrase you've heard in the past.  If you already know what they are, wonderful, however we should talk about what they exactly are and how we can use them to interact with our cloud services.
 
@@ -126,6 +132,8 @@ Let's get some practical experience using QwikLabs.
 > [QwikLabs - Cloud Endpoints: Qwik Start (GSP164) [1 Credit]](https://www.qwiklabs.com/focuses/767?catalog_rank=%7B%22rank%22%3A2%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=8674034)
 
 ## Managed Message Services and Pub/Sub
+
+> Module video: [Pub/Sub Overview [11:45]](https://youtu.be/QcILsObM4LM)
 
 Figure 6 (c/o Google) demonstrates how data moves from clients at the Endpoint to internal services and then back to users.  What generally happens, from a service perspective, is that data comes in, something *happens* to that data (i.e., it is transformed in some way), and then data comes out.  In the cloud world, this procedure needs to happen quickly and reliably.
 
