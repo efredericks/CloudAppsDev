@@ -12,13 +12,17 @@
 
 ## Cloud Applications
 
+First up, a module video going over these points, verbally!
+
+> Module video: [What are cloud applications? [13:33]](https://youtu.be/5eYw7hgv1Fc)
+
 Let's start thinking about how we can take our applications, no matter what type we need, and transition them to the cloud.  Your first question should really be "do we need the cloud?"  If you are designing an application in the cloud just because it is trendy, then there is a good chance you don't actually *need* the cloud.
 
 However, if you do need cloud resources (e.g., scalability, uptime, network-based delivery) then you're exactly where you need to be.
 
 I will link this again at the bottom, but this article is a pretty good read for considerations you'll need to keep in mind when designing an application for the cloud - [Google Cloud - 5 Principles for Cloud-Native Architecture](https://cloud.google.com/blog/products/application-development/5-principles-for-cloud-native-architecture-what-it-is-and-how-to-master-it).  I'll be mainly distilling this article here (plus some of the others I've linked).
 
-> *We'll be getting to concepts such as containers a Cloud Run later on, for now we'll focus on what we need to design for the cloud*.
+> *We'll be getting to concepts such as containers and Cloud Run later on, for now we'll focus on what we need to design for the cloud*.
 
 Depending on which article you read, there are multiple considerations you'll have for transitioning your applications to the cloud.  I'd recommend checking out the linked resources at the bottom to get different perspectives as well.  But, this is a class and you need well-synthesized information so here we go!
 
@@ -149,9 +153,9 @@ You have multiple instances of services, with different versions if necessary, t
 
 I have a couple of videos for you walking you through the next-linked Codelab on App Engine.  It is split into two videos as it was starting to get long.  Of note I left in two mistakes that I made when walking through the demo -- to me watching how to fix problems as they arise is far more useful than cutting them out, so you get to see my process for debugging.
 
-> Module Video - [App Engine Overview [14:15]](https://youtu.be/gH3m5v2Vz04)
-> Module Video - <a href="https://youtu.be/p7l_7GlFxas" target="_blank">App Engine Demo (1/2) [10:46]</a>
-> Module Video - <a href="https://youtu.be/qQF93W_guXU" target="_blank">App Engine Demo (2/2) [10:58]</a>
+> * Module Video - [App Engine Overview [14:15]](https://youtu.be/gH3m5v2Vz04)
+> * Module Video - <a href="https://youtu.be/p7l_7GlFxas" target="_blank">App Engine Demo (1/2) [10:46]</a>
+> * Module Video - <a href="https://youtu.be/qQF93W_guXU" target="_blank">App Engine Demo (2/2) [10:58]</a>
 
 [Google Codelab - App Engine](https://codelabs.developers.google.com/codelabs/cloud-app-engine-python3/)
 
