@@ -1,6 +1,7 @@
 > By the end of this module, you'll gain experience with cloud security and provider vs. consumer responsibilities with respect to security.
 
 > Module videos:
+> * [Cloud Encryption Overview + IAM + Roles [14:42]](https://youtu.be/V-Zu1mRQlFI)
 > * [Cloud KMS Codelabs Demo [8:20]](https://youtu.be/fEoL3pcJySc)
 
 > Module labs:
