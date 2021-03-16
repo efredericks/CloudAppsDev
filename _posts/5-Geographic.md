@@ -1,7 +1,6 @@
 > By the end of this module, you'll gain experience with geographic concerns. 
 
 > Module videos:
-> * Core concepts
 > * [Overview of geographic concerns [10:18]](https://youtu.be/NXLX4nIfEkQ)
 > * [Load Balancing Demo (1/2) [10:38]](https://youtu.be/oawtW7W_T9U)
 > * [Load Balancing Demo (2/2) [10:59]](https://youtu.be/NjX1B5eOqic)
@@ -48,7 +47,7 @@ Let's take a look at the big three in terms of regional availability.  *Note tha
 
 [AWS Regions](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
 
-<img src="https://azurecomcdn.azureedge.net/cvt-501c9a38819bd9ffc1ed855f2ed8b5db5e8936aed3e3a6732ff13f313a6c0ca4/images/shared/regions-map-desktop.svg alt="Microsoft Azure Regions" title="Microsoft Azure Regions" style="background-color:#fff" />
+<img src="https://azurecomcdn.azureedge.net/cvt-501c9a38819bd9ffc1ed855f2ed8b5db5e8936aed3e3a6732ff13f313a6c0ca4/images/shared/regions-map-desktop.svg" alt="Microsoft Azure Regions" title="Microsoft Azure Regions" style="background-color:#fff" />
 
 > Figure 4: Microsoft Azure Regions
 
@@ -75,8 +74,8 @@ Another major concern lies in exporting your data to other countries.  We'll tal
 Here's a demo on load balancing!  Try it out for some experience with the `gcloud compute` shell command (plus load balancing).
   This demo is based on this link: [https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce](https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce)
 
-> Module video: [Load Balancing Demo (1/2) [10:38]](https://youtu.be/oawtW7W_T9U)
-> Module video: [Load Balancing Demo (2/2) [10:59]](https://youtu.be/NjX1B5eOqic)
+> * Module video: [Load Balancing Demo (1/2) [10:38]](https://youtu.be/oawtW7W_T9U)
+> * Module video: [Load Balancing Demo (2/2) [10:59]](https://youtu.be/NjX1B5eOqic)
 
 ### Export Controls
 
@@ -92,9 +91,6 @@ Read the following two links!
 
 [Microsoft Azure - Managing export controls in Azure and Azure Government](:https://devblogs.microsoft.com/azuregov/managing-export-controls-in-azure-and-azure-government/)
 
-## Lab!
-
-> Setup a worldwide load-balanced website.  
 
 ## Additional Resources
 
