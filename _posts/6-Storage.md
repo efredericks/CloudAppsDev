@@ -4,6 +4,8 @@
 > * [Cloud Datatypes [16:38]](https://youtu.be/HVvoLTspxzs)
 > * [Cloud Storage Overview [9:54]](https://youtu.be/cJh_naOJ-qM)
 > * [Cloud Storage / Cloud Shell Demo [8:45]](https://youtu.be/_rFd7lRsDOQ)
+> * [Cloud Storage / Cloud Functions / DLP demo (1/2) [15:21]](https://youtu.be/eX9yGgVU_5I)
+> * [Cloud Storage / Cloud Functions / DLP demo (2/2) [16:10]](https://youtu.be/zmhFTUioSkU)
 > * [Cloud Datastore Demo [13:39]](https://youtu.be/y9T9Xm7oge0)
 > * [Cloud Spanner Demo [10:56]](https://youtu.be/1r7rY6BKmUY)
 
@@ -53,7 +55,20 @@ For reference, Microsoft Azure has a similar set of available options, as shown 
 
 > Figure 3: Microsoft Azure Storage Options
 
-> Module video: [Cloud Storage / Cloud Shell Demo [8:45]](https://youtu.be/_rFd7lRsDOQ)
+> * Module video: [Cloud Storage / Cloud Shell Demo [8:45]](https://youtu.be/_rFd7lRsDOQ)
+
+We also can do some other nifty things with Cloud Storage.  In this next demo, we'll hook up Cloud Storage, Cloud Functions, and the DLP API:
+
+* Link to [Codelab](https://codelabs.developers.google.com/codelabs/cloud-storage-dlp-functions)
+* Link to [Medium article where you can find the correct GitHub repository](https://medium.com/google-cloud/automating-cloud-storage-data-classification-dlp-api-and-cloud-function-7546b3763203)
+
+> * [Cloud Storage / Cloud Functions / DLP demo (1/2) [15:21]](https://youtu.be/eX9yGgVU_5I)
+> * [Cloud Storage / Cloud Functions / DLP demo (2/2) [16:10]](https://youtu.be/zmhFTUioSkU)
+
+> * Module video: [Cloud Storage / Cloud Functions / DLP demo (1/2) [15:21]](https://youtu.be/eX9yGgVU_5I)
+> * Module video: [Cloud Storage / Cloud Functions / DLP demo (2/2) []](https://youtu.be/zmhFTUioSkU)
+
+
 
 ## Structured vs. Unstructured Data
 
