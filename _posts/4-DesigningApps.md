@@ -10,6 +10,10 @@
 > * [Monolithic-Microlithic Demo Pt 2 [18:19]](https://youtu.be/gUXSSpsvARg)
 > * [Monolithic-Microlithic Demo Pt 3 [19:01]](https://youtu.be/P_hvBGdrTqQ)
 
+> Module labs:
+> * Blackboard - Monolithic to Microservices
+> * Extra credit opportunity - App Engine 
+
 ## Cloud Applications
 
 First up, a module video going over these points, verbally!
@@ -159,13 +163,15 @@ I have a couple of videos for you walking you through the next-linked Codelab on
 
 [Google Codelab - App Engine](https://codelabs.developers.google.com/codelabs/cloud-app-engine-python3/)
 
-(**You may note that there is ... another lab for you in Blackboard!**)
+(**You may notice an extra credit opportunity in Blackboard for App Engine!**)
 
 The purpose of this lab is to demonstrate how we might turn a web server into a microservice *that can be deployed and updated without touching the application itself*.  We are creating the microservice using `Flask`, a Python-based web server.  We'll also be using the cloud shell to deploy/re-deploy our microservice.  Again, the lab manual will have screenshots and extensions you'll need to follow as well!
 
 > One thing you should keep in mind when working through this lab.  At present, [you can't delete an app once it is created in Google Cloud](https://stackoverflow.com/questions/42512/deleting-a-google-app-engine-application).  It can be disabled, however you should read the fine print to understand what is going on.
 
 ## Migrating from Monolithic to Microlithic (or at least Microservice-based)
+
+(**You may note that there is ... another lab for you in Blackboard!**)
 
 This bullet list is directly from [Google here](https://cloud.google.com/appengine/docs/standard/python/microservice-migration), but it is a good procedure/heuristic to follow when migrating from a massive application to one that is centered around microservices:
 
