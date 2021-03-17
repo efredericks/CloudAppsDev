@@ -1,6 +1,7 @@
 > By the end of this module, you'll gain experience with cloud security and provider vs. consumer responsibilities with respect to security.
 
 > Module videos:
+> * [Cloud Security Overview [15:36]](https://youtu.be/rIpKMFp9sw4)
 > * [Cloud Encryption Overview + IAM + Roles [14:42]](https://youtu.be/V-Zu1mRQlFI)
 > * [Cloud KMS Codelabs Demo [8:20]](https://youtu.be/fEoL3pcJySc)
 
@@ -10,7 +11,8 @@
 
 Security is a consideration from both the perspective of the cloud provider **and** from  you, the developer.  While we can rely on our provider to enable *perimeter* security (e.g., firewalls/walled gardens) as well as provide *internal* security (e.g., automatic encryption), it will eventually fall on you to implement the necessary security protocols relevant to *your* task.  Specifically, one of the biggest causes of security issues is from mis-configured services/applications that expose a weakness, from poor password management to over-authorizing accounts.  We'll go into all of that in this post, but first lets start with a short overview of the encryption/decryption possibilities available to us, as well as some of the roles we can specify, along with to which entities we can apply those roles:
 
-> Module video: [Cloud Encryption Overview + IAM + Roles [14:42]](https://youtu.be/V-Zu1mRQlFI)
+> * Module video: [Cloud Security Overview [15:36]](https://youtu.be/rIpKMFp9sw4)
+> * Module video: [Cloud Encryption Overview + IAM + Roles [14:42]](https://youtu.be/V-Zu1mRQlFI)
 
 
 ## Google Cloud Security Model
