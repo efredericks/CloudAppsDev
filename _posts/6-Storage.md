@@ -65,8 +65,6 @@ We also can do some other nifty things with Cloud Storage.  In this next demo, w
 > * Module video: [Cloud Storage / Cloud Functions / DLP demo (1/2) [15:21]](https://youtu.be/eX9yGgVU_5I)
 > * Module video: [Cloud Storage / Cloud Functions / DLP demo (2/2) [16:10]](https://youtu.be/zmhFTUioSkU)
 
-
-
 ## Structured vs. Unstructured Data
 
 This discussion is best suited for a proper database course (normalization anybody?), so you get the highlights here.  First and foremost, data that you put into a database must be considered very carefully before you begin (or even before you begin transforming an existing database application to a cloud-based application).
@@ -116,6 +114,12 @@ As we've discussed, you have multiple options for data storage.  Here, we'll foc
 
 With structured data, typically you're looking to model something fairly *relational* in nature (i.e., a normal database).  For this example we'll take a look at Cloud Spanner, a tool that aims to give you the feel of a normal database with the scalability features of a non-relational database.
 
+> Module video: [Cloud Spanner Demo [10:56]](https://youtu.be/1r7rY6BKmUY) 
+
+Links to the demo article: [https://cloud.google.com/spanner/docs/query-syntax#appendix_a_examples_with_sample_data](https://cloud.google.com/spanner/docs/query-syntax#appendix_a_examples_with_sample_data)
+
+And how to use Python with it: [https://cloud.google.com/spanner/docs/getting-started/python](https://cloud.google.com/spanner/docs/getting-started/python)
+
 ### Unstructured Example
 
 Here, you might go for BigTable if you're looking to manage data considered 'big data,' however we'll focus on Cloud Datastore as that may be more tenable for everyday applications.
@@ -123,14 +127,6 @@ Here, you might go for BigTable if you're looking to manage data considered 'big
 > Module Video: [Cloud Datastore Demo [13:39]](https://youtu.be/y9T9Xm7oge0)
 
 Cloud Datastore - [https://codelabs.developers.google.com/codelabs/cloud-spring-datastore/](https://codelabs.developers.google.com/codelabs/cloud-spring-datastore/)
-
-And a bit on Cloud Spanner:
-
-> Module video: [Cloud Spanner Demo [10:56]](https://youtu.be/1r7rY6BKmUY) 
-
-Links to the demo article: [https://cloud.google.com/spanner/docs/query-syntax#appendix_a_examples_with_sample_data](https://cloud.google.com/spanner/docs/query-syntax#appendix_a_examples_with_sample_data)
-And how to use Python with it: [https://cloud.google.com/spanner/docs/getting-started/python](https://cloud.google.com/spanner/docs/getting-started/python)
-
 
 ## Lab
 
@@ -140,7 +136,7 @@ https://codelabs.developers.google.com/codelabs/bigtable-keyviz-art-hbase-java#0
 
 ## Additional Resources
 
-* TBD
+* [Cloud Storage Bucket](https://cloud.google.com/storage/docs/key-terms#buckets) 
 
 <hr size="1" />
 
