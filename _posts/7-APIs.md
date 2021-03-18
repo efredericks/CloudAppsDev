@@ -4,6 +4,7 @@
 * [APIs / REST / Cloud Endpoints Overview [12:33]](https://youtu.be/4PXLJ1B4b-w)
 * [Python / Flask RESTful calls [11:18]](https://youtu.be/YLTTi9WpVCY)
 * [Pub/Sub Overview [11:45]](https://youtu.be/QcILsObM4LM)
+* [Pub/Sub Demo [21:08]](https://youtu.be/UKAmZBrR300)
 
 > Module labs:
 * Create and use a Cloud Endpoint
@@ -197,6 +198,10 @@ To give you an idea as to where Pub/Sub sits in the cloud hierarchy (i.e., where
 
 > Figure 14: Pub/Sub Location
 
+The following video walks you through a [Codelab](https://cloud.google.com/pubsub/docs/building-pubsub-messaging-system) that helps you (1) install gcloud locally and (2) interact with Google Pub/Sub from a local Python script.
+
+> Module video: [Pub/Sub Demo [21:08]](https://youtu.be/UKAmZBrR300)
+
 Time for a Pub/Sub lab!  For this I'd like to have you get experience with Pub/Sub in two different forms - the Cloud Console/Shell and Python.  Note that you can run Python in the Cloud Shell, so nothing needed locally!
 
 > [QwikLabs - Google Cloud Pub/Sub: Qwik Start - Console (GSP096) [Free]](https://www.qwiklabs.com/focuses/3719?catalog_rank=%7B%22rank%22%3A4%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=8673991)
@@ -205,7 +210,7 @@ Time for a Pub/Sub lab!  For this I'd like to have you get experience with Pub/S
 
 ## Additional Resources
 
-* TBD
+* [Pub/Sub Codelab](https://cloud.google.com/pubsub/docs/building-pubsub-messaging-system) cript.
 
 <hr size="1" />
 
