@@ -2,6 +2,8 @@
 
 > Module videos:
 
+* [Cloud Networking Basics [11:30]](https://youtu.be/-pBJH6ObSgM)
+
 > Module labs:
 
 * Lab 1: [QwikLabs - Multiple VPC Networks (GSP211)](https://run.qwiklabs.com/focuses/1230?parent=catalog)

@@ -92,12 +92,17 @@ Read the following two links!
 
 [Export Controls and Cloud Computing](https://www.bis.doc.gov/documents/bis-annual-conference-2018/2239-cloudy-with-a-chance-of-technology-transfer-breakout-rev-13may2018/file)
 
-[Microsoft Azure - Managing export controls in Azure and Azure Government](:https://devblogs.microsoft.com/azuregov/managing-export-controls-in-azure-and-azure-government/)
+[Microsoft Azure - Managing export controls in Azure and Azure Government](https://devblogs.microsoft.com/azuregov/managing-export-controls-in-azure-and-azure-government/)
 
 
 ## Additional Resources
 
-* TBD
+* [Google Cloud Regions](https://cloud.google.com/about/locations/)
+* [AWS Regions](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
+* [Microsoft Azure Regions](https://azure.microsoft.com/en-us/global-infrastructure/geographies/)
+* [https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce](https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce)
+* [Export Controls and Cloud Computing](https://www.bis.doc.gov/documents/bis-annual-conference-2018/2239-cloudy-with-a-chance-of-technology-transfer-breakout-rev-13may2018/file)
+* [Microsoft Azure - Managing export controls in Azure and Azure Government](https://devblogs.microsoft.com/azuregov/managing-export-controls-in-azure-and-azure-government/)
 
 <hr size="1" />
 

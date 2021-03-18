@@ -62,11 +62,8 @@ We also can do some other nifty things with Cloud Storage.  In this next demo, w
 * Link to [Codelab](https://codelabs.developers.google.com/codelabs/cloud-storage-dlp-functions)
 * Link to [Medium article where you can find the correct GitHub repository](https://medium.com/google-cloud/automating-cloud-storage-data-classification-dlp-api-and-cloud-function-7546b3763203)
 
-> * [Cloud Storage / Cloud Functions / DLP demo (1/2) [15:21]](https://youtu.be/eX9yGgVU_5I)
-> * [Cloud Storage / Cloud Functions / DLP demo (2/2) [16:10]](https://youtu.be/zmhFTUioSkU)
-
 > * Module video: [Cloud Storage / Cloud Functions / DLP demo (1/2) [15:21]](https://youtu.be/eX9yGgVU_5I)
-> * Module video: [Cloud Storage / Cloud Functions / DLP demo (2/2) []](https://youtu.be/zmhFTUioSkU)
+> * Module video: [Cloud Storage / Cloud Functions / DLP demo (2/2) [16:10]](https://youtu.be/zmhFTUioSkU)
 
 
 
