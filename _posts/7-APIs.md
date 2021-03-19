@@ -113,7 +113,6 @@ Let's do a *very* simple RESTful lab to get you up and running.  Because it is f
 
 > Lab: [Build a simple RESTful API (see Blackboard for manual](https://codelabs.developers.google.com/codelabs/cloud-springboot-cloudshell)
 
-
 ## Cloud Endpoints
 
 Time to look at what is available to us in the cloud!  Figure 4 (c/o Google) demonstrates Cloud Endpoints, their approach for handling cloud-based APIs.  In this figure you see what is available via Endpoints.
