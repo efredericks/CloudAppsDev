@@ -213,7 +213,16 @@ Time for a Pub/Sub lab!  For this I'd like to have you get experience with Pub/S
 
 ## Additional Resources
 
-* [Pub/Sub Codelab](https://cloud.google.com/pubsub/docs/building-pubsub-messaging-system) cript.
+* [Standardized approach to REST](https://www.w3.org/2001/sw/wiki/REST)
+* [RESTful services](https://restfulapi.net/)
+* [Wikipedia has a delightful overview of what REST means](https://en.wikipedia.org/wiki/Representational_state_transfer)
+* [Pub/Sub Codelab](https://cloud.google.com/pubsub/docs/building-pubsub-messaging-system) script.
+* [Tutorial on building a RESTful API with Flask (Python) and Postman](https://www.kite.com/blog/python/flask-restful-api-tutorial/)
+* [Specifying contracts](https://medium.com/theagilemanager/development-what-is-an-api-contract-683ced58e06f)
+* [AWS Service Endpoints](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/using-govcloud-endpoints.html)
+* [Azure API Management](https://azure.microsoft.com/en-us/services/api-management/)
+* [Amazon's explanation of Pub/Sub](https://aws.amazon.com/pub-sub-messaging/)
+* [Simpler explanation of Pub/Sub](https://medium.com/@onejohi/building-a-simple-rest-api-with-python-and-flask-b404371dc699)
 
 <hr size="1" />
 
