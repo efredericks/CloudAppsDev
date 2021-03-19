@@ -6,17 +6,18 @@ excerpt:
 
         <h2>Module Videos</h2>
         <ul>
-        <li><a href="https://youtu.be/HVvoLTspxzs" target="_blank">Cloud Datatypes [16:38]</a></li>
-        <li><a href="https://youtu.be/cJh_naOJ-qM" target="_blank">Cloud Storage Overview [9:54]</a></li>
-        <li><a href="https://youtu.be/_rFd7lRsDOQ" target="_blank">Cloud Storage / Cloud Shell Demo [8:45]</a></li>
-        <li><a href="https://youtu.be/eX9yGgVU_5I" target="_blank">Cloud Storage / Cloud Functions / DLP demo (1/2) [15:21]</a></li>
-        <li><a href="https://youtu.be/zmhFTUioSkU" target="_blank">Cloud Storage / Cloud Functions / DLP demo (2/2) [16:10]</a></li>
-        <li><a href="https://youtu.be/y9T9Xm7oge0" target="_blank">Cloud Datastore Demo [13:39]</a></li>
-        <li><a href="https://youtu.be/1r7rY6BKmUY" target="_blank">Cloud Spanner Demo [10:56]</a></li>
+          <li><a href="https://youtu.be/HVvoLTspxzs" target="_blank">Cloud Datatypes [16:38]</a></li>
+          <li><a href="https://youtu.be/cJh_naOJ-qM" target="_blank">Cloud Storage Overview [9:54]</a></li>
+          <li><a href="https://youtu.be/_rFd7lRsDOQ" target="_blank">Cloud Storage / Cloud Shell Demo [8:45]</a></li>
+          <li><a href="https://youtu.be/eX9yGgVU_5I" target="_blank">Cloud Storage / Cloud Functions / DLP demo (1/2) [15:21]</a></li>
+          <li><a href="https://youtu.be/zmhFTUioSkU" target="_blank">Cloud Storage / Cloud Functions / DLP demo (2/2) [16:10]</a></li>
+          <li><a href="https://youtu.be/y9T9Xm7oge0" target="_blank">Cloud Datastore Demo [13:39]</a></li>
+          <li><a href="https://youtu.be/1r7rY6BKmUY" target="_blank">Cloud Spanner Demo [10:56]</a></li>
         </ul>
         <h2>Module Labs</h2>
         <ul>
-        <li>Synthesis -- See Blackboard</li>
+          <li><a href="https://codelabs.developers.google.com/codelabs/bigtable-keyviz-art-hbase-java" target="_blank">Codelab - BigTable Visualizer (see Blackboard for manual)</a></li>
+          <li>Synthesis -- See Blackboard</li>
         </ul>
 ---  
 

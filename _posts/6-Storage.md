@@ -9,6 +9,9 @@
 > * [Cloud Datastore Demo [13:39]](https://youtu.be/y9T9Xm7oge0)
 > * [Cloud Spanner Demo [10:56]](https://youtu.be/1r7rY6BKmUY)
 
+> Module labs:
+> * [Codelab - BigTable Visualizer](https://codelabs.developers.google.com/codelabs/bigtable-keyviz-art-hbase-java)
+
 Inevitably, you'll be wanting to "store" things up in the cloud.
 
 Crazy concept, yes, however sometimes we do need persistent data accessible to our various cloud (and even non-cloud) services.  Historically, data has been stored either as file-based (such as an FTP server or fGile share) or in databases (relational for a *long* time and non-relational for a reasonably recent time).  That's not to say that there aren't other options, but typically it'll either be files or relational data (e.g., MySQL, Microsoft SQL server, PostGreSQL, etc.).
@@ -130,13 +133,17 @@ Cloud Datastore - [https://codelabs.developers.google.com/codelabs/cloud-spring-
 
 ## Lab
 
-Let's do something fun now that you have gained some experience with the more 'standard' methods of handling data (both structured and unstructured).  Let's use BigTable
-https://codelabs.developers.google.com/codelabs/bigtable-keyviz-art-hbase-java#0
+Let's do something fun now that you have gained some experience with the more 'standard' methods of handling data (both structured and unstructured).  Let's use BigTable to coerce the BigTable visualizer into creating artwork for us!  This is a lab for class, so you'll be walking through this one on your own (see Blackboard for deliverables).
+
+[Codelab - BigTable Visualizer](https://codelabs.developers.google.com/codelabs/bigtable-keyviz-art-hbase-java)
 
 
 ## Additional Resources
 
 * [Cloud Storage Bucket](https://cloud.google.com/storage/docs/key-terms#buckets) 
+* [Cloud Spanner Demo](https://cloud.google.com/spanner/docs/query-syntax#appendix_a_examples_with_sample_data)
+* [Cloud Spanner + Python](https://cloud.google.com/spanner/docs/getting-started/python)
+* [Cloud Datastore + Spring](https://codelabs.developers.google.com/codelabs/cloud-spring-datastore/)
 
 <hr size="1" />
 
