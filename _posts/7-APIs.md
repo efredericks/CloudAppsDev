@@ -7,6 +7,7 @@
 * [Pub/Sub Demo [21:08]](https://youtu.be/UKAmZBrR300)
 
 > Module labs:
+> * [Build a simple RESTful API (see Blackboard for manual](https://codelabs.developers.google.com/codelabs/cloud-springboot-cloudshell)
 * Create and use a Cloud Endpoint
 
 ## Let's be RESTful
@@ -43,8 +44,10 @@ And here is a [simpler one](https://medium.com/@onejohi/building-a-simple-rest-a
 
 > [Video on Python / Flask RESTful calls [11:18]](https://youtu.be/YLTTi9WpVCY)
 
-> Python Source files: [main1.py](/CloudAppsDev/assets/code/REST/main1.py), [main2.py](/CloudAppsDev/assets/code/REST/main2.py)
-> Python Requirements file: [requirements.txt](/CloudAppsDev/assets/code/REST/requirements.txt)
+Python source / requirements files:
+> * [main1.py](/CloudAppsDev/assets/code/REST/main1.py)
+> * [main2.py](/CloudAppsDev/assets/code/REST/main2.py)
+> * [requirements.txt](/CloudAppsDev/assets/code/REST/requirements.txt)
 
 *Variables to set and how to run*
 
@@ -57,8 +60,6 @@ $ python3 -m flask run
 ```
 
 > Notes: *Change main1 to main2 when going to the second example*, and your method of running Flask may be different (mine is mainly because I have several versions of Python installed on my machine)
-
-
 
 ### But was is an API?
 
@@ -108,7 +109,10 @@ Will your API scale to meet user demand, both upwards and downwards?  As you are
 
 Keeping an eye on what your API is doing and how it is being used is also a major consideration.  You must have traceable evidence of exactly what your API has been doing so that you can properly manage your service and usage patterns.
 
-> Lab: [Display the first 100 files & folders in your Google Drive](https://codelabs.developers.google.com/codelabs/gsuite-apis-intro#8)
+Let's do a *very* simple RESTful lab to get you up and running.  Because it is fun to experience new things, let's try out Spring Boot:
+
+> Lab: [Build a simple RESTful API (see Blackboard for manual](https://codelabs.developers.google.com/codelabs/cloud-springboot-cloudshell)
+
 
 ## Cloud Endpoints
 
