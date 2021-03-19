@@ -7,8 +7,8 @@
 * [Pub/Sub Demo [21:08]](https://youtu.be/UKAmZBrR300)
 
 > Module labs:
-> * [Build a simple RESTful API (see Blackboard for manual](https://codelabs.developers.google.com/codelabs/cloud-springboot-cloudshell)
-* Create and use a Cloud Endpoint
+> * [Build a simple RESTful API (see Blackboard for manual)](https://codelabs.developers.google.com/codelabs/cloud-springboot-cloudshell)
+> * [Qwiklab - Cloud Endpoints: Qwik Start (GSP164) [1 credit]](https://www.qwiklabs.com/focuses/767?parent=catalog)
 
 ## Let's be RESTful
 
@@ -111,7 +111,7 @@ Keeping an eye on what your API is doing and how it is being used is also a majo
 
 Let's do a *very* simple RESTful lab to get you up and running.  Because it is fun to experience new things, let's try out Spring Boot:
 
-> Lab: [Build a simple RESTful API (see Blackboard for manual](https://codelabs.developers.google.com/codelabs/cloud-springboot-cloudshell)
+> Lab: [Build a simple RESTful API (see Blackboard for manual)](https://codelabs.developers.google.com/codelabs/cloud-springboot-cloudshell)
 
 ## Cloud Endpoints
 
@@ -133,7 +133,7 @@ Figure 5 (c/o Google) demonstrates how they (i.e., Cloud Endpoints) fit into the
 
 Let's get some practical experience using QwikLabs.  
 
-> [QwikLabs - Cloud Endpoints: Qwik Start (GSP164) [1 Credit]](https://www.qwiklabs.com/focuses/767?catalog_rank=%7B%22rank%22%3A2%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=8674034)
+> [Qwiklab - Cloud Endpoints: Qwik Start (GSP164) [1 credit]](https://www.qwiklabs.com/focuses/767?parent=catalog)
 
 ## Managed Message Services and Pub/Sub
 
