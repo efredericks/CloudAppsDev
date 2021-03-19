@@ -5,6 +5,8 @@
 * [Python / Flask RESTful calls [11:18]](https://youtu.be/YLTTi9WpVCY)
 * [Pub/Sub Overview [11:45]](https://youtu.be/QcILsObM4LM)
 * [Pub/Sub Demo [21:08]](https://youtu.be/UKAmZBrR300)
+* [Cloud Endpoints Demo (1/2) [14:50]](https://youtu.be/72ZHdM0NNr8)
+* [Cloud Endpoints Demo (2/2) [20:19]](https://youtu.be/e5YMOEd68YQ)
 
 > Module labs:
 > * [Build a simple RESTful API (see Blackboard for manual)](https://codelabs.developers.google.com/codelabs/cloud-springboot-cloudshell)
@@ -130,6 +132,13 @@ Figure 5 (c/o Google) demonstrates how they (i.e., Cloud Endpoints) fit into the
 ![Where Cloud Endpoints fit](/CloudAppsDev/assets/images/7-endpoints2.png "Where Cloud Endpoints fit")
 
 > Figure 5: Where Cloud Endpoints fit
+
+Here is a run-through of a Cloud Endpoints demo, complete with some issues experienced along the way!
+
+> * Module video: [Cloud Endpoints Demo (1/2) [14:50]](https://youtu.be/72ZHdM0NNr8)
+> * Module video: [Cloud Endpoints Demo (2/2) [20:19]](https://youtu.be/e5YMOEd68YQ)
+> * Get started guide: https://cloud.google.com/endpoints/docs/openapi/get-started-cloud-functions
+> * Cloud SDK installation guide: https://cloud.google.com/sdk/docs/quickstart
 
 Let's get some practical experience using QwikLabs.  
 
