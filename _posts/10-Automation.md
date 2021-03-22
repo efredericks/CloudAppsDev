@@ -1,6 +1,8 @@
 > By the end of this module, you'll gain experience with automating cloud-based tasks, as well as understanding and using automation tools for managing and optimizing your applications.
 
 > Module videos:
+> * [Cloud Build/Run Demo [14:20]](https://youtu.be/VgPF8TKY-BA)
+> * [Overview of Cloud Monitoring/Logging/Error Reporting [16:59]](https://youtu.be/muOUkOXxZv8)
 
 > Module labs:
 
@@ -56,6 +58,12 @@ How do we do these things (at least, in Google Cloud)?  Well....Figure 3 (c/o Go
 
 > Figure 3: Google Cloud Operations Suite
 
+First things first, here's a demo running through how we can use Cloud Build and Cloud Run to deploy projects:
+
+> * Module video: [Cloud Build/Run Demo [14:20]](https://youtu.be/VgPF8TKY-BA)
+> * [Codelab](https://codelabs.developers.google.com/codelabs/cloud-run-deploy/)
+> * [Concurrency]https://cloud.google.com/run/docs/about-concurrency)
+
 We'll now go into what these tools do for you, however they effectively provide insights into your various services, deployments, containers, etc.
 
 Forewarning: lots of Google-provided slides in the following sections!
@@ -110,6 +118,10 @@ Last but not least, we have Profiler.  This service watches CPU and memory of yo
 
 > Figure 9: Google Cloud Profiler
 
+The following video shows an overview of some of our automation and debugging tools, focusing on monitoring and logging with special guest appearances by Cloud Functions and Error Reporting.
+
+> * Module video: [Overview of Cloud Monitoring/Logging/Error Reporting [16:59]](https://youtu.be/muOUkOXxZv8)
+
 ### Lab!
 
 Let's get up and running with Cloud Monitoring.  This lab will help you understand some of these tools we've shown you.
@@ -121,7 +133,8 @@ Let's get up and running with Cloud Monitoring.  This lab will help you understa
 
 ## Additional Resources
 
-* TBD
+> * [Cloud Build/Run Codelab](https://codelabs.developers.google.com/codelabs/cloud-run-deploy/)
+> * [Concurrency]https://cloud.google.com/run/docs/about-concurrency)
 
 <hr size="1" />
 

@@ -3,6 +3,7 @@
 > Module videos:
 > * [Cloud Security Overview [15:36]](https://youtu.be/rIpKMFp9sw4)
 > * [Cloud Encryption Overview + IAM + Roles [14:42]](https://youtu.be/V-Zu1mRQlFI)
+> * [Cloud IAM Demo [13:13]](https://youtu.be/p0H0Z1xNWks)
 > * [Cloud KMS Codelabs Demo [8:20]](https://youtu.be/fEoL3pcJySc)
 
 > Module labs:
@@ -159,6 +160,10 @@ The **custom** role offers more granularity than the prior two.  Effectively, it
 ![Google Cloud - Custom Role](/CloudAppsDev/assets/images/8-gc-custom.png "Google Cloud - Custom Role")
 
 Figure 12: Google Cloud - Custom Role
+
+And here's a video on IAM and how it can be used!  Note we don't go the organization route, though that may be helpful if you're structuring a larger organization!
+
+> Module video: [Cloud IAM Demo [13:13]](https://youtu.be/p0H0Z1xNWks)
 
 ### Service Accounts
 
