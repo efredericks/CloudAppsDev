@@ -62,7 +62,7 @@ First things first, here's a demo running through how we can use Cloud Build and
 
 > * Module video: [Cloud Build/Run Demo [14:20]](https://youtu.be/VgPF8TKY-BA)
 > * [Codelab](https://codelabs.developers.google.com/codelabs/cloud-run-deploy/)
-> * [Concurrency]https://cloud.google.com/run/docs/about-concurrency)
+> * [Concurrency](https://cloud.google.com/run/docs/about-concurrency)
 
 We'll now go into what these tools do for you, however they effectively provide insights into your various services, deployments, containers, etc.
 
