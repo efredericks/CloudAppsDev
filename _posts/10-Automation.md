@@ -135,6 +135,7 @@ Let's get up and running with Cloud Monitoring.  This lab will help you understa
 
 > * [Cloud Build/Run Codelab](https://codelabs.developers.google.com/codelabs/cloud-run-deploy/)
 > * [Concurrency]https://cloud.google.com/run/docs/about-concurrency)
+> * [Error Reporting (Cloud Functions)](https://cloud.google.com/error-reporting/docs/setup/nodejs#cloud_functions)
 
 <hr size="1" />
 
