@@ -1,6 +1,7 @@
 > By the end of this module, you'll gain experience in developing apps that use Firebase.
 
 > Module videos:
+> * [[External] What is Firebase [21:44]](https://www.youtube.com/watch?v=9kRgVxULbag)
 > * [[External] Cloud Functions for Firebase [2:22]](https://www.youtube.com/watch?v=vr0Gfvp5v1A)
 
 > Module labs:
@@ -9,6 +10,8 @@
 > * [Qwiklab: Build a Serverless Web App with Firebase (GSP643)](https://run.qwiklabs.com/focuses/8391?parent=catalog)
 
 ## Firebase
+
+> External video: [What is Firebase [21:44]](https://www.youtube.com/watch?v=9kRgVxULbag)
 
 You will most likely have come across Firebase if you have ever dipped into the mobile or web development scene.  You can read all about its fascinating history (it used to be called Envolve) at various blogs ([here](https://hackernoon.com/introduction-to-firebase-218a23186cd7) and [here](https://www.geeksforgeeks.org/firebase-introduction/)), but what we are mainly interested in is how we can use it and how it can apply to cloud applications.
 
@@ -34,7 +37,7 @@ The following image shows off some quick guides for various platforms.  Note tha
 
 ### Firebase Features
 
-Let's take a look at a couple of commonly-used features.  
+Let's take a look at a couple of commonly-used features.  [This article](https://howtofirebase.com/what-is-firebase-fcb8614ba442) provides a helpful source to dip into it (plus, there's a video covering it as well).
 
 ### Linking up to the Cloud
 
@@ -111,6 +114,7 @@ Most of the code above is administrative in nature, however there are a few inte
 * [Firebase and Google Cloud](https://firebase.google.com/firebase-and-gcp/)
 * [Introduction to Firebase](https://hackernoon.com/introduction-to-firebase-218a23186cd7)
 * [Firebase - Introduction](https://www.geeksforgeeks.org/firebase-introduction/)
+* [What is Firebase?](https://howtofirebase.com/what-is-firebase-fcb8614ba442)
 * [Multi-Tenant Applications with Firebase and Google Cloud](https://medium.com/firebase-developers/multi-tenant-applications-with-firebase-and-google-cloud-4d0d02b7d859)
 * [Google Guide](https://cloud.google.com/build/docs/deploying-builds/deploy-firebase)
 
