@@ -6,6 +6,7 @@ excerpt:
 
         <h2>Module Videos</h2>
         <ul>
+          <li><a href="https://youtu.be/TOmJ7tr9phY" target="_blank">Automation Overview [11:32]</a></li>
           <li><a href="https://youtu.be/VgPF8TKY-BA" target="_blank">Cloud Build/Run Demo [14:20]</a></li>
           <li><a href="https://youtu.be/muOUkOXxZv8" target="_blank">Overview of Cloud Monitoring/Logging/Error Reporting [16:59]</a></li>
         </ul>
