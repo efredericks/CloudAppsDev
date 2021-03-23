@@ -80,6 +80,12 @@ This is the last section of this blog for this class!  Keep in mind that there i
 * [Use Cloud Functions to create a service-based game?]()
 * [Use Google Cloud for public good!](https://cloud.google.com/blog/products/data-analytics/publicly-available-covid-19-data-for-analytics)
 
+## The last video from me to you!
+
+Thanks all for keeping up with this course!  I hope it was as interesting for you to go through as it was for me to put together.  Here's a short video outlining what I hope you were able to get out of it and where to go from here:
+
+> Module video: [Course wrapup []]()
+
 # Labs
 
 * [Cloud Tasks](https://codelabs.developers.google.com/codelabs/cloud-gae-python-migrate-8-cloudtasks#0)
