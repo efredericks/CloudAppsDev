@@ -7,6 +7,7 @@
 > * [Cloud KMS Codelabs Demo [8:20]](https://youtu.be/fEoL3pcJySc)
 
 > Module labs:
+> * [Qwiklabs Quest - Security and Identity Fundamentals [40 credits]](https://www.qwiklabs.com/quests/40)
 
 ## Cloud Security
 
@@ -191,7 +192,7 @@ Let's talk about some best practices now.  Note that these are provided by Googl
 
 1. Use Projects to group resources
 2. Check the policy granted on each resource
-3. Use "principle of least privilege
+3. Use "principle of least privilege"
 4. Use logs
 5. Audit membership
 
@@ -220,9 +221,21 @@ For Steps 2 and 3, a naming convention and purpose of naming can make your life 
 
 Another hopefully self-evident task, but ensure your access keys expire regularly and are rotated!  Not rotating keys is a great way of opening up your cloud accounts to intrusion.
 
+## Lab
+
+You'll be completing your first Qwiklabs Quest!  This comprises 8 separate labs that takes you through the various facets of security and IAM.  For this one, simply submit the screenshots requested on Blackboard (note that I'll be checking completion reports in Qwiklabs as well).
+
+> [Qwiklabs Quest - Security and Identity Fundamentals [40 credits]](https://www.qwiklabs.com/quests/40)
+
 ## Additional Resources
 
-* TBD
+* [AWS Security Model](https://docs.microsoft.com/en-us/azure/security/fundamentals/overview)
+* [Azure Security Model](https://docs.microsoft.com/en-us/azure/security/fundamentals/overview)
+* [Overview of encryption/decryption](https://www.geeksforgeeks.org/difference-between-encryption-and-decryption/)
+* [Google Cloud's key management service (Cloud KMS)](https://cloud.google.com/security-key-management)
+* [Cloud Directory Sync](https://support.google.com/a/answer/106368?hl=en)
+* [AWS IAM approach](https://docs.aws.amazon.com/clouddirectory/latest/developerguide/iam_auth_access.html)
+* [Azure IAM approach](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods)
 
 <hr size="1" />
 
