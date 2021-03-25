@@ -3,6 +3,8 @@
 > Module videos:
 
 * [Cloud Networking Basics [11:30]](https://youtu.be/-pBJH6ObSgM)
+* [VPC Networks and Firewalls [20:01] (1/2)](https://youtu.be/hxr3eUpP2Zk)
+* [VPC Networks and Firewalls [12:55] (2/2)](https://youtu.be/-HZgkYYM_mE)
 
 > Module labs:
 
@@ -19,6 +21,12 @@ Time to discuss networking!  Sure would be a shame if all those nifty services y
 Take what you know of standard networking and scale it up significantly, and you have cloud networking.  Sandboxed networks?  Yep.  Subnets?  Yep.  Network partitioning and load balancing?  Sure!
 
 Plus a lot more, time to get into it.
+
+Here are a few videos to get you up and running, covering the basics of cloud networking, what VPC networks are and how they differ, and the great ｆｉｒｅｗａｌｌ:
+
+> * Module video: [Cloud Networking Basics [11:30]](https://youtu.be/-pBJH6ObSgM)
+> * Module video: [VPC Networks and Firewalls [20:01] (1/2)](https://youtu.be/hxr3eUpP2Zk)
+> * Module video: [VPC Networks and Firewalls [12:55] (2/2)](https://youtu.be/-HZgkYYM_mE)
 
 ## Networking Background
 

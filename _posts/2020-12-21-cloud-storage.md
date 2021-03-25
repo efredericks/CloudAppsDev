@@ -16,7 +16,8 @@ excerpt:
         </ul>
         <h2>Module Labs</h2>
         <ul>
-          <li><a href="https://codelabs.developers.google.com/codelabs/bigtable-keyviz-art-hbase-java" target="_blank">Codelab - BigTable Visualizer (see Blackboard for manual)</a></li>
+          <li><a href="https://www.qwiklabs.com/focuses/579?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=9414783" target="_blank">Bigtable- Qwik Start - Command Line [1 credit]</a></li>
+          <li><a href="https://www.qwiklabs.com/focuses/580?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=9414776" target="_blank">Bigtable- Qwik Start - Hbase Shell [1 credit]</a></li>
           <li>Synthesis -- See Blackboard</li>
         </ul>
 ---  

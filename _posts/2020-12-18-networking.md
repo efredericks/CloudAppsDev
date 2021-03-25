@@ -7,6 +7,8 @@ excerpt:
         <h2>Module Videos</h2>
         <ul>
           <li><a href="https://youtu.be/-pBJH6ObSgM" target="_blank">Cloud Networking Basics [11:30]</a></li>
+          <li><a href="https://youtu.be/hxr3eUpP2Zk" target="_blank">VPC Networks and Firewalls [20:01] (1/2)</a></li>
+          <li><a href="https://youtu.be/-HZgkYYM_mE" target="_blank">VPC Networks and Firewalls [12:55] (2/2)</a></li>
         </ul>
         <h2>Module Labs</h2>
         <ul>
