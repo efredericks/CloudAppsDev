@@ -2,7 +2,11 @@
 
 > Module videos:
 > * [Big Data Overview [14:10]](https://youtu.be/Mdh6sIxQy4U)
-> * [Google BigQuery - Analytics Data Warehouse (1:58)](https://youtu.be/eyBK9nj-7AA)
+> * [Google BigQuery - Analytics Data Warehouse [1:58]](https://youtu.be/eyBK9nj-7AA)
+> * [Dataproc/Spark Demo [8:53] (1/2)](https://youtu.be/tqomMqFSTaw)
+> * [Dataproc/Spark Demo [17:10] (2/2)](https://youtu.be/ID0SVlWoClc)
+
+https://codelabs.developers.google.com/codelabs/spark-jupyter-dataproc
 
 > Module labs:
 
@@ -163,6 +167,12 @@ Next, you'll be blasted with a series of slides and quotes from Google, as they 
 > In terms of value, resources can be focused on the data with Dataproc, not spent on cluster creation and management. Integrations with new Google Cloud products also unlock new features for Spark clusters.
 
 > * Additional information on the [Spark Machine Learning Libraries (MLlib)](http://spark.apache.org/docs/latest/mllib-guide.html)
+
+Here is a workthrough of a Codelab involving Dataproc and Spark -- setting up a Jupyter notebook environment!  
+
+> * [Dataproc/Spark Demo [8:53] (1/2)](https://youtu.be/tqomMqFSTaw)
+> * [Dataproc/Spark Demo [17:10] (2/2)](https://youtu.be/ID0SVlWoClc)
+> * [https://codelabs.developers.google.com/codelabs/spark-jupyter-dataproc](https://codelabs.developers.google.com/codelabs/spark-jupyter-dataproc)
 
 Ok, enough preamble.  Let's do some Dataproc work!
 
