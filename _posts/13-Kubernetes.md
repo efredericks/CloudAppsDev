@@ -20,7 +20,7 @@ As an aside, a great overview of both Docker and Kubernetes can be found here (p
 
 Kubernetes is an orchestration service for managing containers, their deployments, and their configurations.  Assuming we understand the purpose of the container (i.e., provide a fairly robust method for delivering a seamless application experience across different devices), Kubernetes sits on a layer above to enable oversight on container deployments.
 
-![https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/eb693/images/docs/container_evolution.svg](https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/eb693/images/docs/container_evolution.svg "Kubernetes Overview")
+<img style="background: #fff" src="https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/eb693/images/docs/container_evolution.svg" alt="Kubernetes Overview" title="Kubernetes Overview" />
 
 Kubernetes can be configured via an API for initial/ad-hoc updates or by loading configuration files that specify all the particulars necessary for defining parameters such as namespaces, images, replicates, etc. (see [Kubernetes Configuration](https://kubernetes.io/docs/concepts/configuration/overview/))
 
