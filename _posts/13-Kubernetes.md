@@ -18,17 +18,49 @@ As an aside, a great overview of both Docker and Kubernetes can be found here (p
 
 ## What is Kubernetes?
 
+> Note, much of this overview comes from the following two articles:
+> * [What is Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
+> * [What is Kubernetes? The Complete Guide](https://phoenixnap.com/kb/what-is-kubernetes)
+
+> Module video: [Kubernetes Overview []]()
+
 Kubernetes is an orchestration service for managing containers, their deployments, and their configurations.  Assuming we understand the purpose of the container (i.e., provide a fairly robust method for delivering a seamless application experience across different devices), Kubernetes sits on a layer above to enable oversight on container deployments.
 
 <img style="background: #fff" src="https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/eb693/images/docs/container_evolution.svg" alt="Kubernetes Overview" title="Kubernetes Overview" />
 
 Kubernetes can be configured via an API for initial/ad-hoc updates or by loading configuration files that specify all the particulars necessary for defining parameters such as namespaces, images, replicates, etc. (see [Kubernetes Configuration](https://kubernetes.io/docs/concepts/configuration/overview/))
 
+Kubernetes comprises three aspects: a master node, worker nodes, and pods.  
 
+* **Master node**: manages the deployed cluster, supporting networking, API calls, scheduling, etc.
+* **Worker node(s)**: performs tasks running containers and their workloads
+* **Pods**: wrapper for containers
 
+Typically, scalability is enabled by adding pods (scaling up) or removing pods (scaling down).  
+
+### Managing Kubernetes Clusters
+
+We can interact with Kubernetes via the `kubectl` command - you'll have used this when working with `GKE` and you'll be getting more experience with it in this module.  It is similar to `gcloud` in that we will be pretty much exclusively using it to manage our deployments (following all the initial `gcloud` setup commands for Kubernetes, that is).  Now, there are a few more terms to discuss with respect to the types of things you'll need to configure and manage when setting up and deploying GKE clusters:
+
+**Namespaces**
+
+**Labels**
+
+**Replication Controllers**
+
+These are just three of the highlights for setting up a deployment.  For an in-depth guide on the considerations you'll need (including examples of how to setup an `nginx` deployment), see this article: [The beginners guide to creating Kubernetes manifests](https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/)
+
+It will be best to gain some experience with setting up a basic deployment.  The following Codelab and video are a good starting point for this:
+
+> Module video: [Spring Boot Kubernetes Deployment Demo []]()
+> Codelab: [Spring Boot Kubernetes Deployment](https://codelabs.developers.google.com/codelabs/cloud-springboot-kubernetes)
 
 
 ## Cloud Build and Cloud Run
+
+We have looked at Cloud Build and Cloud Run in the past (see [Automation](/CloudAppsDev/_posts/10-Automation.md)), however it is worth discussing again in the context of container orchestration.  
+
+TBD
 
 > * [Building a SlackBot with Cloud Build, Cloud Run, and Node.js Part 1 [13:20]](https://youtu.be/kYUUEvBT4Ms)
 > * [Building a SlackBot with Cloud Build, Cloud Run, and Node.js Part 2 [19:09]](https://youtu.be/xpPTR05Bxdc)
@@ -38,6 +70,8 @@ Kubernetes can be configured via an API for initial/ad-hoc updates or by loading
 * [Introduction to Docker](https://medium.com/swlh/introduction-to-docker-96aad5eabb30)
 * [Container Runtime eFunctions](https://medium.com/cri-o/container-runtimes-clarity-342b62172dc3)
 * [What is Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
+* [What is Kubernetes? The Complete Guide](https://phoenixnap.com/kb/what-is-kubernetes)
 * [Container runtime](https://medium.com/cri-o/container-runtimes-clarity-342b62172dc3)
 * [Kubernetes Configuration](https://kubernetes.io/docs/concepts/configuration/overview/)
 * [Brian Anstett - K8 Presentation](https://github.com/briananstett/k8-presentation)
+* [The beginners guide to creating Kubernetes manifests](https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/)
