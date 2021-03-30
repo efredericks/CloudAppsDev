@@ -46,6 +46,14 @@ Typically, scalability is enabled by adding pods (scaling up) or removing pods (
 
 In Figure 1 we see the *Master node* (i.e., Control Plane) on the left comprising multiple managing services (i.e., `kube-api-server`, etc.) and `etcd`, the key-value store that manages Kubernetes cluster data.  On the right we see the *Worker nodes*, where the *pods* are internal to the worker nodes.
 
+Since we've been talking about pods, Figure 2 (c/o WikiPedia) shows a view of how they fit in with the Kubernetes scheme (the [WikiPedia article](https://en.wikipedia.org/wiki/Kubernetes) is pretty good as well if you want another perspective):
+
+<img style="background:#fff" src="https://upload.wikimedia.org/wikipedia/commons/6/63/Pod-networking.png" title="Pod/Service Interaction" alt="Pod/Service Interaction" />
+
+> Figure 2: Pod/Service Interaction (c/o WikiPedia)
+
+Here, you see that each pod has its own IP address and encapsulates a number of containers.  Essentially, the pod is the **scheduling unit** of Kubernetes -- it is in charge of managing and running the containerized applications.  Of note here is that each pod is a separate entity; containers within a pod can talk to each other directly (i.e., via `localhost`)   but must access remote containers (i.e., within a different pod) via the other pod's IP address.
+
 ### Managing Kubernetes Clusters
 
 We can interact with Kubernetes via the `kubectl` command - you'll have used this when working with `GKE` and you'll be getting more experience with it in this module.  It is similar to `gcloud` in that we will be pretty much exclusively using it to manage our deployments (following all the initial `gcloud` setup commands for Kubernetes, that is).  Now, there are a few more terms to discuss with respect to the types of things you'll need to configure and manage when setting up and deploying GKE clusters:
@@ -63,6 +71,9 @@ It will be best to gain some experience with setting up a basic deployment.  The
 > * Module video: [Spring Boot Kubernetes Deployment Demo []]()
 > * Codelab: [Spring Boot Kubernetes Deployment](https://codelabs.developers.google.com/codelabs/cloud-springboot-kubernetes)
 
+The lab you need to do here is the Kubernetes Qwiklabs quest.  It will take you through building up a Docker container to deploying a Kubernetes cluster.  Definitely good practice!
+
+* [Qwiklabs - Kubernetes in Google Cloud Quest [25 credits]](https://www.qwiklabs.com/quests/29)
 
 ## Cloud Build and Cloud Run
 
@@ -83,3 +94,4 @@ TBD
 * [Kubernetes Configuration](https://kubernetes.io/docs/concepts/configuration/overview/)
 * [Brian Anstett - K8 Presentation](https://github.com/briananstett/k8-presentation)
 * [The beginners guide to creating Kubernetes manifests](https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/)
+* [WikiPedia - Kubernetes](https://en.wikipedia.org/wiki/Kubernetes)
