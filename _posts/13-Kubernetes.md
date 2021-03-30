@@ -6,6 +6,8 @@
 
 > Module labs:
 
+* [Qwiklabs - Kubernetes in Google Cloud Quest [25 credits]](https://www.qwiklabs.com/quests/29)
+
 ## Docker Blurb
 
 The point of this post isn't necessarily to dig into containers however (we'll assume that's par for the course, though here is an overview on Docker to help you otherwise: [Introduction to Docker](https://medium.com/swlh/introduction-to-docker-96aad5eabb30)).
@@ -38,7 +40,7 @@ Kubernetes comprises three aspects: a master node, worker nodes, and pods.
 
 Typically, scalability is enabled by adding pods (scaling up) or removing pods (scaling down).  Let's take a look at the architecture.  Figure 1 (c/o kubernetes.io) shows all the components of a Kubernetes cluster:
 
-![Kubernetes Components](https://v1-18.docs.kubernetes.io/images/docs/components-of-kubernetes.png "Kubernetes Components")
+<img style="background:#fff" src="https://v1-18.docs.kubernetes.io/images/docs/components-of-kubernetes.png" title="Kubernetes Components" alt="Kubernetes Components" />
 
 > Figure 1: Kubernetes Components (c/o kubernetes.io)
 
