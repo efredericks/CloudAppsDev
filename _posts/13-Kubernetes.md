@@ -8,7 +8,7 @@
 
 ## Docker Blurb
 
-The point of this post isn't necessarily to dig into containers however (we'll assume that's par for the course, though here is an overview on Docker to help you otherwise: [Introduction to Docker](https://medium.com/swlh/introduction-to-docker-96aad5eabb30).
+The point of this post isn't necessarily to dig into containers however (we'll assume that's par for the course, though here is an overview on Docker to help you otherwise: [Introduction to Docker](https://medium.com/swlh/introduction-to-docker-96aad5eabb30)).
 
 You are arriving at Kubernetes in an interesting time.  As of this posting, it recently announced that Kubernetes is planning to remove `dockershim` support, which enables communication between Docker containers and Kubernetes.  Docker containers will still be supported, however that support is being moved from the Kubernetes codebase.
 
@@ -52,8 +52,8 @@ These are just three of the highlights for setting up a deployment.  For an in-d
 
 It will be best to gain some experience with setting up a basic deployment.  The following Codelab and video are a good starting point for this:
 
-> Module video: [Spring Boot Kubernetes Deployment Demo []]()
-> Codelab: [Spring Boot Kubernetes Deployment](https://codelabs.developers.google.com/codelabs/cloud-springboot-kubernetes)
+> * Module video: [Spring Boot Kubernetes Deployment Demo []]()
+> * Codelab: [Spring Boot Kubernetes Deployment](https://codelabs.developers.google.com/codelabs/cloud-springboot-kubernetes)
 
 
 ## Cloud Build and Cloud Run
