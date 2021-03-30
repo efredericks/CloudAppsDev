@@ -7,8 +7,6 @@
 > * [Dataproc/Spark Demo [17:10] (2/2)](https://youtu.be/ID0SVlWoClc)
 > * [Composer/Airflow/Hadoop Demo [30:28]](https://youtu.be/MS_YjES660M)
 
-https://codelabs.developers.google.com/codelabs/spark-jupyter-dataproc
-
 > Module labs:
 
 ## Data (More Specifically - of the Big Variety)
