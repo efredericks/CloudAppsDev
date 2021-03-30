@@ -5,6 +5,7 @@
 > * [Google BigQuery - Analytics Data Warehouse [1:58]](https://youtu.be/eyBK9nj-7AA)
 > * [Dataproc/Spark Demo [8:53] (1/2)](https://youtu.be/tqomMqFSTaw)
 > * [Dataproc/Spark Demo [17:10] (2/2)](https://youtu.be/ID0SVlWoClc)
+> * [Composer/Airflow/Hadoop Demo [30:28]](https://youtu.be/MS_YjES660M)
 
 https://codelabs.developers.google.com/codelabs/spark-jupyter-dataproc
 
@@ -234,6 +235,17 @@ How do you choose, Dataproc or Dataflow?  Figure 14 (c/o Google) shows a decisio
 > Figure 14: Dataproc vs. Dataflow
 
 Each service can perform the traditional map-reduce operations necessary for big data management.  The key difference here is that Dataflow is *serverless*, whereas Dataproc is more akin to managing a Hadoop/Spark cluster (albeit, as a service).   
+
+This video is quite fun...here is the description from the video:
+
+> Oh, this was a fun one.  I left the majority of me looking foolish in to demonstrate my approach to debugging (I did cut out all the swearing).  
+> Codelab in question: https://codelabs.developers.google.com/codelabs/intro-cloud-composer
+> Notes:
+> * I had to spin up Composer in the Cloud Shell using gcloud commands (see the Composer manual for details on that), however when actually recording this the GUI worked, so YMMV there.
+> * There is a problem with the Codelab as is -- you need to use n2 machines instead of n1.  In Step 4 you can replace n1-standard-1 with n2-standard-2.  You also need to edit the Python script that you copy/paste later in that step with the same update (n2-standard-2).
+
+> * Module video: [Composer/Airflow/Hadoop Demo [30:28]](https://youtu.be/MS_YjES660M)
+
 
 **Lab Choices**
 

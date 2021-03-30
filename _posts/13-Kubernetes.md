@@ -71,9 +71,9 @@ It will be best to gain some experience with setting up a basic deployment.  The
 > * Module video: [Spring Boot Kubernetes Deployment Demo []]()
 > * Codelab: [Spring Boot Kubernetes Deployment](https://codelabs.developers.google.com/codelabs/cloud-springboot-kubernetes)
 
-The lab you need to do here is the Kubernetes Qwiklabs quest.  It will take you through building up a Docker container to deploying a Kubernetes cluster.  Definitely good practice!
+The lab you need to do here (for credit, still attempt the Codelab above for practice!) is the Kubernetes Qwiklabs quest.  It will take you through building up a Docker container to deploying a Kubernetes cluster.  Definitely good practice!
 
-* [Qwiklabs - Kubernetes in Google Cloud Quest [25 credits]](https://www.qwiklabs.com/quests/29)
+* Module lab: [Qwiklabs - Kubernetes in Google Cloud Quest [25 credits]](https://www.qwiklabs.com/quests/29)
 
 ## Cloud Build and Cloud Run
 
