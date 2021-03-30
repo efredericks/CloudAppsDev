@@ -36,7 +36,13 @@ Kubernetes comprises three aspects: a master node, worker nodes, and pods.
 * **Worker node(s)**: performs tasks running containers and their workloads
 * **Pods**: wrapper for containers
 
-Typically, scalability is enabled by adding pods (scaling up) or removing pods (scaling down).  
+Typically, scalability is enabled by adding pods (scaling up) or removing pods (scaling down).  Let's take a look at the architecture.  Figure 1 (c/o kubernetes.io) shows all the components of a Kubernetes cluster:
+
+![Kubernetes Components](https://v1-18.docs.kubernetes.io/images/docs/components-of-kubernetes.png "Kubernetes Components")
+
+> Figure 1: Kubernetes Components (c/o kubernetes.io)
+
+In Figure 1 we see the *Master node* (i.e., Control Plane) on the left comprising multiple managing services (i.e., `kube-api-server`, etc.) and `etcd`, the key-value store that manages Kubernetes cluster data.  On the right we see the *Worker nodes*, where the *pods* are internal to the worker nodes.
 
 ### Managing Kubernetes Clusters
 
