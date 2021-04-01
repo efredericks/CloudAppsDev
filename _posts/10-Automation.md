@@ -6,6 +6,8 @@
 > * [Overview of Cloud Monitoring/Logging/Error Reporting [16:59]](https://youtu.be/muOUkOXxZv8)
 
 > Module labs:
+> * Term project proposal (see Blackboard)
+> * [QwikLabs - Monitoring and Logging for Cloud Functions [5 credits]](https://www.qwiklabs.com/focuses/1833?parent=catalog)
 
 ## Cloud Automation
 
@@ -129,12 +131,26 @@ The following video shows an overview of some of our automation and debugging to
 
 ### Lab!
 
-Let's get up and running with Cloud Monitoring.  This lab will help you understand some of these tools we've shown you.
+Let's get up and running with Cloud Monitoring and Logging.  This lab will help you understand some of these tools we've shown you.
 
-* [QwikLabs - Cloud Monitoring: Qwik Start ()](https://google.qwiklabs.com/focuses/10600?parent=catalog)
-* [QwikLabs - Monitoring and Logging for Cloud Functions ()](https://www.qwiklabs.com/focuses/1833?parent=catalog)
+* [QwikLabs - Monitoring and Logging for Cloud Functions [5 credits]](https://www.qwiklabs.com/focuses/1833?parent=catalog)
+
+If you want additional experience you can try these ones out, but I'll just be grading the one above.
+
+* [QwikLabs - Cloud Monitoring: Qwik Start [1 credit]](https://google.qwiklabs.com/focuses/10599?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=9504730)
 * [Codelabs - Analyze Production Performance with Cloud Profiler](https://codelabs.developers.google.com/codelabs/cloud-profiler)
 
+### Project!
+
+This is to be done in Blackboard, but you will be building a "term-project-lite" for this class (if we had 15 weeks, it would not be "lite").  Blackboard will have the details, but I want you to link together **five** services for a fully-functioning cloud application.  **Four** of those services are your decision, however the **fifth** must use one of the following:
+
+* [Cloud Composer](https://cloud.google.com/composer/)
+* [AI Platform](https://cloud.google.com/ai-platform/) / [AutoML](https://cloud.google.com/automl) / [Tensorflow](https://www.tensorflow.org/)
+* [Kubernetes (Container Orchestration - Week 5 topic)](https://cloud.google.com/kubernetes-engine/)
+* [Firebase (Full-Stack App Development - Week 5 topic)](https://firebase.google.com/)
+* *Propose a "difficult" service if you have a particular interest*
+
+This assignment has you proposing your topic for me to approve.  The amount of effort I'll be looking for is approximately 2-3 assignments worth of effort (so a functioning prototype that meets agreed-upon specifications).  I'll also be looking for you to do a small writeup and record a demo video that will be due with your final deliverables (will be due during Finals week).
 
 ## Additional Resources
 
