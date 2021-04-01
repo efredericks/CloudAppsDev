@@ -109,6 +109,8 @@ The labs for this module are pretty straightforward!  I walk you through the fol
 ## Additional Resources
 
 * [Cloud Scheduler](https://cloud.google.com/scheduler)
+* [cron - man7.org](http://man7.org/linux/man-pages/man5/crontab.5.html)
+* [cron - tecadmin.net](https://tecadmin.net/crontab-in-linux-with-20-examples-of-cron-schedule/)
 * [Cloud Tasks](https://cloud.google.com/tasks)
 * [Cloud Tasks vs. Cloud Scheduler](https://cloud.google.com/tasks/docs/comp-tasks-sched)
 * [Task Scheduling made easy by Google Cloud Scheduler](https://medium.com/pankaj-khuranas-blog/task-scheduling-made-easy-by-google-cloud-scheduler-a-managed-cron-service-136bdf8b3111)
