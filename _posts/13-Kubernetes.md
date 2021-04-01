@@ -2,7 +2,8 @@
 
 > Module videos:
 
-* [Kubernetes Overview []]()
+* [Kubernetes Overview [9:16]](https://youtu.be/hwz5vteZdIE)
+* [Kubernetes Deployment Demo [17:06]](https://youtu.be/x-3uf20MTKc)
 
 > Module labs:
 
@@ -24,7 +25,7 @@ As an aside, a great overview of both Docker and Kubernetes can be found here (p
 > * [What is Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 > * [What is Kubernetes? The Complete Guide](https://phoenixnap.com/kb/what-is-kubernetes)
 
-> Module video: [Kubernetes Overview []]()
+> Module video: [Kubernetes Overview [9:16]](https://youtu.be/hwz5vteZdIE)
 
 Kubernetes is an orchestration service for managing containers, their deployments, and their configurations.  Assuming we understand the purpose of the container (i.e., provide a fairly robust method for delivering a seamless application experience across different devices), Kubernetes sits on a layer above to enable oversight on container deployments.
 
@@ -68,7 +69,7 @@ These are just three of the highlights for setting up a deployment.  For an in-d
 
 It will be best to gain some experience with setting up a basic deployment.  The following Codelab and video are a good starting point for this:
 
-> * Module video: [Spring Boot Kubernetes Deployment Demo []]()
+> * Module video: [Kubernetes Deployment Demo [17:06]](https://youtu.be/x-3uf20MTKc)
 > * Codelab: [Spring Boot Kubernetes Deployment](https://codelabs.developers.google.com/codelabs/cloud-springboot-kubernetes)
 
 The lab you need to do here (for credit, still attempt the Codelab above for practice!) is the Kubernetes Qwiklabs quest.  It will take you through building up a Docker container to deploying a Kubernetes cluster.  Definitely good practice!
