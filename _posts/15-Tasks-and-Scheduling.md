@@ -24,29 +24,29 @@ Why is this important?  Managing scheduled tasks can be a necessary part of any 
 
 It is also possible to support retry activities as well, meaning that if a job failed you can have it automatically retry to complete its task.  
 
-Let's take a look at scheduling a few tasks, then you'll get some experience with it as well.  Figure X shows the page you get when you visit the Cloud Scheduler (as always, search for it with the top bar or check the hamburger menu on the left ... it is towards the bottom of the list).
+Let's take a look at scheduling a few tasks, then you'll get some experience with it as well.  Figure 1 shows the page you get when you visit the Cloud Scheduler (as always, search for it with the top bar or check the hamburger menu on the left ... it is towards the bottom of the list).
 
 ![Cloud Scheduler Creation](/CloudAppsDev/assets/images/15-scheduler.png "Cloud Scheduler Creation")
 
-> Figure X: Cloud Scheduler Creation
+> Figure 1: Cloud Scheduler Creation
 
-You first are asked to pick a region for the scheduler (the regions should look familiar by now) and then to provide the particulars of the job.  Figure X shows the particulars of a job.  Note that if you're familiar with cron syntax you should have no issue here.  If you have no idea what cron is I highly suggest you look into a tool like [this one](https://crontab.guru/) for helping you with its syntax.  Double note: Google provides a [separate page for their cron syntax as well](https://cloud.google.com/scheduler/docs/configuring/cron-job-schedules#defining_the_job_schedule).
+You first are asked to pick a region for the scheduler (the regions should look familiar by now) and then to provide the particulars of the job.  Figure 2 shows the particulars of a job.  Note that if you're familiar with cron syntax you should have no issue here.  If you have no idea what cron is I highly suggest you look into a tool like [this one](https://crontab.guru/) for helping you with its syntax.  Double note: Google provides a [separate page for their cron syntax as well](https://cloud.google.com/scheduler/docs/configuring/cron-job-schedules#defining_the_job_schedule).
 
 ![Cloud Scheduler Job](/CloudAppsDev/assets/images/15-job.png "Cloud Scheduler Job")
 
-> Figure X: Cloud Scheduler Job
+> Figure 2: Cloud Scheduler Job
 
-Figure X next shows you what targets are currently available to be triggered via the Cloud Scheduler.  Note that you will need whatever service receiving the job to have been previously setup (e.g., if you're using Pub/Sub, you should already have a Pub/Sub environment up and running and ready to execute whatever command you're scheduling!).
+Figure 3 next shows you what targets are currently available to be triggered via the Cloud Scheduler.  Note that you will need whatever service receiving the job to have been previously setup (e.g., if you're using Pub/Sub, you should already have a Pub/Sub environment up and running and ready to execute whatever command you're scheduling!).
 
 ![Cloud Scheduler Job Target](/CloudAppsDev/assets/images/10-job-target.png "Cloud Scheduler Job Target")
 
-> Figure X: Cloud Scheduler Job Target
+> Figure 3: Cloud Scheduler Job Target
 
-The payload options will change based on which type of target you select.  For example, Pub/Sub will be looking for a topic and payload (terms you should know from the Pub/Sub section).  HTTP (as shown in Figure X) looks for a URL, method (GET, POST, etc.), and the body of the message.
+The payload options will change based on which type of target you select.  For example, Pub/Sub will be looking for a topic and payload (terms you should know from the Pub/Sub section).  HTTP (as shown in Figure 4) looks for a URL, method (GET, POST, etc.), and the body of the message.
 
 ![Cloud Scheduler Job Target - HTTP](/CloudAppsDev/assets/images/15-job-http.png "Cloud Scheduler Job Target - HTTP")
 
-> Figure X: Cloud Scheduler Job Target - HTTP
+> Figure 4: Cloud Scheduler Job Target - HTTP
 
 Why would we use this service other than for the obvious reason of centralizing our repetitive tasks?  There is a nice list of use cases in [this article (Task Scheduling made easy by Google Cloud Scheduler — A managed cron service)](https://medium.com/pankaj-khuranas-blog/task-scheduling-made-easy-by-google-cloud-scheduler-a-managed-cron-service-136bdf8b3111) (that I highly recommend you read).  
 
