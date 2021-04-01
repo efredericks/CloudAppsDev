@@ -5,9 +5,7 @@
 > * [[External] Cloud Functions for Firebase [2:22]](https://www.youtube.com/watch?v=vr0Gfvp5v1A)
 
 > Module labs:
-> * [Codelab: Firebase Performance Monitoring for web](https://firebase.google.com/codelabs/firebase-perf-mon-web)
-> * [Codelab: Cloud Functions for Firebase](https://firebase.google.com/codelabs/firebase-cloud-functions)
-> * [Qwiklab: Build a Serverless Web App with Firebase (GSP643)](https://run.qwiklabs.com/focuses/8391?parent=catalog)
+> * [Qwiklabs - Build Apps & Websites with Firebase [20 credits]](https://www.qwiklabs.com/quests/148)
 
 ## Firebase
 
@@ -134,6 +132,11 @@ Most of the code above is administrative in nature, however there are a few inte
 * [Multi-Tenant Applications with Firebase and Google Cloud](https://medium.com/firebase-developers/multi-tenant-applications-with-firebase-and-google-cloud-4d0d02b7d859)
 * [Google Guide](https://cloud.google.com/build/docs/deploying-builds/deploy-firebase)
 
+# A quest!
+
+Homework here!  This will walk you through all the various facets of Firebase!
+
+* [Qwiklabs - Build Apps & Websites with Firebase [20 credits]](https://www.qwiklabs.com/quests/148)
 
 <hr size="1" />
 
