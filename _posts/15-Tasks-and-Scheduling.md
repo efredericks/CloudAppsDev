@@ -1,6 +1,11 @@
 > By the end of this module, you'll gain experience in scheduling tasks and look to the future.
 
 > Module videos:
+> * Cloud Tasks and Scheduler Overview
+> * Cloud Tasks Demo
+> * Cloud Scheduler Demo
+> * Quantum Computing Demo
+> * Course Wrapup
 
 > Module labs:
 
@@ -43,6 +48,11 @@ The payload options will change based on which type of target you select.  For e
 Why would we use this service other than for the obvious reason of centralizing our repetitive tasks?  There is a nice list of use cases in [this article (Task Scheduling made easy by Google Cloud Scheduler — A managed cron service)](https://medium.com/pankaj-khuranas-blog/task-scheduling-made-easy-by-google-cloud-scheduler-a-managed-cron-service-136bdf8b3111) (that I highly recommend you read).  
 
 One consideration you **should** have is that this service is not free (nor is anything in the cloud, really -- you just need to plan appropriately).  At the time of writing (2021) you get 3 free jobs per month (per account, not per project), and after that it is $0.10 per job per month.  Keep this in mind when creating jobs!
+
+Keep in mind it uses standard `cron` syntax - here are a pair of articles to help you with that syntax:
+
+* [man7.org](http://man7.org/linux/man-pages/man5/crontab.5.html)
+* [tecadmin.net](https://tecadmin.net/crontab-in-linux-with-20-examples-of-cron-schedule/)
 
 Next, we'll take a look at Cloud Tasks (and, how it is different from Cloud Scheduler).
 
