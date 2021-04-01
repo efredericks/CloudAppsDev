@@ -8,6 +8,9 @@
 > * Course Wrapup
 
 > Module labs:
+> * [Cloud Scheduler Quick Start (see Blackboard)](https://cloud.google.com/scheduler/docs/quickstart)
+> * [Cloud Tasks Quick Start (see Blackboard)](https://cloud.google.com/tasks/docs/quickstart)
+> * Wrap up your term projects!
 
 ## Cloud Scheduler
 
@@ -35,13 +38,13 @@ You first are asked to pick a region for the scheduler (the regions should look 
 
 Figure X next shows you what targets are currently available to be triggered via the Cloud Scheduler.  Note that you will need whatever service receiving the job to have been previously setup (e.g., if you're using Pub/Sub, you should already have a Pub/Sub environment up and running and ready to execute whatever command you're scheduling!).
 
-![Cloud Scheduler Job Target](/CloudAppsDev/assets/images/15-jobtarget.png "Cloud Scheduler Job Target")
+![Cloud Scheduler Job Target](/CloudAppsDev/assets/images/10-job-target.png "Cloud Scheduler Job Target")
 
 > Figure X: Cloud Scheduler Job Target
 
 The payload options will change based on which type of target you select.  For example, Pub/Sub will be looking for a topic and payload (terms you should know from the Pub/Sub section).  HTTP (as shown in Figure X) looks for a URL, method (GET, POST, etc.), and the body of the message.
 
-![Cloud Scheduler Job Target - HTTP](/CloudAppsDev/assets/images/15-jobhttp.png "Cloud Scheduler Job Target - HTTP")
+![Cloud Scheduler Job Target - HTTP](/CloudAppsDev/assets/images/15-job-http.png "Cloud Scheduler Job Target - HTTP")
 
 > Figure X: Cloud Scheduler Job Target - HTTP
 
@@ -98,8 +101,10 @@ Thanks all for keeping up with this course!  I hope it was as interesting for yo
 
 # Labs
 
-* [Cloud Tasks](https://codelabs.developers.google.com/codelabs/cloud-gae-python-migrate-8-cloudtasks#0)
-* [Cloud Tasks Quick Start](https://cloud.google.com/tasks/docs/quickstart)
+The labs for this module are pretty straightforward!  I walk you through the following Quick Start guides on video, and the lab (see Blackboard) will have you modifying them.  Light load this module ... finish up your term projects!
+
+> * [Cloud Scheduler Quick Start (see Blackboard)](https://cloud.google.com/scheduler/docs/quickstart)
+> * [Cloud Tasks Quick Start (see Blackboard)](https://cloud.google.com/tasks/docs/quickstart)
 
 ## Additional Resources
 
