@@ -11,6 +11,10 @@ excerpt:
           <li><a href="https://youtu.be/muOUkOXxZv8" target="_blank">Overview of Cloud Monitoring/Logging/Error Reporting [16:59]</a></li>
         </ul>
         <h2>Module Labs</h2>
+        <ul>
+          <li>Term project proposal (see Blackboard)</li>
+          <li><a href="https://www.qwiklabs.com/focuses/1833?parent=catalog" target="_blank">QwikLabs - Monitoring and Logging for Cloud Functions [5 credits]</a></li>
+        </ul>
 ---  
 
 {% include_relative 10-Automation.md %}

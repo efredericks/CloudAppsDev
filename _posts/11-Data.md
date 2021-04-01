@@ -9,6 +9,19 @@
 
 > Module labs:
 
+**Pick one**:
+
+* [Dataproc: Qwik Start (Console)](https://run.qwiklabs.com/focuses/586?parent=catalog)
+* [Dataproc: Hadoop/Spark](https://www.qwiklabs.com/focuses/672?parent=catalog)
+
+**Pick one**:
+* [Dataflow: Qwik Start - Templates](https://run.qwiklabs.com/focuses/1101?parent=catalog)
+* [Dataflow: Qwik Start - Python](https://run.qwiklabs.com/focuses/1100?parent=catalog)
+* [Processing Data with Dataflow](https://www.qwiklabs.com/focuses/1159?parent=catalog)
+
+**And lastly**:
+* [QwikLabs - Dataprep: Qwik Start](https://google.qwiklabs.com/focuses/111?parent=catalog)
+
 ## Data (More Specifically - of the Big Variety)
 
 > Module video: [Big Data Overview [14:10]](https://youtu.be/Mdh6sIxQy4U)
@@ -175,9 +188,9 @@ Here is a workthrough of a Codelab involving Dataproc and Spark -- setting up a 
 
 Ok, enough preamble.  Let's do some Dataproc work!
 
-> TODO: LAB
-
 **Lab choices**
+
+For this assignment you have a choice!  You can either do the Qwik Start or a Hadoop/Spark lab (or both, but I'll only be grading you on one!).  See Blackboard for submission details.
 
 * [Dataproc: Qwik Start (Console)](https://run.qwiklabs.com/focuses/586?parent=catalog)
 * [Dataproc: Hadoop/Spark](https://www.qwiklabs.com/focuses/672?parent=catalog)
@@ -244,8 +257,9 @@ This video is quite fun...here is the description from the video:
 
 > * Module video: [Composer/Airflow/Hadoop Demo [30:28]](https://youtu.be/MS_YjES660M)
 
-
 **Lab Choices**
+
+Another self-choice!  Select one of the following Qwiklabs to get some experience with Dataflow:
 
 * [Dataflow: Qwik Start - Templates](https://run.qwiklabs.com/focuses/1101?parent=catalog)
 * [Dataflow: Qwik Start - Python](https://run.qwiklabs.com/focuses/1100?parent=catalog)
@@ -295,13 +309,28 @@ We'll play with BigQuery momentarily.  However it is worth noting you can use mu
 
 > Figure 18: BigQuery Partners
 
-Time for practical experience!  
+Time for practical experience! No choice here, just do this one!
 
 * [QwikLabs - Dataprep: Qwik Start](https://google.qwiklabs.com/focuses/111?parent=catalog)
 
 ## Additional Resources
 
-* TBD
+* [**Dataproc**](https://cloud.google.com/dataproc/)
+  * Amazon analogue - [AWS EMR](https://aws.amazon.com/emr/)
+  * Microsoft analogue - [Azure Hindsight](https://azure.microsoft.com/en-us/services/hdinsight/)
+* [**Dataflow**](https://cloud.google.com/dataflow)
+  * Amazon analogue = [AWS Data Pipeline](https://aws.amazon.com/datapipeline/)
+  * Microsoft analogue = [Azure Data Factory](https://azure.microsoft.com/en-us/services/data-factory/)
+* [**BigQuery**](khttps://cloud.google.com/bigquery)
+  * Amazon analogue = [AWS Redshift](https://aws.amazon.com/redshift/)
+  * Microsoft analogue = [Azure Synapse Analytics](https://azure.microsoft.com/en-us/services/synapse-analytics/)
+* [Hadoop](https://hadoop.apache.org/)
+* [Spark](https://spark.apache.org/)
+* [Dataproc Workflow Templates](https://cloud.google.com/dataproc/docs/concepts/workflows/overview)
+* [Life of a Dataproc job](https://cloud.google.com/dataproc/docs/concepts/jobs/life-of-a-job)
+> [Spark Shell](https://spark.apache.org/docs/latest/quick-start.html#interactive-analysis-with-the-spark-shell)
+> [Spark Standalone Mode](https://spark.apache.org/docs/latest/spark-standalone.html)
+> [Spark Machine Learning Libraries (MLlib)](http://spark.apache.org/docs/latest/mllib-guide.html)
 
 <hr size="1" />
 
