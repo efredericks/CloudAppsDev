@@ -39,6 +39,22 @@ The following image shows off some quick guides for various platforms.  Note tha
 
 Let's take a look at a couple of commonly-used features.  [This article](https://howtofirebase.com/what-is-firebase-fcb8614ba442) provides a helpful source to dip into it (plus, there's a video covering it as well).
 
+**Hosting**
+
+**Authentication**
+
+To me, one of the most delightful aspects of Firebase apps involves the authentication.  You can **very** easily setup authentication with a multitude of OAuth-based systems, meaning that *you don't have to worry about authentication*!  Figure X shows a screenshot of the currently-available services.  The accounts registered with your service get added to your app's database, where you can easily manage users, roles, etc.
+
+![Firebase Authentication Options](/CloudAppsDev/assets/images/14-Firebase-Auth.png "Firebase Authentication Options")
+
+> Figure X: Firebase Authentication Options
+
+**Database**
+
+**Storage**
+
+
+
 ### Linking up to the Cloud
 
 This [Medium article](https://medium.com/firebase-developers/multi-tenant-applications-with-firebase-and-google-cloud-4d0d02b7d859) (hopefully not paywalled) describes an interesting use of Google Cloud and Firebase together.  Specifically, the focus is on *[multi-tenancy](https://www.redhat.com/en/topics/cloud-computing/what-is-multitenancy)*, or enabling a software instance to serve multiple groups of users.  Think of it as multiple users using cloud-based infrastructure at the same time (e.g., shared hosting, sharing resources, etc.).  Generally there will be some level of customization per user/user group as well.   We'll generally consider our SaaS as multi-tenant applications (whereas the general cloud environment can be considered PaaS).  In a cloud-based environment (such as Google Cloud) multi-tenancy is generally enabled via some sort of identify management framework to enable you to group users together.  This task is accomplished in Google Cloud via [Identity Platform](https://cloud.google.com/blog/products/identity-security/simplifying-identity-and-access-management-of-your-employees-partners-and-customers).  Figure 3 (c/o Google) shows how this framework is structured:
