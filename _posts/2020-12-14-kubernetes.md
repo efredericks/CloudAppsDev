@@ -8,7 +8,7 @@ excerpt:
         <ul>
           <li><a href="https://youtu.be/DrSf9oxL5kw" target="_blank">Containers Demo [16:31]</a></li>
           <li><a href="https://youtu.be/hwz5vteZdIE" target="_blank">Kubernetes Overview [9:16]</a></li>
-          <li><a href="https://youtu.be/nXJsD35ZuOsKubernetes Quick Start Demo [9:53]</a></li>
+          <li><a href="https://youtu.be/nXJsD35ZuOs" target="_blank">Kubernetes Quick Start Demo [9:53]</a></li>
           <li><a href="https://youtu.be/x-3uf20MTKc" target="_blank">Kubernetes Deployment Demo [17:06]</a></li>
         </ul>
         <h2>Module Labs</h2>
