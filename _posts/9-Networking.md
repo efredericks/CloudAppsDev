@@ -83,7 +83,7 @@ Figure 4 (c/o Google) shows how resources in different regions *yet the same VPC
 
 Subnets can be created automatically or via custom rules.  While we're not going to spend *too* much time on this topic, note that automated creation tends to be good for proof-of-concept builds, whereas the finer-grained control (and less hand-holding) of the custom build is more suitable for production (Figure 5, c/o Google).
 
-![Auto vs. Custom Subnets](/CloudAppsDev/assets/images/9-auto-v-custom.png "Auto vs. Custom Subnets")
+![Auto vs. Custom Subnets](/CloudAppsDev/assets/images/9-auto-vs-custom.png "Auto vs. Custom Subnets")
 
 > Figure 5: Auto vs. Custom Subnets
 

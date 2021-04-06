@@ -1,6 +1,11 @@
 > By the end of this module, you'll gain experience in developing apps that use Firebase.
 
 > Module videos:
+
+[Firebase and Cloud Functions Demo [31:55]](https://youtu.be/WO2vrfYIDmo)
+- https://firebase.google.com/codelabs/firebase-cloud-functions
+
+
 > * [[External] What is Firebase [21:44]](https://www.youtube.com/watch?v=9kRgVxULbag)
 > * [[External] Cloud Functions for Firebase [2:22]](https://www.youtube.com/watch?v=vr0Gfvp5v1A)
 

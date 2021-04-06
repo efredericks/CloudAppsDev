@@ -2,6 +2,7 @@
 
 > Module videos:
 
+* [Containers Demo [16:31]](https://youtu.be/DrSf9oxL5kw)
 * [Kubernetes Overview [9:16]](https://youtu.be/hwz5vteZdIE)
 * [Kubernetes Deployment Demo [17:06]](https://youtu.be/x-3uf20MTKc)
 
@@ -18,6 +19,11 @@ You are arriving at Kubernetes in an interesting time.  As of this posting, it r
 To understand how a container runtime functions, I recommend you check out [this article](https://medium.com/cri-o/container-runtimes-clarity-342b62172dc3).
 
 As an aside, a great overview of both Docker and Kubernetes can be found here (put together by a former student): [Brian Anstett - K8 Presentation](https://github.com/briananstett/k8-presentation).
+
+Here is a short demo of running Cloud Build for containers, including creating a Docker image, pushing it to the Artifacts Repository, and then building/pushing it to the Cloud Build repository. 
+
+> * Module video: [Containers Demo [16:31]](https://youtu.be/DrSf9oxL5kw)
+> * [Quickstart](https://cloud.google.com/build/docs/quickstart-build)
 
 ## What is Kubernetes?
 
