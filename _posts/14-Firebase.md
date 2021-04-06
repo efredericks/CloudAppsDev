@@ -2,19 +2,20 @@
 
 > Module videos:
 
-[Firebase and Cloud Functions Demo [31:55]](https://youtu.be/WO2vrfYIDmo)
-- https://firebase.google.com/codelabs/firebase-cloud-functions
-
-
-> * [[External] What is Firebase [21:44]](https://www.youtube.com/watch?v=9kRgVxULbag)
-> * [[External] Cloud Functions for Firebase [2:22]](https://www.youtube.com/watch?v=vr0Gfvp5v1A)
+* [Firebase Overview (+ web hosting demo) [18:04]](https://youtu.be/VQca8zxoHm8)
+* [Firebase and Hosting/TensorFlow Demo [23:03]](https://youtu.be/L4zXFVVdx-k)
+* [Firebase and Cloud Functions Demo [31:55]](https://youtu.be/WO2vrfYIDmo)
+* [[External] What is Firebase [21:44]](https://www.youtube.com/watch?v=9kRgVxULbag)
+* [[External] Cloud Functions for Firebase [2:22]](https://www.youtube.com/watch?v=vr0Gfvp5v1A)
 
 > Module labs:
-> * [Qwiklabs - Build Apps & Websites with Firebase [20 credits]](https://www.qwiklabs.com/quests/148)
+
+* [Qwiklabs - Build Apps & Websites with Firebase [20 credits]](https://www.qwiklabs.com/quests/148)
 
 ## Firebase
 
-> External video: [What is Firebase [21:44]](https://www.youtube.com/watch?v=9kRgVxULbag)
+> * Module video: [Firebase Overview (+ web hosting demo) [18:04]](https://youtu.be/VQca8zxoHm8)
+> * External video: [What is Firebase [21:44]](https://www.youtube.com/watch?v=9kRgVxULbag)
 
 You will most likely have come across Firebase if you have ever dipped into the mobile or web development scene.  You can read all about its fascinating history (it used to be called Envolve) at various blogs ([here](https://hackernoon.com/introduction-to-firebase-218a23186cd7) and [here](https://www.geeksforgeeks.org/firebase-introduction/)), but what we are mainly interested in is how we can use it and how it can apply to cloud applications.
 
@@ -122,9 +123,24 @@ if err != nil {
 
 Most of the code above is administrative in nature, however there are a few interesting blocks.  Towards the end you see a `config :=` block.  This section sets the tenant's name to `ABC Auto Distributors` (this is for onboarding a car dealership to a larger organization) and giving that account access to email sign-in with password sign-up enabled.  What is happening here is that we are programmatically assigning access rights to a group of users (said car dealership).  Users can be added/removed from this tenant and gain the same rights as those already assigned (think of how you might assign users to groups and then assign permissions to those groups in a server-based environment; the principle is similar).
 
-## An Example!
+## Examples!
 
-> A VIDEO!
+Here are a pair of videos demonstrating some Firebase tasks.  First we'll go through basic hosting and then add in some machine learning (c/o TensorFlow.js):
+
+> * Module video: [Firebase and Hosting/TensorFlow Demo [23:03]](https://youtu.be/L4zXFVVdx-k)
+> * [Codelab](https://codelabs.developers.google.com/codelabs/tensorflowjs-firebase-hosting-model
+> * [Issue with NodeJS mentioned in the video](https://timjrobinson.com/fixing-node-gyp-permission-denied-when-running-as-root/)
+
+And here is a long-winded example of hooking up Firebase with Cloud Functions to make a chat application that also scans posted images for adult/violent content (note I couldn't get the final step of the Codelab working):
+
+> * Module video: [Firebase and Cloud Functions Demo [31:55]](https://youtu.be/WO2vrfYIDmo)
+> * [Codelab](https://firebase.google.com/codelabs/firebase-cloud-functions)
+
+## A quest!
+
+Homework here!  This will walk you through all the various facets of Firebase!
+
+* [Qwiklabs - Build Apps & Websites with Firebase [20 credits]](https://www.qwiklabs.com/quests/148)
 
 ## Additional Resources
 
@@ -136,12 +152,6 @@ Most of the code above is administrative in nature, however there are a few inte
 * [What is Firebase?](https://howtofirebase.com/what-is-firebase-fcb8614ba442)
 * [Multi-Tenant Applications with Firebase and Google Cloud](https://medium.com/firebase-developers/multi-tenant-applications-with-firebase-and-google-cloud-4d0d02b7d859)
 * [Google Guide](https://cloud.google.com/build/docs/deploying-builds/deploy-firebase)
-
-# A quest!
-
-Homework here!  This will walk you through all the various facets of Firebase!
-
-* [Qwiklabs - Build Apps & Websites with Firebase [20 credits]](https://www.qwiklabs.com/quests/148)
 
 <hr size="1" />
 

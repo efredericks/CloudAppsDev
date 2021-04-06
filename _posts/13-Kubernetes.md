@@ -4,6 +4,7 @@
 
 * [Containers Demo [16:31]](https://youtu.be/DrSf9oxL5kw)
 * [Kubernetes Overview [9:16]](https://youtu.be/hwz5vteZdIE)
+* [Kubernetes Quick Start Demo [9:53]](https://youtu.be/nXJsD35ZuOs)
 * [Kubernetes Deployment Demo [17:06]](https://youtu.be/x-3uf20MTKc)
 
 > Module labs:
