@@ -328,9 +328,9 @@ Time for practical experience! No choice here, just do this one!
 * [Spark](https://spark.apache.org/)
 * [Dataproc Workflow Templates](https://cloud.google.com/dataproc/docs/concepts/workflows/overview)
 * [Life of a Dataproc job](https://cloud.google.com/dataproc/docs/concepts/jobs/life-of-a-job)
-> [Spark Shell](https://spark.apache.org/docs/latest/quick-start.html#interactive-analysis-with-the-spark-shell)
-> [Spark Standalone Mode](https://spark.apache.org/docs/latest/spark-standalone.html)
-> [Spark Machine Learning Libraries (MLlib)](http://spark.apache.org/docs/latest/mllib-guide.html)
+* [Spark Shell](https://spark.apache.org/docs/latest/quick-start.html#interactive-analysis-with-the-spark-shell)
+* [Spark Standalone Mode](https://spark.apache.org/docs/latest/spark-standalone.html)
+* [Spark Machine Learning Libraries (MLlib)](http://spark.apache.org/docs/latest/mllib-guide.html)
 
 <hr size="1" />
 
