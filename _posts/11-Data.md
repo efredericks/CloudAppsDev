@@ -73,8 +73,8 @@ This is the "business/marketing" side of big data, however also very *very* impo
 As you would expect by this point, there are several cloud services to help us manage big data for our applications.  Per usual, we'll talk about them in terms of Google Cloud, however similar services exist in Azure/AWS.  We'll be mainly looking at this in terms of *managed services* (mild shock) that we can leverage to do all the heavy lifting for us.  Here are the main services we'll be looking at in Google Cloud (with their other provider analogues):
 
 * [**Dataproc**](https://cloud.google.com/dataproc/)
-  * Amazon analogue - [AWS EMR](https://aws.amazon.com/emr/)
-  * Microsoft analogue - [Azure Hindsight](https://azure.microsoft.com/en-us/services/hdinsight/)
+  * Amazon analogue = [AWS EMR](https://aws.amazon.com/emr/)
+  * Microsoft analogue = [Azure Hindsight](https://azure.microsoft.com/en-us/services/hdinsight/)
 
 Dataproc (and similar) are going to be your engines for processing big data.  Common strategies leverage Hadoop/Spark for working with data.  These are open-source technologies that can be used for handling massive amounts of unstructured data.
 
@@ -316,8 +316,8 @@ Time for practical experience! No choice here, just do this one!
 ## Additional Resources
 
 * [**Dataproc**](https://cloud.google.com/dataproc/)
-  * Amazon analogue - [AWS EMR](https://aws.amazon.com/emr/)
-  * Microsoft analogue - [Azure Hindsight](https://azure.microsoft.com/en-us/services/hdinsight/)
+  * Amazon analogue = [AWS EMR](https://aws.amazon.com/emr/)
+  * Microsoft analogue = [Azure Hindsight](https://azure.microsoft.com/en-us/services/hdinsight/)
 * [**Dataflow**](https://cloud.google.com/dataflow)
   * Amazon analogue = [AWS Data Pipeline](https://aws.amazon.com/datapipeline/)
   * Microsoft analogue = [Azure Data Factory](https://azure.microsoft.com/en-us/services/data-factory/)
