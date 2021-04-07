@@ -70,7 +70,40 @@ We can interact with Kubernetes via the `kubectl` command - you'll have used thi
 
 **Labels**
 
+What is a label but a way to very quickly reference a *thing*?  For Kubernetes, we consider a label to be a *key/value* pair for referencing some *thing* (or object, more formally).  Here, we can label pods, ReplicaSets, etc. 
+
+For example, we might label a `Pod` to be either `development` or `production`:
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: i-am-a-pod
+  labels:
+    environment: production
+    app: nginx
+```
+
+or similarly:
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: i-am-another-pod
+  labels:
+    environment: development
+    app: flask
+```
+We could then select objects based on labels, with a lookup as follows (using `kubectl`):
+
+`$ kubectl get pods -l 'environment in (production)` (using set-based requirements lookup)
+
+See [Kubernetes - Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) for more details.
+
 **Replication Controllers**
+
+## Wrapup
 
 These are just three of the highlights for setting up a deployment.  For an in-depth guide on the considerations you'll need (including examples of how to setup an `nginx` deployment), see this article: [The beginners guide to creating Kubernetes manifests](https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/)
 
@@ -100,6 +133,7 @@ TBD
 * [What is Kubernetes? The Complete Guide](https://phoenixnap.com/kb/what-is-kubernetes)
 * [Container runtime](https://medium.com/cri-o/container-runtimes-clarity-342b62172dc3)
 * [Kubernetes Configuration](https://kubernetes.io/docs/concepts/configuration/overview/)
+* [Kubernetes - Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
 * [Brian Anstett - K8 Presentation](https://github.com/briananstett/k8-presentation)
 * [The beginners guide to creating Kubernetes manifests](https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/)
 * [WikiPedia - Kubernetes](https://en.wikipedia.org/wiki/Kubernetes)
