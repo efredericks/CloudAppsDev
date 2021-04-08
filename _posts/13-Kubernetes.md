@@ -125,7 +125,7 @@ For more detail, see: [Introducing ReplicationControllers](https://medium.com/@m
 
 ## Wrapup
 
-These are just three of the highlights for setting up a deployment.  For an in-depth guide on the considerations you'll need (including examples of how to setup an `nginx` deployment), see this article: [The beginners guide to creating Kubernetes manifests](https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/)
+These are just three of the highlights for setting up a deployment.  For an in-depth guide on the considerations you'll need (including examples of how to setup an `nginx` deployment), see this article: [The beginners guide to creating Kubernetes manifests](https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/).
 
 It will be best to gain some experience with setting up a basic deployment.  The following Codelab and video are a good starting point for this:
 
@@ -140,7 +140,32 @@ The lab you need to do here (for credit, still attempt the Codelab above for pra
 
 We have looked at Cloud Build and Cloud Run in the past (see [Automation](/CloudAppsDev/_posts/10-Automation.md)), however it is worth discussing again in the context of container orchestration.  
 
-TBD
+### Cloud Build
+
+Cloud Build is a continuous integration / continuous deployment (CI/CD) platform that can be used for getting your applications ready to go.  Think of offloading your build chain to the cloud (including versioning and deployments).  A typical process would have you specify necessary build parameters (via YAML/JSON), upload your code to Cloud Storage, and then Cloud Build creates a Docker container to execute the build.  Once the build is successful, the image is pushed to the [Container Registry](https://cloud.google.com/container-registry), where it can be pulled for application use or submitted to Cloud Run (next section).
+
+The following image (c/o Google) shows a continuous delivery pipeline involving Cloud Build:
+
+<img style="background:#fff" src="https://cloud.google.com/kubernetes-engine/images/gitops-tutorial-pipeline-architecture.svg" title="Cloud Build Pipeline" alt="Cloud Build Pipeline" />
+
+> Cloud Build Pipeline (c/o Google)
+
+This image walks you through the process that can involve Cloud Build.  In essence, it is used to build and deploy your applications to be used elsewhere!
+
+See [Cloud Build Overview](https://cloud.google.com/build/docs/overview) for more details.
+
+### Cloud Run
+
+Cloud Run is one method for getting your applications out there!  We have used it as a component of our process in the past (Cloud Build -> Cloud Run -> Access Publicly).  Essentially, it is the managed service for executing your applications, where the *managed* aspect includes server deployments, scalability, etc.  The following image (c/o Google) demonstrates where Cloud Run might fit in with a Firebase (next post!) deployment:
+
+<img style="background:#fff" src="https://cloudx-bricks-prod-bucket.storage.googleapis.com/ba7e4e7b69dfbdf12d02b231c54788f11e5460bf05e899aab5bc121fd8d9d741.svg" alt="Cloud Run Overview" title="Cloud Run Overview" />
+
+> Cloud Run Overview (c/o Google)
+
+[Cloud Run Overview](https://cloud.google.com/run/docs)
+
+
+The following videos takes you through using Cloud Build and Cloud run to create a bot for Slack!  Fair warning, it involves cat emoji:
 
 > * [Building a SlackBot with Cloud Build, Cloud Run, and Node.js Part 1 [13:20]](https://youtu.be/kYUUEvBT4Ms)
 > * [Building a SlackBot with Cloud Build, Cloud Run, and Node.js Part 2 [19:09]](https://youtu.be/xpPTR05Bxdc)
@@ -159,3 +184,5 @@ TBD
 * [Brian Anstett - K8 Presentation](https://github.com/briananstett/k8-presentation)
 * [The beginners guide to creating Kubernetes manifests](https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/)
 * [WikiPedia - Kubernetes](https://en.wikipedia.org/wiki/Kubernetes)
+* [Cloud Build Overview](https://cloud.google.com/build/docs/overview)
+* [Cloud Run Overview](https://cloud.google.com/run/docs)
