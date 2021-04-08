@@ -45,6 +45,8 @@ Let's take a look at a couple of commonly-used features.  [This article](https:/
 
 **Hosting**
 
+In the module videos (you hopefully already watched), we setup Hosting for our Firebase apps.  These spawn websites hosted by Firebase in a very straightforward manner -- no Apache / nginx setup or configuration required.  We spin up a local website on our local machines, connect it to Firebase, and have Firebase transfer the files upwards (by means of the `public` directory created in your local instance).  You get a generated domain name tied to Firebase, however it can be configurable if you want to set/pay for your own domain.
+
 **Authentication**
 
 To me, one of the most delightful aspects of Firebase apps involves the authentication.  You can **very** easily setup authentication with a multitude of OAuth-based systems, meaning that *you don't have to worry about authentication*!  Figure X shows a screenshot of the currently-available services.  The accounts registered with your service get added to your app's database, where you can easily manage users, roles, etc.
@@ -55,8 +57,19 @@ To me, one of the most delightful aspects of Firebase apps involves the authenti
 
 **Database**
 
+There are two databases (currently) available for Firebase: [Firestore Database](https://firebase.google.com/docs/firestore) and [Realtime Database](https://firebase.google.com/docs/database).  Both are of the NoSQL variety (non-relational, document-based), however Realtime Database uses *data synchronization* for handling updates (i.e., if the data changes, all connected devices' views change), whereas Firestore must be queried for updates.  While common SQL commands won't work here, managing the JSON-based NoSQL databases is pretty straightforward.  The following image (via [Firebase Tips and Tricks](https://medium.com/firebase-tips-tricks/how-to-use-cloud-firestore-in-flutter-9ea80593ca40) shows an example of its representation:
+
+[Firestore Database Example](https://miro.medium.com/max/4552/0*aLKZbmwrjqNNtVZw.jpg "Firestore Database Example")
+
+> Firestore Database Example (c/o Peter Haddad@medium)
+
 **Storage**
 
+Last but certainly not least, we have Storage.  These are the Cloud Storage Buckets we have seen before (and yes, it uses the `gs://` pathing as well), where we can store our files in the cloud and reference them fairly easily.  Not a whole lot to go into here as we've worked with buckets before, but here is the Firebase-specific page!  [Firebase Storage](https://firebase.google.com/docs/storage) + [Firebase & Google Cloud: What’s different with Cloud Storage?](https://medium.com/google-developers/firebase-google-cloud-whats-different-with-cloud-storage-a33fad7c2b80) 
+
+![Firebase Storage Example](https://miro.medium.com/max/3200/0*b0FqITXZJvls0BAH "Firebase Storage Example")
+
+> Firebase Storage Example
 
 
 ### Linking up to the Cloud
@@ -69,7 +82,7 @@ This [Medium article](https://medium.com/firebase-developers/multi-tenant-applic
 
 Figure 4 (again from Google) shows how multi-tenancy is supported via grouping users into the Google Cloud Identity Platform (GCIP):
 
-![An example of customer-of-customer authentication structure]https://storage.googleapis.com/gweb-cloudblog-publish/images/customer-of-customer_authentication_structur.max-600x600.png "An example customer-of-customer authentication structure")
+![An example of customer-of-customer authentication structure](https://storage.googleapis.com/gweb-cloudblog-publish/images/customer-of-customer_authentication_structur.max-600x600.png "An example customer-of-customer authentication structure")
 
 > Figure 4: An example of customer-of-customer authentication structure
 
@@ -152,6 +165,8 @@ Homework here!  This will walk you through all the various facets of Firebase!
 * [What is Firebase?](https://howtofirebase.com/what-is-firebase-fcb8614ba442)
 * [Multi-Tenant Applications with Firebase and Google Cloud](https://medium.com/firebase-developers/multi-tenant-applications-with-firebase-and-google-cloud-4d0d02b7d859)
 * [Google Guide](https://cloud.google.com/build/docs/deploying-builds/deploy-firebase)
+* [Firebase Tips and Tricks](https://medium.com/firebase-tips-tricks/how-to-use-cloud-firestore-in-flutter-9ea80593ca40)
+* [Firebase & Google Cloud: What’s different with Cloud Storage?](https://medium.com/google-developers/firebase-google-cloud-whats-different-with-cloud-storage-a33fad7c2b80) 
 
 <hr size="1" />
 
