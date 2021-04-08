@@ -81,7 +81,7 @@ This [Medium article](https://medium.com/firebase-developers/multi-tenant-applic
 
 Figure 5 (again from Google) shows how multi-tenancy is supported via grouping users into the Google Cloud Identity Platform (GCIP):
 
-![An example of customer-of-customer authentication structure](https://storage.googleapis.com/gweb-cloudblog-publish/images/customer-of-customer_authentication_structur.max-600x600.png "An example customer-of-customer authentication structure")
+<img style="background:#fff" src="https://storage.googleapis.com/gweb-cloudblog-publish/images/customer-of-customer_authentication_structur.max-600x600.png" alt="An example customer-of-customer authentication structure" title="An example customer-of-customer authentication structure" />
 
 > Figure 5: An example of customer-of-customer authentication structure
 
