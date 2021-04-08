@@ -49,17 +49,17 @@ In the module videos (you hopefully already watched), we setup Hosting for our F
 
 **Authentication**
 
-To me, one of the most delightful aspects of Firebase apps involves the authentication.  You can **very** easily setup authentication with a multitude of OAuth-based systems, meaning that *you don't have to worry about authentication*!  Figure X shows a screenshot of the currently-available services.  The accounts registered with your service get added to your app's database, where you can easily manage users, roles, etc.
+To me, one of the most delightful aspects of Firebase apps involves the authentication.  You can **very** easily setup authentication with a multitude of OAuth-based systems, meaning that *you don't have to worry about authentication*!  Figure 3 shows a screenshot of the currently-available services.  The accounts registered with your service get added to your app's database, where you can easily manage users, roles, etc.
 
 ![Firebase Authentication Options](/CloudAppsDev/assets/images/14-Firebase-Auth.png "Firebase Authentication Options")
 
-> Figure X: Firebase Authentication Options
+> Figure 3: Firebase Authentication Options
 
 **Database**
 
 There are two databases (currently) available for Firebase: [Firestore Database](https://firebase.google.com/docs/firestore) and [Realtime Database](https://firebase.google.com/docs/database).  Both are of the NoSQL variety (non-relational, document-based), however Realtime Database uses *data synchronization* for handling updates (i.e., if the data changes, all connected devices' views change), whereas Firestore must be queried for updates.  While common SQL commands won't work here, managing the JSON-based NoSQL databases is pretty straightforward.  The following image (via [Firebase Tips and Tricks](https://medium.com/firebase-tips-tricks/how-to-use-cloud-firestore-in-flutter-9ea80593ca40) shows an example of its representation:
 
-[Firestore Database Example](https://miro.medium.com/max/4552/0*aLKZbmwrjqNNtVZw.jpg "Firestore Database Example")
+![Firestore Database Example](https://miro.medium.com/max/4552/0*aLKZbmwrjqNNtVZw.jpg "Firestore Database Example")
 
 > Firestore Database Example (c/o Peter Haddad@medium)
 
@@ -71,20 +71,19 @@ Last but certainly not least, we have Storage.  These are the Cloud Storage Buck
 
 > Firebase Storage Example
 
-
 ### Linking up to the Cloud
 
-This [Medium article](https://medium.com/firebase-developers/multi-tenant-applications-with-firebase-and-google-cloud-4d0d02b7d859) (hopefully not paywalled) describes an interesting use of Google Cloud and Firebase together.  Specifically, the focus is on *[multi-tenancy](https://www.redhat.com/en/topics/cloud-computing/what-is-multitenancy)*, or enabling a software instance to serve multiple groups of users.  Think of it as multiple users using cloud-based infrastructure at the same time (e.g., shared hosting, sharing resources, etc.).  Generally there will be some level of customization per user/user group as well.   We'll generally consider our SaaS as multi-tenant applications (whereas the general cloud environment can be considered PaaS).  In a cloud-based environment (such as Google Cloud) multi-tenancy is generally enabled via some sort of identify management framework to enable you to group users together.  This task is accomplished in Google Cloud via [Identity Platform](https://cloud.google.com/blog/products/identity-security/simplifying-identity-and-access-management-of-your-employees-partners-and-customers).  Figure 3 (c/o Google) shows how this framework is structured:
+This [Medium article](https://medium.com/firebase-developers/multi-tenant-applications-with-firebase-and-google-cloud-4d0d02b7d859) (hopefully not paywalled) describes an interesting use of Google Cloud and Firebase together.  Specifically, the focus is on *[multi-tenancy](https://www.redhat.com/en/topics/cloud-computing/what-is-multitenancy)*, or enabling a software instance to serve multiple groups of users.  Think of it as multiple users using cloud-based infrastructure at the same time (e.g., shared hosting, sharing resources, etc.).  Generally there will be some level of customization per user/user group as well.   We'll generally consider our SaaS as multi-tenant applications (whereas the general cloud environment can be considered PaaS).  In a cloud-based environment (such as Google Cloud) multi-tenancy is generally enabled via some sort of identify management framework to enable you to group users together.  This task is accomplished in Google Cloud via [Identity Platform](https://cloud.google.com/blog/products/identity-security/simplifying-identity-and-access-management-of-your-employees-partners-and-customers).  Figure 4 (c/o Google) shows how this framework is structured:
 
 ![Context-Aware Access High-Level Architecture](https://storage.googleapis.com/gweb-cloudblog-publish/images/Context-aware_access_high-level_architectu.max-1100x1100.png "Context-Aware Access High-Level Architecture")
 
-> Figure 3: Context-Aware Access High-Level Architecture
+> Figure 4: Context-Aware Access High-Level Architecture
 
-Figure 4 (again from Google) shows how multi-tenancy is supported via grouping users into the Google Cloud Identity Platform (GCIP):
+Figure 5 (again from Google) shows how multi-tenancy is supported via grouping users into the Google Cloud Identity Platform (GCIP):
 
 ![An example of customer-of-customer authentication structure](https://storage.googleapis.com/gweb-cloudblog-publish/images/customer-of-customer_authentication_structur.max-600x600.png "An example customer-of-customer authentication structure")
 
-> Figure 4: An example of customer-of-customer authentication structure
+> Figure 5: An example of customer-of-customer authentication structure
 
 Here you can see how you are creating *silos* of users, where a silo can represent customer groups, employee categories, etc.  In this environment each tenant (again, user group) has its own (list [c/o Google](https://cloud.google.com/blog/products/identity-security/multi-tenancy-support-identity-platform-now-generally-available)):
 
