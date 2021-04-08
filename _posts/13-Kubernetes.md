@@ -74,7 +74,7 @@ Namespaces provide a construct for holding the various aspects of a Kubernetes c
 
 > Namespace example (c/o theithollow)
 
-Effectively, a namespace is a method to enable *separation of concerns*.  
+Effectively, a namespace is a method to enable *separation of concerns* within a Kubernetes cluster.  
 
 [Namespaces Walkthrough](https://kubernetes.io/docs/tasks/administer-cluster/namespaces-walkthrough/)
 
@@ -111,7 +111,17 @@ We could then select objects based on labels, with a lookup as follows (using `k
 
 See [Kubernetes - Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) for more details.
 
-**Replication Controllers**
+**ReplicationControllers**
+
+A *ReplicationController* ensures that your pods are always running!  It is tasked with monitoring your cluster's pods (typically via checking its *health*), and if the amount of available pods dip beneath whatever value you have configured in your manifest file, then the ReplicationController spins up a new pod.  The following image (c/o marko.luksa@medium) demonstrates this feature:
+
+![ReplicationController Example](https://miro.medium.com/max/875/1*IHQPG9yKJHdy6N817wIdeA.png "ReplicationController Example")
+
+> ReplicationController Example (c/o marko.luksa@medium)
+
+We have seen this as part of our manifest files already (or configured via `kubectl`), however we must specify the *label selector*, *replica count*, and *pod template* to define which pods to keep an eye on (i.e., in scope), how many pods should be running, and which template should be used for spinning up new pods, respectively.
+
+For more detail, see: [Introducing ReplicationControllers](https://medium.com/@marko.luksa/kubernetes-in-action-introducing-replication-controllers-aaa2c05e0b4e)
 
 ## Wrapup
 
@@ -145,6 +155,7 @@ TBD
 * [Kubernetes Configuration](https://kubernetes.io/docs/concepts/configuration/overview/)
 * [Namespaces Walkthrough](https://kubernetes.io/docs/tasks/administer-cluster/namespaces-walkthrough/)
 * [Kubernetes - Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
+* [Introducing ReplicationControllers](https://medium.com/@marko.luksa/kubernetes-in-action-introducing-replication-controllers-aaa2c05e0b4e)
 * [Brian Anstett - K8 Presentation](https://github.com/briananstett/k8-presentation)
 * [The beginners guide to creating Kubernetes manifests](https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/)
 * [WikiPedia - Kubernetes](https://en.wikipedia.org/wiki/Kubernetes)
