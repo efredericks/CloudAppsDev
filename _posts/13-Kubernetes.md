@@ -68,6 +68,16 @@ We can interact with Kubernetes via the `kubectl` command - you'll have used thi
 
 **Namespaces**
 
+Namespaces provide a construct for holding the various aspects of a Kubernetes cluster, including pods, services, and deployments.  You can also use a namespace to handle policies and authorizations as well.  The following image (c/o theithollow) provides an example of how namespaces can be used:
+
+![Namespace example](https://theithollow.com/wp-content/uploads/2019/01/k8snamespace.png "Namespace Example")
+
+> Namespace example (c/o theithollow)
+
+Effectively, a namespace is a method to enable *separation of concerns*.  
+
+[Namespaces Walkthrough](https://kubernetes.io/docs/tasks/administer-cluster/namespaces-walkthrough/)
+
 **Labels**
 
 What is a label but a way to very quickly reference a *thing*?  For Kubernetes, we consider a label to be a *key/value* pair for referencing some *thing* (or object, more formally).  Here, we can label pods, ReplicaSets, etc. 
@@ -133,6 +143,7 @@ TBD
 * [What is Kubernetes? The Complete Guide](https://phoenixnap.com/kb/what-is-kubernetes)
 * [Container runtime](https://medium.com/cri-o/container-runtimes-clarity-342b62172dc3)
 * [Kubernetes Configuration](https://kubernetes.io/docs/concepts/configuration/overview/)
+* [Namespaces Walkthrough](https://kubernetes.io/docs/tasks/administer-cluster/namespaces-walkthrough/)
 * [Kubernetes - Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
 * [Brian Anstett - K8 Presentation](https://github.com/briananstett/k8-presentation)
 * [The beginners guide to creating Kubernetes manifests](https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/)
