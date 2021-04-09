@@ -6,6 +6,8 @@
 * [Kubernetes Overview [9:16]](https://youtu.be/hwz5vteZdIE)
 * [Kubernetes Quick Start Demo [9:53]](https://youtu.be/nXJsD35ZuOs)
 * [Kubernetes Deployment Demo [17:06]](https://youtu.be/x-3uf20MTKc)
+* [Building a SlackBot with Cloud Build, Cloud Run, and Node.js Part 1 [13:20]](https://youtu.be/kYUUEvBT4Ms)
+* [Building a SlackBot with Cloud Build, Cloud Run, and Node.js Part 2 [19:09]](https://youtu.be/xpPTR05Bxdc)
 
 > Module labs:
 
