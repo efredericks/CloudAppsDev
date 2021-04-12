@@ -140,7 +140,7 @@ Most of the code above is administrative in nature, however there are a few inte
 Here are a pair of videos demonstrating some Firebase tasks.  First we'll go through basic hosting and then add in some machine learning (c/o TensorFlow.js):
 
 > * Module video: [Firebase and Hosting/TensorFlow Demo [23:03]](https://youtu.be/L4zXFVVdx-k)
-> * [Codelab](https://codelabs.developers.google.com/codelabs/tensorflowjs-firebase-hosting-model
+> * [Codelab](https://codelabs.developers.google.com/codelabs/tensorflowjs-firebase-hosting-model)
 > * [Issue with NodeJS mentioned in the video](https://timjrobinson.com/fixing-node-gyp-permission-denied-when-running-as-root/)
 
 And here is a long-winded example of hooking up Firebase with Cloud Functions to make a chat application that also scans posted images for adult/violent content (note I couldn't get the final step of the Codelab working):
