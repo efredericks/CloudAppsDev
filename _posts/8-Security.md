@@ -21,7 +21,7 @@ Security is a consideration from both the perspective of the cloud provider **an
 
 For reference, here are links to Amazon's and Microsoft's cloud security models:
 
-* [AWS Security Model](https://docs.microsoft.com/en-us/azure/security/fundamentals/overview)
+* [AWS Security Model](https://aws.amazon.com/compliance/shared-responsibility-model/)
 * [Azure Security Model](https://docs.microsoft.com/en-us/azure/security/fundamentals/overview)
 
 If you were to read through the articles (and I suggest you do ... nice to see what the other providers do as well!), you might notice some similarities.  Most notably the **shared responsibility** model!  What this means is that the cloud provider ...
@@ -229,7 +229,7 @@ You'll be completing your first Qwiklabs Quest!  This comprises 8 separate labs 
 
 ## Additional Resources
 
-* [AWS Security Model](https://docs.microsoft.com/en-us/azure/security/fundamentals/overview)
+* [AWS Security Model](https://aws.amazon.com/compliance/shared-responsibility-model/)
 * [Azure Security Model](https://docs.microsoft.com/en-us/azure/security/fundamentals/overview)
 * [Overview of encryption/decryption](https://www.geeksforgeeks.org/difference-between-encryption-and-decryption/)
 * [Google Cloud's key management service (Cloud KMS)](https://cloud.google.com/security-key-management)
