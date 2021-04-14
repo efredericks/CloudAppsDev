@@ -140,7 +140,7 @@ The lab you need to do here (for credit, still attempt the Codelab above for pra
 
 ## Cloud Build and Cloud Run
 
-We have looked at Cloud Build and Cloud Run in the past (see [Automation](/CloudAppsDev/_posts/10-Automation.md)), however it is worth discussing again in the context of container orchestration.  
+We have looked at Cloud Build and Cloud Run in the past (see [Automation](/CloudAppsDev/2020/12/17/automation.html)), however it is worth discussing again in the context of container orchestration.  
 
 ### Cloud Build
 
