@@ -223,7 +223,7 @@ Another hopefully self-evident task, but ensure your access keys expire regularl
 
 ## Lab
 
-You'll be completing your first Qwiklabs Quest!  This comprises 8 separate labs that takes you through the various facets of security and IAM.  For this one, simply submit the screenshots requested on Blackboard (note that I'll be checking completion reports in Qwiklabs as well).
+You'll be completing your first Qwiklabs Quest!  This comprises 8 separate labs that takes you through the various facets of security and IAM.  For this one, simply run through the Quest and I'll check the completion reports.
 
 > [Qwiklabs Quest - Security and Identity Fundamentals [40 credits]](https://www.qwiklabs.com/quests/40)
 
